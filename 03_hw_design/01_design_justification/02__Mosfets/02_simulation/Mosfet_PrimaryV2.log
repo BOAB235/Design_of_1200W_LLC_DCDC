@@ -1,0 +1,47 @@
+Questionable use of curly braces in ".model sir870adp vdmos(rg=3 vto=2.9 rd=3.2m rs=1.5m rb={m} kp=100 mtriode=1.85 cgdmax=1.4n cgdmin=70p cgs=2.9n cjo=3.6n m=.4 a=.7 vj=.7 lambda=20m is=3p ksubthres=.08 mfg=siliconix vds=100 ron=5.5m qg=53.5n)"
+    Error: undefined symbol in: "[m]"
+Circuit: * C:\Users\a037702\NotSynchronized\Personnel\GIT\Design_of_1200W_LLC_DCDC\03_hw_design\01_design_justification\02__Mosfets\02_simulation\Mosfet_PrimaryV2.asc
+
+Error on line 12 : m3 n001 n003 vm vm stw48n60dm2 nmos stw48n60dm2
+	 Unknown parameter "nmos"
+Error on line 13 : m1 vm n007 0 0 stw48n60dm2 nmos stw48n60dm2
+	 Unknown parameter "nmos"
+Error on line 981 : .model stw48n60dm2 nmos (vto=3.5  beta=11.2  lambda=0.01  rd=0.05 rs=0.05  cgs=3.25n cgd=0.15n  is=40n  rds=0.079  vds=600  qg=70n  ciss=3250p coss=142p crss=4.5p  kf=0.0 af=1  vmax=5  pb=0.8  rg=4)
+	* Unrecognized parameter "beta" -- ignored
+	* Unrecognized parameter "cgs" -- ignored
+	* Unrecognized parameter "cgd" -- ignored
+	* Unrecognized parameter "ciss" -- ignored
+	* Unrecognized parameter "coss" -- ignored
+	* Unrecognized parameter "crss" -- ignored
+	* Unrecognized parameter "vmax" -- ignored
+Direct Newton iteration for .op point succeeded.
+.step freq=60000
+.step freq=70000
+.step freq=80000
+.step freq=90000
+.step freq=100000
+.step freq=110000
+.step freq=120000
+.step freq=130000
+.step freq=140000
+.step freq=150000
+.step freq=156000
+
+Date: Tue Jul 01 23:08:48 2025
+Total elapsed time: 2.020 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2115
+traniter = 2108
+tranpoints = 1045
+accept = 1045
+rejected = 0
+matrix size = 18
+fillins = 3
+solver = Normal
+Matrix Compiler1: 1.21 KB object code size  1.2/0.8/[0.5]
+Matrix Compiler2: 1.41 KB object code size  0.7/1.0/[0.5]
+
+

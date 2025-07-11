@@ -1,0 +1,37 @@
+* C:\Users\a037702\NotSynchronized\Personnel\GIT\Design_of_1200W_LLC_DCDC\03_hw_design\01_design_justification\02__Mosfets\02_simulation\Mosfet_PrimaryV2.asc
+L1 N004 N005 {Lm}
+Lr N004 Vm {Lr}
+V3 Vcmd 0 SINE(0 1 {Freq})
+B1 N002 Vm V= 10*(v(Vcmd)>{ Thresh})
+B2 N006 0 V= 10*(v(Vcmd)<{-Thresh})
+V1 N001 0 400 Rser=1m
+R1 N003 N002 3
+R2 N007 N006 3
+R_load N004 N005 {Re_110}
+C3 0 N005 {Cru}
+M3 N001 N003 Vm Vm STW48N60DM2 NMOS STW48N60DM2
+M1 Vm N007 0 0 STW48N60DM2 NMOS STW48N60DM2
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\Users\Public\Downloads\ltspice\lib\cmp\standard.mos
+.param Thresh=0.05
+.tran 0 {5/Freq} {2.1/Freq}
+.param Cru=120n Lr=21.8u Lm=65.4u Re_110=22.6
+.step param Freq  60k 156k 10k
+;.param Freq = 60k
+.model STW48N60DM2 NMOS (VTO=3.5 
++ BETA=11.2 
++ LAMBDA=0.01 
++ RD=0.05 RS=0.05 
++ CGS=3.25n CGD=0.15n 
++ IS=40n 
++ RDS=0.079 
++ VDS=600 
++ Qg=70n 
++ Ciss=3250p Coss=142p Crss=4.5p 
++ KF=0.0 AF=1 
++ VMAX=5 
++ PB=0.8 
++ RG=4)
+.backanno
+.end

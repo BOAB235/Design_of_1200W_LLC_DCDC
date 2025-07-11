@@ -1,0 +1,16 @@
+.param Lnc=3.0
+.param Qec=0.55
+.param Cr_nF=116.209
+.param Lr_uH=21.797
+.param Lm_uH=65.392
+.param fsw_min=60170.0
+.param fsw_max=156220.0
+.param Im_rms=6.992
+.param Io=25.0
+.param Ioe_rms=7.636
+.param Ios_rms=30.545
+.param Ir_rms=10.354
+.param I_second_rms=27.969
+.param L_second_uH=4.087
+.param Re_nom=24.901
+.param Re_110=22.637
