@@ -1,0 +1,25 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model PA2756NLT
+#/11583189/1753220/2.50/4/3/Filter
+DEF PA2756NLT FL 0 30 Y Y 1 F N
+F0 "FL" 850 300 50 H V L CNN
+F1 "PA2756NLT" 850 200 50 H V L CNN
+F2 "PA2756NLT" 850 100 50 H I L CNN
+F3 "" 850 0 50 H I L CNN
+F4 "Common Mode Chokes / Filters 484 UH 8A" 850 -100 50 H I L CNN "Description"
+F5 "9.91" 850 -200 50 H I L CNN "Height"
+F6 "673-PA2756NLT" 850 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Pulse-Electronics/PA2756NLT?qs=EU6FO9ffTwfuV3zHiQJj4A%3D%3D" 850 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "PULSE" 850 -500 50 H I L CNN "Manufacturer_Name"
+F9 "PA2756NLT" 850 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X N1+ 1 0 0 200 R 50 50 0 0 P
+X N1- 2 1000 0 200 L 50 50 0 0 P
+X N2+ 3 0 -100 200 R 50 50 0 0 P
+X N2- 4 1000 -100 200 L 50 50 0 0 P
+P 5 0 1 6 200 100 800 100 800 -200 200 -200 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library

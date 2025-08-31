@@ -1,0 +1,22 @@
+LTspice 24.1.9 for Windows
+Circuit: C:\Users\a037702\OneDrive - Alliance\12_personnel\05_GIT\Design_of_1200W_LLC_DCDC\03_hw_design\01_design_justification\01_llc_tank\02_simulation\04_simple_model\LLC_simple_model.net
+Start Time: Sun Aug 31 19:20:53 2025
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+C:\Users\a037702\OneDrive - Alliance\12_personnel\05_GIT\Design_of_1200W_LLC_DCDC\03_hw_design\01_design_justification\01_llc_tank\02_simulation\04_simple_model\LLC_simple_model.net(20): Limiting fall time to 2.03288e-21.
+
+V2 N001 0 PULSE(0 1 0 {1/Freq} 0 0 {1/Freq})
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+WARNING: Node nc_02 is floating.
+
+Direct Newton iteration for .op point succeeded.
+Total elapsed time: 0.200 seconds.
+
+Files loaded:
+C:\Users\a037702\OneDrive - Alliance\12_personnel\05_GIT\Design_of_1200W_LLC_DCDC\03_hw_design\01_design_justification\01_llc_tank\02_simulation\04_simple_model\LLC_simple_model.net
+C:\Users\a037702\AppData\Local\LTspice\lib\cmp\standard.dio
+C:\Users\a037702\AppData\Local\LTspice\lib\cmp\standard.mos
+
