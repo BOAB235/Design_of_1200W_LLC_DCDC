@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "TNY274GNTL"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "TNY274GNTL")
+        (spec "default")
+    )
+)

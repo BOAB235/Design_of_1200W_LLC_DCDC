@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "B32672L8153J"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2020-11-27-16:06:22)
+    (mountForm default
+        (footprintRef "B32672L8153J")
+        (spec "System")
+    )
+)

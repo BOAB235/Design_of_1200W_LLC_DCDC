@@ -1,0 +1,249 @@
+#include <stdio.h>
+#include <stdint.h>
+#include <math.h>
+#include "esp_err.h"
+#include "esp_timer.h"
+#include "driver/ledc.h"
+#include "driver/adc.h"
+#include "esp_rom_sys.h"
+#include "driver/timer.h"
+#include "esp_timer.h"
+#include "freertos/FreeRTOS.h"
+#include "freertos/task.h"
+#include <stdio.h>
+
+// ----------------- Pins -----------------
+#define ADC_PIN_CH   ADC2_CHANNEL_6    // GPIO14 (ADC2)
+#define PWM_GPIO     25                // PWM output (LEDC)
+
+// ----------------- Capture size -----------------
+#define N 100//10000
+
+// ----------------- Targets & scaling -----------------
+// v_target: desired RC output voltage (in volts)
+static float v_target = 0.40f;         // volts
+
+// Convert raw ADC (12-bit) to volts for ADC2 @ 11 dB (~0..3.3 V)
+
+static const float ADC_SCALE = 3.3f / 4095.0f;       // raw -> volts
+
+
+
+
+// ----------------- State & buffers -----------------
+static int      tab[N];       // measurement scaled to 0..1000 (not duty)
+static uint32_t ttab[N];      // timestamps in microseconds (like Arduino's micros())
+
+
+// ----------------- PI controller (as-is) -----------------
+static const float To = 0.0222f;   // RC time constant (s)
+static const float n  = 3.0f;      // Kp
+static float integral  = 0.0f;
+static float integral_ = 0.0f;
+static int Ts_us = 100;
+
+static float PI_cont(float v_tgt, float v_meas_in) {
+    // PI WITH Anti-windup logic
+
+    const float Kp = n;
+    const float Ki = Kp / To;
+
+    float PI_out_upper = 1.0f;
+    float PI_out_lower = 0.0f;
+    float PI_out;
+    //   this is Backward Euler (more stable than the forward)
+    float e = v_tgt - v_meas_in;
+    integral_ = integral + e * Ts_us*1e-6f;
+    PI_out = Kp * e + Ki * integral_;
+    // Backward Euler integrator uses current error:
+    // I[k] = I[k−1] + Ts * e[k]
+    // Forward Euler would use the previous error:
+    // I[k] = I[k−1] + Ts * e[k−1]
+    // Tustin would use the average of the current and previous errors:
+    // I[k] = I[k−1] + Ts * (e[k] + e[k−1]) / 2
+
+    // Clamp (preserves your original logic incl. integral_)
+    if (PI_out > PI_out_upper) {
+        return PI_out_upper;
+    } else if (PI_out < PI_out_lower) {
+        return PI_out_lower;
+    } 
+
+    integral = integral_;
+    
+    return PI_out;
+}
+
+
+
+
+
+int i = 0; 
+bool run = false; 
+bool prin = false;
+void task_step(void){
+
+if (run){
+
+        // Measure RC output (volts)
+        int raw = 0;
+        // adc_width is implicit for adc2_get_raw -> 12 bits in IDF v4.x
+        adc2_get_raw(ADC_PIN_CH, ADC_WIDTH_BIT_12, &raw);
+        float v_meas = raw * ADC_SCALE;   // volts
+
+        // Step the setpoint after N/3 (as in your code)
+        if (i > N/3) v_target = 0.3f;
+
+        // PI control
+        float u = PI_cont(v_target, v_meas);
+
+        // Duty 8-bit
+        int duty = (int)lroundf(u * 255.0f);
+        if (duty < 0)   duty = 0;
+        if (duty > 255) duty = 255;
+
+        // Apply PWM
+        ledc_set_duty(LEDC_LOW_SPEED_MODE, LEDC_CHANNEL_0, duty);
+        ledc_update_duty(LEDC_LOW_SPEED_MODE, LEDC_CHANNEL_0);
+
+        // Log MEASUREMENT only (scaled to 0..1000)
+        
+
+        tab[i]  = (int)(v_meas * 1000);
+        ttab[i] = (uint32_t)(esp_timer_get_time());
+        run = false; 
+}
+if (prin){
+        timer_disable_intr(TIMER_GROUP_0, TIMER_0);
+
+
+        // Stop PWM
+        ledc_set_duty(LEDC_LOW_SPEED_MODE, LEDC_CHANNEL_0, 0);
+        ledc_update_duty(LEDC_LOW_SPEED_MODE, LEDC_CHANNEL_0);
+
+        // Print results (timestamp \t value)
+        printf("##START\r\n");
+        for (int i = 0; i < N; i++) {
+            // match Arduino print format: "timestamp \t value"
+            printf("#data\t%u\t%d\r\n", (unsigned)ttab[i], tab[i]);
+        }
+        printf("END\r\n");
+
+        // Halt
+        while(1);
+}
+
+
+}
+void IRAM_ATTR  step_run(void *arg) {
+    timer_group_clr_intr_status_in_isr(TIMER_GROUP_0, TIMER_0);
+    timer_group_enable_alarm_in_isr(TIMER_GROUP_0, TIMER_0);
+
+    if (i< N) {
+
+        run  = true;
+
+    } else {
+prin = true;
+
+
+    }
+}
+
+void init_time_interuption(void){
+
+
+
+
+
+   // Now enable the interrupt manually
+    //timer_enable_intr(TIMER_GROUP_0, TIMER_0)
+
+
+
+}
+
+void app_main() {
+    init_time_interuption();
+
+
+
+        timer_config_t config = {
+        .divider = 80,
+        .counter_dir = TIMER_COUNT_UP,
+        .counter_en = TIMER_PAUSE,
+        .alarm_en = TIMER_ALARM_EN,
+        .auto_reload = true
+    };
+    timer_init(TIMER_GROUP_0, TIMER_0, &config);
+    timer_set_counter_value(TIMER_GROUP_0, TIMER_0, 0);
+    timer_set_alarm_value(TIMER_GROUP_0, TIMER_0, Ts_us); // Ts_us µs
+    //timer_enable_intr(TIMER_GROUP_0, TIMER_0);
+    timer_isr_register(TIMER_GROUP_0, TIMER_0, step_run, NULL, ESP_INTR_FLAG_IRAM, NULL);
+    
+
+
+
+
+
+
+
+    // Start timer WITHOUT enabling interrupt
+    timer_start(TIMER_GROUP_0, TIMER_0);
+
+
+
+    // ===== Wait for '#' over stdin (IDF monitor) =====
+    // (press '#' in the serial terminal to start)
+    int ch = -1;
+    while ((ch = getchar()) != '#') {
+        // block until '#' arrives
+    }
+
+    // ===== Configure ADC2: GPIO14, 11 dB, 12-bit =====
+    // Note: ADC2 unavailable when Wi-Fi is active.
+    ESP_ERROR_CHECK(adc2_config_channel_atten(ADC_PIN_CH, ADC_ATTEN_DB_11));
+
+    // ===== Configure LEDC PWM: 100 kHz, 8-bit, GPIO25 =====
+    ledc_timer_config_t tcfg = {
+        .speed_mode       = LEDC_LOW_SPEED_MODE,
+        .duty_resolution  = (ledc_timer_bit_t)8, // 8-bit
+        .timer_num        = LEDC_TIMER_0,
+        .freq_hz          = 100000,//100kHz
+        .clk_cfg          = LEDC_AUTO_CLK,
+    };
+    ESP_ERROR_CHECK(ledc_timer_config(&tcfg));
+
+    ledc_channel_config_t ccfg = {
+        .gpio_num   = PWM_GPIO,
+        .speed_mode = LEDC_LOW_SPEED_MODE,
+        .channel    = LEDC_CHANNEL_0,
+        .intr_type  = LEDC_INTR_DISABLE,
+        .timer_sel  = LEDC_TIMER_0,
+        .duty       = 0,
+        .hpoint     = 0,
+        .flags.output_invert = 0,
+    };
+    ESP_ERROR_CHECK(ledc_channel_config(&ccfg));
+
+
+    // Before your sampling loop INITIALIZE THE CAPACITOR
+    ESP_ERROR_CHECK(ledc_set_duty(LEDC_LOW_SPEED_MODE, LEDC_CHANNEL_0, 0));
+    ESP_ERROR_CHECK(ledc_update_duty(LEDC_LOW_SPEED_MODE, LEDC_CHANNEL_0));
+
+    // Wait ~5 tau (5*To = 5*22.2 ms ≈ 111 ms)
+    esp_rom_delay_us(120000);  // 120 ms, blocks CPU (no RTOS tick)
+
+
+    // ===== Sampling loop =====
+    uint32_t t_start = esp_timer_get_time(); // micros
+
+
+   // Now enable the interrupt manually
+    timer_enable_intr(TIMER_GROUP_0, TIMER_0);
+
+
+
+
+
+}

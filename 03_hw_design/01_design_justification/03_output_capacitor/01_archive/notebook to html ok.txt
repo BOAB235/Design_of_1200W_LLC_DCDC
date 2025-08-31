@@ -1,0 +1,4 @@
+1) convert notebook to html
+jupyter nbconvert 03_LLC_48v_LLC_output_capa_v1.ipynb --to html --no-input --EmbedImagesPreprocessor.enabled=True
+
+2) print htlm in pdf using brwoser manually 

@@ -1,0 +1,4 @@
+| Option                           | Pros                                                       | Cons                                                                                                                       |
+| -------------------------------- | ---------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| **LEDC high-speed PWM**          | Glitch‑free frequency change, hardware-managed transitions | Limited dead‑time control (must external gate driver), no true complementary outputs (no hardware dead-time insertion) |
+| **MCPWM + manual assembly sync** | Full dead‑time control inside ESP32                        | Complex, risky, glitches likely, requires low-level register handling                                                      |

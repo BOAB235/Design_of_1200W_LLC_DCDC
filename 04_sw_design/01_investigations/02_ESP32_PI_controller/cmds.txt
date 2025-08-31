@@ -1,0 +1,25 @@
+# search (win +s) ==>  esp-idf 5.5 powershell
+# go to the wanted folder 
+cd C:\Users\a037702\NotSynchronized\ESP_IDL_Workspace\PI
+# creat new project and config the esp32
+idf.py create-project 06_interuption2
+cd 06_interuption2
+# for WROOM ESP
+idf.py set-target esp32 
+# change the c file in the main 
+# build and flash (you can use: idf.py build flash) 
+idf.py -p COM5 build flash
+
+
+
+
+# you cal clean all folder in one cmd
+# Run idf.py clean in each subfolder that has a CMakeLists.txt
+# remove build folders 
+Get-ChildItem -Directory | ForEach-Object {
+    $buildPath = Join-Path $_.FullName "build"
+    if (Test-Path $buildPath) {
+        Write-Host "Removing build folder in $($_.Name) ..."
+        Remove-Item $buildPath -Recurse -Force
+    }
+}

@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'AZ1117CH2_3.3TRG1'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Diodes Incorporated", "AZ1117CH2-3.3TRG1" (!) = "", "SOT230P700X180-4N", "SOT223 (3-Pin)", "621-AZ1117CH2-33TRG1", "https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/AZ1117CH2-3.3TRG1?qs=lQAVKuKFhkLc7jCxso2G3w%3D%3D", "LDO Voltage Regulators LDO BJT HiCurr SOT223 T&R 4K", "https://www.diodes.com//assets/Datasheets/AZ1117C.pdf", "1.8 mm"
+END_PART
+
+END.

@@ -1,0 +1,35 @@
+========================================================
+jupyter nbconvert 01_LLC_48v_LLC_tank_design_note_v2.ipynb --to html --no-input
+I use this after print to pdf 
+========================================================
+
+jupyter nbconvert LLC_48v_LLC_tank_design_note_v1.ipynb --to markdown --no-input
+
+
+
+
+
+# ADD IMAGE
+jupyter nbconvert LLC_48v_LLC_tank_design_note_v2.ipynb --to html --no-input --EmbedImagesPreprocessor.enabled=True
+
+wkhtmltopdf LLC_48v_LLC_tank_design_note_v2.html LLC_48v_LLC_tank_design_note_v2.pdf
+
+
+
+
+
+
+===========================>>>>>>>>>>>>>>>>>
+1) install using admin, Windows	Installer (Vista or later)	64-bit	32-bit	 
+https://wkhtmltopdf.org/downloads.html
+2) go to 
+C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe
+
+3) convert notebook to html
+jupyter nbconvert 01_LLC_48v_LLC_tank_design_note_v2.ipynb --to html --no-input --EmbedImagesPreprocessor.enabled=True
+4) run to convert html to pdf
+& "C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe" "01_LLC_48v_LLC_tank_design_note_v2.html" "01_LLC_48v_LLC_tank_design_note_v2.pdf"
+
+
+
+
