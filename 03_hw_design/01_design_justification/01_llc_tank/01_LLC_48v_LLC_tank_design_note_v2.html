@@ -14576,8 +14576,6 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs jp-mod-noInput ">
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs jp-mod-noInput ">
-
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
@@ -14660,6 +14658,8 @@ $$<p>See page 3 formula (23) <a href="#referencesID1">[1]</a>.
 </div>
 </div>
 </div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs jp-mod-noInput ">
+
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
 
 <div class="jp-Cell-outputWrapper">
@@ -14680,13 +14680,61 @@ V_{In_{min}} &amp;= 360 \; \;\textrm{(v)}
 V_{In_{nom}} &amp;= 380 \; \;\textrm{(v)}
 \\[10pt]
 V_{In_{max}} &amp;= 400 \; \;\textrm{(v)}
-\\[10pt]
+\end{aligned}
+$
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+
+
+<div class="jp-RenderedLatex jp-OutputArea-output " data-mime-type="text/latex">
+$
+\begin{aligned}
 \mathrm{Vo}_{min} &amp;= 42 \; \;\textrm{(v)}
 \\[10pt]
 \mathrm{Vo}_{nom} &amp;= 48 \; \;\textrm{(v)}
 \\[10pt]
 \mathrm{Vo}_{max} &amp;= 54 \; \;\textrm{(v)}
-\\[10pt]
+\end{aligned}
+$
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+
+
+<div class="jp-RenderedLatex jp-OutputArea-output " data-mime-type="text/latex">
+$
+\begin{aligned}
 \mathrm{Power} &amp;= 1200 \; \;\textrm{(w)}
 \\[10pt]
 f_{nom} &amp;= 100000.000 \; \;\textrm{(Hz)}
@@ -14866,11 +14914,35 @@ $
 \begin{aligned}
 \mathrm{margin} &amp;= 0.010 \; 
 \\[10pt]
-\mathrm{Mg}_{min} &amp;= n \cdot \frac{ \mathrm{Vo}_{min} \cdot \left( 1 - \mathrm{margin} \right) + \mathrm{Vf} }{ \frac{ V_{In_{max}} }{ 2 } }  = 4 \cdot \frac{ 42 \cdot \left( 1 - 0.010 \right) + 0.200 }{ \frac{ 400 }{ 2 } } &amp;= 0.836  
+\mathrm{Mg}_{min} &amp;= n \cdot \frac{ \mathrm{Vo}_{min} \cdot \left( 1 - \mathrm{margin} \right) + \mathrm{Vf} }{ \frac{ V_{In_{max}} }{ 2 } } \\&amp;= 4 \cdot \frac{ 42 \cdot \left( 1 - 0.010 \right) + 0.200 }{ \frac{ 400 }{ 2 } } \\&amp;= 0.836  \\[10pt]
+\end{aligned}
+$
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+
+
+<div class="jp-RenderedLatex jp-OutputArea-output " data-mime-type="text/latex">
+$
+\begin{aligned}
+\mathrm{Mg}_{max} &amp;= n \cdot \frac{ \mathrm{Vo}_{max} \cdot \left( 1 + \mathrm{margin} \right) + \mathrm{Vf} + V_{loss} }{ \frac{ V_{In_{min}} }{ 2 } } \\&amp;= 4 \cdot \frac{ 54 \cdot \left( 1 + 0.010 \right) + 0.200 + 2.526 }{ \frac{ 360 }{ 2 } } \\&amp;= 1.273  \\[10pt]
 \\[10pt]
-\mathrm{Mg}_{max} &amp;= n \cdot \frac{ \mathrm{Vo}_{max} \cdot \left( 1 + \mathrm{margin} \right) + \mathrm{Vf} + V_{loss} }{ \frac{ V_{In_{min}} }{ 2 } }  = 4 \cdot \frac{ 54 \cdot \left( 1 + 0.010 \right) + 0.200 + 2.526 }{ \frac{ 360 }{ 2 } } &amp;= 1.273  
-\\[10pt]
-\mathrm{Mg}_{max110} &amp;= \mathrm{Mg}_{max} \cdot \left( \frac{ 110 }{ 100 } \right)  = 1.273 \cdot \left( \frac{ 110 }{ 100 } \right) &amp;= 1.400  
+\mathrm{Mg}_{max110} &amp;= \mathrm{Mg}_{max} \cdot \left( \frac{ 110 }{ 100 } \right) \\&amp;= 1.273 \cdot \left( \frac{ 110 }{ 100 } \right) \\&amp;= 1.400  \\[10pt]
 \end{aligned}
 $
 </div>
@@ -15227,13 +15299,13 @@ class="
 <div class="jp-RenderedLatex jp-OutputArea-output " data-mime-type="text/latex">
 $
 \begin{aligned}
-\mathrm{Re}_{nom} &amp;= 8 \cdot \left( n \right) ^{ 2 } \cdot \frac{ \mathrm{Vo}_{nom} }{ \left( \pi \right) ^{ 2 } \cdot \mathrm{Io}_{nom} }  = 8 \cdot \left( 4 \right) ^{ 2 } \cdot \frac{ 48 }{ \left( 3.142 \right) ^{ 2 } \cdot 25.000 } &amp;= 24.901  
+\mathrm{Re}_{nom} &amp;= 8 \cdot \left( n \right) ^{ 2 } \cdot \frac{ \mathrm{Vo}_{nom} }{ \left( \pi \right) ^{ 2 } \cdot \mathrm{Io}_{nom} } \\&amp;= 8 \cdot \left( 4 \right) ^{ 2 } \cdot \frac{ 48 }{ \left( 3.142 \right) ^{ 2 } \cdot 25.000 } \\&amp;= 24.901  \\[10pt]
 \\[10pt]
-\mathrm{Re}_{nom} &amp;= \operatorname{round} \left( \mathrm{Re}_{nom} ,\  3 \right)  = \operatorname{round} \left( 24.901 ,\  3 \right) &amp;= 24.901  
+\mathrm{Re}_{nom} &amp;= \operatorname{round} \left( \mathrm{Re}_{nom} ,\  3 \right) \\&amp;= \operatorname{round} \left( 24.901 ,\  3 \right) \\&amp;= 24.901  \\[10pt]
 \\[10pt]
-\mathrm{Re}_{110} &amp;= 8 \cdot \left( n \right) ^{ 2 } \cdot \frac{ \mathrm{Vo}_{nom} }{ \left( \pi \right) ^{ 2 } \cdot \mathrm{Io}_{nom} \cdot 1.1 }  = 8 \cdot \left( 4 \right) ^{ 2 } \cdot \frac{ 48 }{ \left( 3.142 \right) ^{ 2 } \cdot 25.000 \cdot 1.1 } &amp;= 22.637  
+\mathrm{Re}_{110} &amp;= 8 \cdot \left( n \right) ^{ 2 } \cdot \frac{ \mathrm{Vo}_{nom} }{ \left( \pi \right) ^{ 2 } \cdot \mathrm{Io}_{nom} \cdot 1.1 } \\&amp;= 8 \cdot \left( 4 \right) ^{ 2 } \cdot \frac{ 48 }{ \left( 3.142 \right) ^{ 2 } \cdot 25.000 \cdot 1.1 } \\&amp;= 22.637  \\[10pt]
 \\[10pt]
-P_{re_{110}} &amp;= \frac{ \left( \frac{ V_{In_{nom}} }{ 2 } \right) ^{ 2 } }{ \mathrm{Re}_{nom} }  = \frac{ \left( \frac{ 380 }{ 2 } \right) ^{ 2 } }{ 24.901 } &amp;= 1449.741  
+P_{re_{110}} &amp;= \frac{ \left( \frac{ V_{In_{nom}} }{ 2 } \right) ^{ 2 } }{ \mathrm{Re}_{nom} } \\&amp;= \frac{ \left( \frac{ 380 }{ 2 } \right) ^{ 2 } }{ 24.901 } \\&amp;= 1449.741  \\[10pt]
 \end{aligned}
 $
 </div>
@@ -15269,21 +15341,119 @@ $
 <div class="jp-RenderedLatex jp-OutputArea-output " data-mime-type="text/latex">
 $
 \begin{aligned}
-\mathrm{Cr}_{nF} &amp;= \frac{ 1 \times 10 ^ {9} }{ 2 \cdot \pi \cdot \mathrm{Qec} \cdot f_{nom} \cdot \mathrm{Re}_{nom} }  = \frac{ 1 \times 10 ^ {9} }{ 2 \cdot 3.142 \cdot 0.550 \cdot 100000.000 \cdot 24.901 } &amp;= 116.209 \; \;\textrm{(nF)}
-\\[10pt]
+\mathrm{Cr}_{nF} &amp;= \frac{ 1 \times 10 ^ {9} }{ 2 \cdot \pi \cdot \mathrm{Qec} \cdot f_{nom} \cdot \mathrm{Re}_{nom} } \\&amp;= \frac{ 1 \times 10 ^ {9} }{ 2 \cdot 3.142 \cdot 0.550 \cdot 100000.000 \cdot 24.901 } \\&amp;= 116.209 \; \;\textrm{(nF)}\\[10pt]
+\end{aligned}
+$
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+
+
+<div class="jp-RenderedLatex jp-OutputArea-output " data-mime-type="text/latex">
+$
+\begin{aligned}
 \mathrm{Cr} &amp;= 116.209 \; 
 \\[10pt]
-\mathrm{Cr} &amp;= \operatorname{round} \left( \mathrm{Cr} ,\  3 \right)  = \operatorname{round} \left( 116.209 ,\  3 \right) &amp;= 116.209  
+\mathrm{Cr} &amp;= \operatorname{round} \left( \mathrm{Cr} ,\  3 \right) \\&amp;= \operatorname{round} \left( 116.209 ,\  3 \right) \\&amp;= 116.209  \\[10pt]
+\end{aligned}
+$
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+
+
+<div class="jp-RenderedLatex jp-OutputArea-output " data-mime-type="text/latex">
+$
+\begin{aligned}
+\mathrm{Lr} &amp;= \frac{ 1 }{ \left( 2 \cdot \pi \cdot f_{nom} \right) ^{ 2 } \cdot \mathrm{Cr} \cdot 1 \times 10 ^ {-9} } \\&amp;= \frac{ 1 }{ \left( 2 \cdot 3.142 \cdot 100000.000 \right) ^{ 2 } \cdot 116.209 \cdot 1 \times 10 ^ {-9} } \\&amp;= 0.000  \\[10pt]
 \\[10pt]
-\mathrm{Lr} &amp;= \frac{ 1 }{ \left( 2 \cdot \pi \cdot f_{nom} \right) ^{ 2 } \cdot \mathrm{Cr} \cdot 1 \times 10 ^ {-9} }  = \frac{ 1 }{ \left( 2 \cdot 3.142 \cdot 100000.000 \right) ^{ 2 } \cdot 116.209 \cdot 1 \times 10 ^ {-9} } &amp;= 0.000  
+\mathrm{Lr}_{uH} &amp;= \mathrm{Lr} \cdot 1 \times 10 ^ {6} \\&amp;= 0.000 \cdot 1 \times 10 ^ {6} \\&amp;= 21.797 \; \;\textrm{(uH)}\\[10pt]
 \\[10pt]
-\mathrm{Lr}_{uH} &amp;= \mathrm{Lr} \cdot 1 \times 10 ^ {6}  = 0.000 \cdot 1 \times 10 ^ {6} &amp;= 21.797 \; \;\textrm{(uH)}
+\mathrm{Lr}_{uH} &amp;= \operatorname{round} \left( \mathrm{Lr}_{uH} ,\  3 \right) \\&amp;= \operatorname{round} \left( 21.797 ,\  3 \right) \\&amp;= 21.797  \\[10pt]
+\end{aligned}
+$
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+
+
+<div class="jp-RenderedLatex jp-OutputArea-output " data-mime-type="text/latex">
+$
+\begin{aligned}
+\mathrm{Lm} &amp;= \mathrm{Lr} \cdot \mathrm{Lnc} \\&amp;= 0.000 \cdot 3.000 \\&amp;= 0.000  \\[10pt]
 \\[10pt]
-\mathrm{Lr}_{uH} &amp;= \operatorname{round} \left( \mathrm{Lr}_{uH} ,\  3 \right)  = \operatorname{round} \left( 21.797 ,\  3 \right) &amp;= 21.797  
-\\[10pt]
-\mathrm{Lm} &amp;= \mathrm{Lr} \cdot \mathrm{Lnc}  = 0.000 \cdot 3.000 &amp;= 0.000  
-\\[10pt]
-\mathrm{Lm}_{uH} &amp;= \mathrm{Lm} \cdot 1 \times 10 ^ {6}  = 0.000 \cdot 1 \times 10 ^ {6} &amp;= 65.392 \; \;\textrm{(uH)}
+\mathrm{Lm}_{uH} &amp;= \mathrm{Lm} \cdot 1 \times 10 ^ {6} \\&amp;= 0.000 \cdot 1 \times 10 ^ {6} \\&amp;= 65.392 \; \;\textrm{(uH)}\\[10pt]
+\end{aligned}
+$
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+
+
+<div class="jp-RenderedLatex jp-OutputArea-output " data-mime-type="text/latex">
+$
+\begin{aligned}
+L_{second_{uH}} &amp;= \frac{ \mathrm{Lm}_{uH} }{ \left( n \right) ^{ 2 } } \\&amp;= \frac{ 65.392 }{ \left( 4 \right) ^{ 2 } } \\&amp;= 4.087 \; \;\textrm{(uH)}\\[10pt]
 \end{aligned}
 $
 </div>
@@ -15358,25 +15528,13 @@ $
 <div class="jp-RenderedLatex jp-OutputArea-output " data-mime-type="text/latex">
 $
 \begin{aligned}
-\mathrm{fsw}_{min} &amp;= \operatorname{round} \left( \mathrm{fn}_{min} \cdot f_{nom} ,\  2 \right)  = \operatorname{round} \left( 0.602 \cdot 100000.000 ,\  2 \right) &amp;= 60170.000 \; \;\textrm{(Hz)}
+\mathrm{fsw}_{min} &amp;= \mathrm{fn}_{min} \cdot f_{nom} \\&amp;= 0.602 \cdot 100000.000 \\&amp;= 60170.000 \; \;\textrm{(Hz)}\\[10pt]
 \\[10pt]
-\mathrm{fsw}_{max} &amp;= \operatorname{round} \left( \mathrm{fn}_{max} \cdot f_{nom} ,\  2 \right)  = \operatorname{round} \left( 1.562 \cdot 100000.000 ,\  2 \right) &amp;= 156220.000 \; \;\textrm{(Hz)}
+\mathrm{fsw}_{max} &amp;= \mathrm{fn}_{max} \cdot f_{nom} \\&amp;= 1.562 \cdot 100000.000 \\&amp;= 156220.000 \; \;\textrm{(Hz)}\\[10pt]
 \\[10pt]
-\mathrm{wmin} &amp;= 2 \cdot \pi \cdot \mathrm{fsw}_{min}  = 2 \cdot 3.142 \cdot 60170.000 &amp;= 378059.260 \; \;\textrm{(rad/s)}
+\mathrm{wmin} &amp;= 2 \cdot \pi \cdot \mathrm{fsw}_{min} \\&amp;= 2 \cdot 3.142 \cdot 60170.000 \\&amp;= 378059.260 \; \;\textrm{(rad/s)}\\[10pt]
 \\[10pt]
-\mathrm{wmax} &amp;= 2 \cdot \pi \cdot \mathrm{fsw}_{max}  = 2 \cdot 3.142 \cdot 156220.000 &amp;= 981559.209 \; \;\textrm{(rad/s)}
-\\[10pt]
-\mathrm{Im}_{rms} &amp;= 2 \cdot \sqrt { 2 } \cdot n \cdot \frac{ \mathrm{Vo}_{nom} }{ \pi \cdot \mathrm{Lm} \cdot \mathrm{wmin} }  = 2 \cdot \sqrt { 2 } \cdot 4 \cdot \frac{ 48 }{ 3.142 \cdot 0.000 \cdot 378059.260 } &amp;= 6.992 \; \;\textrm{(Arms)}
-\\[10pt]
-\mathrm{Io} &amp;= 25.000 \; \;\textrm{(Arms)}
-\\[10pt]
-\mathrm{Ioe}_{rms} &amp;= 1.1 \cdot \pi \cdot \frac{ \mathrm{Io} }{ n \cdot 2 \cdot \sqrt { 2 } }  = 1.1 \cdot 3.142 \cdot \frac{ 25.000 }{ 4 \cdot 2 \cdot \sqrt { 2 } } &amp;= 7.636 \; \;\textrm{(Arms @ 110%)}
-\\[10pt]
-\mathrm{Ios}_{rms} &amp;= \mathrm{Ioe}_{rms} \cdot n  = 7.636 \cdot 4 &amp;= 30.545 \; \;\textrm{(Arms)}
-\\[10pt]
-\mathrm{Ir}_{rms} &amp;= \sqrt { \left( \mathrm{Im}_{rms} \right) ^{ 2 } + \left( \mathrm{Ioe} \right) ^{ 2 } }  = \sqrt { \left( 6.992 \right) ^{ 2 } + \left( 7.636 \right) ^{ 2 } } &amp;= 10.354 \; \;\textrm{(Arms)}
-\\[10pt]
-L_{second_{uH}} &amp;= \frac{ \mathrm{Lm}_{uH} }{ \left( n \right) ^{ 2 } }  = \frac{ 65.392 }{ \left( 4 \right) ^{ 2 } } &amp;= 4.087 \; \;\textrm{(uH)}
+\mathrm{wmax} &amp;= 2 \cdot \pi \cdot \mathrm{fsw}_{max} \\&amp;= 2 \cdot 3.142 \cdot 156220.000 \\&amp;= 981559.209 \; \;\textrm{(rad/s)}\\[10pt]
 \end{aligned}
 $
 </div>
@@ -15386,6 +15544,90 @@ $
 </div>
 
 </div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+
+
+<div class="jp-RenderedLatex jp-OutputArea-output " data-mime-type="text/latex">
+$
+\begin{aligned}
+\mathrm{Im}_{rms} &amp;= 2 \cdot \sqrt { 2 } \cdot n \cdot \frac{ \mathrm{Vo}_{nom} }{ \pi \cdot \mathrm{Lm} \cdot \mathrm{wmin} } \\&amp;= 2 \cdot \sqrt { 2 } \cdot 4 \cdot \frac{ 48 }{ 3.142 \cdot 0.000 \cdot 378059.260 } \\&amp;= 6.992 \; \;\textrm{(Arms)}\\[10pt]
+\end{aligned}
+$
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+
+
+<div class="jp-RenderedLatex jp-OutputArea-output " data-mime-type="text/latex">
+$
+\begin{aligned}
+\mathrm{Io} &amp;= 25.000 \; \;\textrm{(Arms)}
+\\[10pt]
+\mathrm{Ioe}_{rms} &amp;= 1.1 \cdot \pi \cdot \frac{ \mathrm{Io} }{ n \cdot 2 \cdot \sqrt { 2 } } \\&amp;= 1.1 \cdot 3.142 \cdot \frac{ 25.000 }{ 4 \cdot 2 \cdot \sqrt { 2 } } \\&amp;= 7.636 \; \;\textrm{(Arms @ 110%)}\\[10pt]
+\\[10pt]
+\mathrm{Ios}_{rms} &amp;= \mathrm{Ioe}_{rms} \cdot n \\&amp;= 7.636 \cdot 4 \\&amp;= 30.545 \; \;\textrm{(Arms)}\\[10pt]
+\end{aligned}
+$
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+
+
+<div class="jp-RenderedLatex jp-OutputArea-output " data-mime-type="text/latex">
+$
+\begin{aligned}
+\mathrm{Ir}_{rms} &amp;= \sqrt { \left( \mathrm{Im}_{rms} \right) ^{ 2 } + \left( \mathrm{Ioe} \right) ^{ 2 } } \\&amp;= \sqrt { \left( 6.992 \right) ^{ 2 } + \left( 7.636 \right) ^{ 2 } } \\&amp;= 10.354 \; \;\textrm{(Arms)}\\[10pt]
+\end{aligned}
+$
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs jp-mod-noInput ">
 
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
@@ -15409,108 +15651,27 @@ $
 <div class="jp-OutputArea-child">
 
 
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Output datas</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>Lnc</th>
-      <td>3.000000e+00</td>
-    </tr>
-    <tr>
-      <th>Qec</th>
-      <td>5.500000e-01</td>
-    </tr>
-    <tr>
-      <th>Cr_nF</th>
-      <td>1.162090e+02</td>
-    </tr>
-    <tr>
-      <th>n</th>
-      <td>4.000000e+00</td>
-    </tr>
-    <tr>
-      <th>Lr_uH</th>
-      <td>2.179700e+01</td>
-    </tr>
-    <tr>
-      <th>Lm_uH</th>
-      <td>6.539200e+01</td>
-    </tr>
-    <tr>
-      <th>fsw_min</th>
-      <td>6.017000e+04</td>
-    </tr>
-    <tr>
-      <th>fsw_max</th>
-      <td>1.562200e+05</td>
-    </tr>
-    <tr>
-      <th>Im_rms</th>
-      <td>6.992000e+00</td>
-    </tr>
-    <tr>
-      <th>Io</th>
-      <td>2.500000e+01</td>
-    </tr>
-    <tr>
-      <th>Ioe_rms</th>
-      <td>7.636000e+00</td>
-    </tr>
-    <tr>
-      <th>Ios_rms</th>
-      <td>3.054500e+01</td>
-    </tr>
-    <tr>
-      <th>Ir_rms</th>
-      <td>1.035400e+01</td>
-    </tr>
-    <tr>
-      <th>L_second_uH</th>
-      <td>4.087000e+00</td>
-    </tr>
-    <tr>
-      <th>Re_nom</th>
-      <td>2.490100e+01</td>
-    </tr>
-    <tr>
-      <th>Re_110</th>
-      <td>2.263700e+01</td>
-    </tr>
-    <tr>
-      <th>Cr</th>
-      <td>1.162090e-07</td>
-    </tr>
-    <tr>
-      <th>Lr</th>
-      <td>2.179700e-05</td>
-    </tr>
-    <tr>
-      <th>Lm</th>
-      <td>6.539200e-05</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>{&#39;Lnc&#39;: 3.0,
+ &#39;Qec&#39;: 0.55,
+ &#39;Cr_nF&#39;: 116.209,
+ &#39;n&#39;: 4.0,
+ &#39;Lr_uH&#39;: 21.797,
+ &#39;Lm_uH&#39;: 65.392,
+ &#39;fsw_min&#39;: 60170.0,
+ &#39;fsw_max&#39;: 156220.0,
+ &#39;Im_rms&#39;: 6.992,
+ &#39;Io&#39;: 25.0,
+ &#39;Ioe_rms&#39;: 7.636,
+ &#39;Ios_rms&#39;: 30.545,
+ &#39;Ir_rms&#39;: 10.354,
+ &#39;L_second_uH&#39;: 4.087,
+ &#39;Re_nom&#39;: 24.901,
+ &#39;Re_110&#39;: 22.637,
+ &#39;Cr&#39;: 1.16209e-07,
+ &#39;Lr&#39;: 2.1796999999999998e-05,
+ &#39;Lm&#39;: 6.539199999999999e-05}</pre>
 </div>
 
 </div>
@@ -15528,7 +15689,7 @@ $
 <h2 id="References-">References <a class="title_class" id="title_7" /><a class="anchor-link" href="#References-">&#182;</a></h2><p><a id="referencesID1"></a> [1] Hong Huang, <em>Designing an LLC Resonant
 Half-Bridge Power Converter</em>. Available: <a href="https://bbs.dianyuan.com/upload/community/2013/12/01/1385867010-65563.pdf">https://bbs.dianyuan.com/upload/community/2013/12/01/1385867010-65563.pdf</a>
 [2] <br>
-Code <a href="./01_LLC_48v_LLC_tank_design_note_v2.ipynb">Python notebook used to make this PDF</a></p>
+Code <a href="https://github.com/BOAB235/Design_of_1200W_LLC_DCDC/blob/main/03_hw_design/01_design_justification/01_llc_tank/01_LLC_48v_LLC_tank_design_note_v2.ipynb">Python notebook used to make this PDF</a></p>
 
 </div>
 </div>

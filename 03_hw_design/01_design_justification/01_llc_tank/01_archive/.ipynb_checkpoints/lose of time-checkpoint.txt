@@ -1,0 +1,20 @@
+go to 
+https://github.com/jgm/pandoc/releases/tag/3.7.0.2
+dowload extract
+pandoc-3.7.0.2-windows-x86_64.zip
+example of extracted folder
+C:\Users\a037702\NotSynchronized\pandoc-3.7.0.2
+
+download and isntall (admin)
+https://wkhtmltopdf.org/downloads.html
+
+
+final cmd 
+"C:\Users\a037702\NotSynchronized\pandoc-3.7.0.2\pandoc.exe" ^
+ "01_LLC_48v_LLC_tank_design_note_v2.html" ^
+ -t pdf --pdf-engine="C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe" ^
+ -o "01_LLC_48v_LLC_tank_design_note_v2.pdf"
+
+
+
+NOOOOOOOOOOOOOOOOOOOOOOOOOOOK THE PDF IS NOT NICE THE TEXT IS NOK I don't like it 

@@ -1,0 +1,15 @@
+LTspice 24.1.9 for Windows
+Circuit: C:\Users\a037702\OneDrive - Alliance\12_personnel\05_GIT\Design_of_1200W_LLC_DCDC\03_hw_design\01_design_justification\01_llc_tank\01_archive\Simple_simulation.net
+Start Time: Sun Aug 31 19:10:02 2025
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration for .op point succeeded.
+Total elapsed time: 1.302 seconds.
+
+Files loaded:
+C:\Users\a037702\OneDrive - Alliance\12_personnel\05_GIT\Design_of_1200W_LLC_DCDC\03_hw_design\01_design_justification\01_llc_tank\01_archive\Simple_simulation.net
+C:\Users\a037702\AppData\Local\LTspice\lib\cmp\standard.dio
+
