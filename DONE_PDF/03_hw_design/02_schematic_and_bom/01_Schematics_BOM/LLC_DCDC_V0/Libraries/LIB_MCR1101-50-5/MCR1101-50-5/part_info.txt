@@ -1,9 +1,0 @@
-Manufacturer=ACEINNA
-PartNumber=MCR1101-50-5
-PartCategory=Undefined or Miscellaneous
-PackageCategory=Other
-PinCount=16
-Version=2.7
-Released=2019-12-05 10:40:01
-Downloaded=2025-08-22 17:03:01
-3D=Y

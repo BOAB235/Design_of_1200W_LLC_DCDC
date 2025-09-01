@@ -1,9 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP R46KI310050M1K
-D R46 275 VAC, Film, Metallized Polypropylene, Safety, 0.1 uF, 10%, 275 VAC (X2), 560 VDC, 110C, 15mm
-K
-F https://search.kemet.com/component-documentation/download/specsheet/R46KI310050M1K
-$ENDCMP
-#
-#End Doc Library

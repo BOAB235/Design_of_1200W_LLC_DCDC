@@ -1,9 +1,0 @@
-Manufacturer=Power Integrations
-PartNumber=TNY280PN
-PartCategory=Switch
-PackageCategory=Other
-PinCount=7
-Version=1.1
-Released=2017-11-06 10:32:04
-Downloaded=2025-08-24 14:48:03
-3D=Y

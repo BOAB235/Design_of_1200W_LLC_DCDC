@@ -1,9 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP AZ1117CH2-3.3TRG1
-D LDO Voltage Regulators LDO BJT HiCurr SOT223 T&R 4K
-K
-F https://www.diodes.com//assets/Datasheets/AZ1117C.pdf
-$ENDCMP
-#
-#End Doc Library

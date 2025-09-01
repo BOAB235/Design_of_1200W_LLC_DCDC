@@ -1,9 +1,0 @@
-Manufacturer=TDK
-PartNumber=B32672L8153J
-PartCategory=Capacitor
-PackageCategory=Other
-PinCount=2
-Version=1.3
-Released=2020-04-29 10:11:21
-Downloaded=2025-08-21 17:03:01
-3D=Y

@@ -1,9 +1,0 @@
-Manufacturer=Texas Instruments
-PartNumber=LM2575HVT-12/LF03
-PartCategory=Integrated Circuit
-PackageCategory=Transistor Outline, Vertical
-PinCount=5
-Version=1.1
-Released=2021-05-04 05:27:33
-Downloaded=2025-08-24 13:31:03
-3D=Y

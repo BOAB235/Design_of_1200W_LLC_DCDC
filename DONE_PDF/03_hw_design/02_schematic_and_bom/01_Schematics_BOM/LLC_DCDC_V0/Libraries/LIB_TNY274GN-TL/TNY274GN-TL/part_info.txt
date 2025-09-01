@@ -1,9 +1,0 @@
-Manufacturer=Power Integrations
-PartNumber=TNY274GN-TL
-PartCategory=Integrated Circuit
-PackageCategory=Other
-PinCount=7
-Version=1.2
-Released=2020-08-17 12:48:45
-Downloaded=2025-08-24 10:35:14
-3D=N

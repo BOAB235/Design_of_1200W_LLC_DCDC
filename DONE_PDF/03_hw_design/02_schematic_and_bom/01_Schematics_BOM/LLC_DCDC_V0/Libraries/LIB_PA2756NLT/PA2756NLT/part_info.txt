@@ -1,9 +1,0 @@
-Manufacturer=PULSE
-PartNumber=PA2756NLT
-PartCategory=Filter
-PackageCategory=Other
-PinCount=4
-Version=1.2
-Released=2024-12-04 13:34:22
-Downloaded=2025-08-21 07:31:23
-3D=Y

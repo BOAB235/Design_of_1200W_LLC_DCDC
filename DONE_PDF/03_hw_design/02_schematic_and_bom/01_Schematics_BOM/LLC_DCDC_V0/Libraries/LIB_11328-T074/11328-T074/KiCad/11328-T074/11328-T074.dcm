@@ -1,9 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP 11328-T074
-D Power Transformers Flyback Transformer for LT8316
-K
-F https://www.mouser.co.cr/datasheet/2/390/LT8316_PQ2620_Datasheet_ver_3_20190825-2199694.pdf
-$ENDCMP
-#
-#End Doc Library
