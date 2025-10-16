@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'MP9486AGN_Z'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Monolithic Power Systems (MPS)", "MP9486AGN-Z" (!) = "", "SOIC127P600X170-9N", "Small Outline Packages", "946-MP9486AGN-Z", "https://www.mouser.co.uk/ProductDetail/Monolithic-Power-Systems-MPS/MP9486AGN-Z?qs=YCa%2FAAYMW010ws20lFESXg%3D%3D", "Switching Voltage Regulators 100V Input, 3.5A, Switching Current Limit Step-Down Converter", "https://componentsearchengine.com/Datasheets/1/MP9486AGN-Z.pdf", "1.7 mm"
+END_PART
+
+END.

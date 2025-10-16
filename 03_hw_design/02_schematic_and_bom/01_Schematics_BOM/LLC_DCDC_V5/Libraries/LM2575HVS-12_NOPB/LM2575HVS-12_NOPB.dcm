@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LM2575HVS-12_NOPB
+D Texas Instruments, LM2575HVS-12/NOPB Step-Down Switching Regulator 1A, 1.23  57 V, 5-Pin TO-263
+K
+F http://www.ti.com/lit/gpn/lm2575hv
+$ENDCMP
+#
+#End Doc Library

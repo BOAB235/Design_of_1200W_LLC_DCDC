@@ -1,0 +1,156 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "TNY280PN"
+   (description "Power Integrations TNY280PN Intelligent Power Switch, Off Line Switcher, 2550mA, 28.5W 8-Pin, DIPC")
+   (family "SWI")
+   (package "DIP-8C")
+   (attribute "Datasheet Link" "https://www.digikey.ph/en/products/detail/power-integrations/TNY280PN/1007189?msockid=39f1ec84d77b6f4428b7f904d6676eed")
+   (attribute "Mouser Part Number" "869-TNY280PN")
+   (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Power-Integrations/TNY280PN?qs=WS5Jv%252B%252Bx1qW1eUCHvoKBfA%3D%3D")
+   (attribute "Manufacturer_Name" "Power Integrations")
+   (attribute "Manufacturer_Part_Number" "TNY280PN")
+   (gate
+    (symbol "TNY280PN")
+    (pin "EN/UV" 1 PS)
+    (pin "BP/M" 2 PS)
+    (pin "D" 4 PS)
+    (pin "S_1" 5 PS)
+    (pin "S_2" 6 PS)
+    (pin "S_3" 7 PS)
+    (pin "S_4" 8 PS)
+   )
+  )
+  (symbol "TNY280PN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 300) (pt 1000 300) (pt 1000 -400) (pt 200 -400) (pt 200 300) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 1200 0) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 600 500) (rot 90) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 400 -600) (rot 90) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 500 -600) (rot 90) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 600 -600) (rot 90) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 700 -600) (rot 90) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "DIP-8C"
+   (units MM)
+   (layer TASM
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed true)
+      (pt -2.18 -0.635)
+      (pt 7.26 -0.635)
+      (pt 7.26 -6.985)
+      (pt -2.18 -6.985)
+      (pt -2.18 -0.635))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt -2.18 -6.985)
+      (pt -2.18 -0.635))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt 7.26 -0.635)
+      (pt 7.26 -6.985))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt 1.871 -6.985)
+      (pt 5.736 -6.985))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt -0.7 -0.635)
+      (pt 0.7 -0.635))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt 1.84 -0.635)
+      (pt 3.24 -0.635))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt 4.38 -0.635)
+      (pt 5.78 -0.635))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (circle
+      (pt -2.48339 -8.292) (pt -2.34061 -8.292)
+     )
+    )
+   )
+   (leg 8 (pt -1.27 0) (padstack 0))
+   (leg 7 (pt 1.27 0) (padstack 0))
+   (leg 6 (pt 3.81 0) (padstack 0))
+   (leg 5 (pt 6.35 0) (padstack 0))
+   (leg 1 (pt -1.27 -7.62) (padstack 0))
+   (leg 2 (pt 1.27 -7.62) (padstack 0))
+   (leg 4 (pt 6.35 -7.62) (padstack 0))
+   (padstack 0
+    (hole 0.88)
+    (plated true)
+    (pad (layer TCOP) (round 1.38))
+    (pad (layer INNER) (round 1.38))
+    (pad (layer BCOP) (round 1.38))
+   )
+   (model "TNY280PN.stp"
+    (euler 0 0 90)
+    (offset 2.559999942779541 -3.8499999046325684 2.059999942779541)
+   )
+  )
+ )
+)
