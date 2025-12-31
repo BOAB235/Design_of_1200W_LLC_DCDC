@@ -1,0 +1,43 @@
+{
+    "CH1": {
+        "PROBe": "1.0E0",
+        "IMPEDANCE": "MEG",
+        "COUPLING": "DC",
+        "OFFSET": "0.0E0",
+        "POSITION": "0.0E0",
+        "BANDWIDTH": "TWENTY",
+        "INVERT": "0",
+        "SCALE": "2.0E-1"
+    },
+    "CH2": {
+        "PROBe": "1.0E0",
+        "IMPEDANCE": "MEG",
+        "COUPLING": "DC",
+        "OFFSET": "0.0E0",
+        "POSITION": "3.4E-1",
+        "BANDWIDTH": "TWENTY",
+        "INVERT": "0",
+        "SCALE": "5.0E0"
+    },
+    "general": {
+        "HORIZONTAL:MAIN:SCALE?": "4.0E-4",
+        "WFMPRE:NR_Pt?": "10000"
+    },
+    "trigger": {
+        "TRIGger:STATE?": "TRIGGER",
+        "TRIGger:MAIn:EDGE:SOURce?": "CH2",
+        "TRIGger:MAIn:EDGE:SLOPe?": "RISE",
+        "TRIGger:MAIn:EDGE:COUPling?": "DC",
+        "TRIGger:MAIn:LEVel?": "0.0E0"
+    },
+    "measurements": {
+        "CH2": {
+            "FREQUENCY": "6.4666E2",
+            "DELAY": "3.41E-4",
+            "PHASE": "7.9384E1"
+        },
+        "CH1": {
+            "RMS": "2.5262E-1"
+        }
+    }
+}

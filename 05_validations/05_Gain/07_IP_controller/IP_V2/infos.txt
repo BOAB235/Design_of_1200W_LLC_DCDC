@@ -1,0 +1,17 @@
+
+FYI : SYNCH IC of MOS SEC H IS NOK (HS)
+Vin = 48.9
+Vout = 8.12
+CH1 = Vds low primary 
+CH3 = Vout/GND 
+CH4 = VGS of low second
+
+
+Open 78.65khz
+2025-12-15_18-29-51-951.png
+with charge (22 ohm) 73khz 
+2025-12-15_18-34-49-236.png
+the ip regulation is ok 
+but not fast 
+
+

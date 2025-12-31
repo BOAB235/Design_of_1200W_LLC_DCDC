@@ -1,0 +1,60 @@
+TNY264PN (NOT 254 i'm sur) power supp 
+
+Vin = (no meas)
+Vout = 11.14V
+Rload (out) = 10 ohm x 4
+CH1 = Islated sensor = Vp_trans
+CH2 = Current of the primary of the trans 
+
+
+No load
+vout 11.16v
+vin 313.1v
+2025-12-22_11-34-38-340
+
+
+Load 
+Vout 11.14V
+2025-12-22_11-42-20-845.png
+2025-12-22_11-43-23-012.png
+...
+2025-12-22_11-44-55-477.png
+
+v = L di/dt
+L = v/(di/dt) =1e6*280/(209e-3/1.48e-6)=1982.77uH
+small signal L = 2320.032 uH
+Theorical value 5.2*26**2= 3515.2uH
+
+
+2025-12-22_12-01-03-789.png
+CH2 = OUTPUT CURRENT sens du courant est l'invere de la diode (il faut ajouté - pour avoir le vourant de la diode 
+
+
+WITH LOAD
+CH2 = Ip of trans
+Vin = 324v
+2025-12-22_12-23-51-444.csv
+
+Vin = 324v
+2025-12-22_12-23-51-444.csv
+
+Vin = 396.6v
+2025-12-22_12-28-08-717
+
+
+Vin = 387V
+Load = 20ohm instead of 40Ohm (~500mA)
+2025-12-22_12-30-58-426.png
+the TNY264 make reset each 852ms
+2025-12-22_12-33-02-043.png
+
+Vin = 414V
+Load 20 Ohm 
+2025-12-22_12-40-33-094.png
+
+
+
+
+
+
+

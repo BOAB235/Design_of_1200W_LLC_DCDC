@@ -1,0 +1,601 @@
+
+(footprint "PlanarTransformer_ELP-102-20-38_4T:1T"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+
+
+	(fp_rect
+		(start 0 0)
+		(end   102 37.5)
+		(stroke (width 0.2) (type solid))
+		(fill no)
+		(layer "F.Fab")
+	)
+
+	(fp_line
+		(start 8.0 0)
+		(end 8.0 37.5)
+		(stroke
+			(width 0.2)
+			(type default)
+		)
+		(layer F.Fab)
+	)
+
+	(fp_line
+		(start 44.0 0)
+		(end 44.0 37.5)
+		(stroke
+			(width 0.2)
+			(type default)
+		)
+		(layer F.Fab)
+	)
+
+	(fp_line
+		(start 58.0 0)
+		(end 58.0 37.5)
+		(stroke
+			(width 0.2)
+			(type default)
+		)
+		(layer F.Fab)
+	)
+
+	(fp_line
+		(start 94.0 0)
+		(end 94.0 37.5)
+		(stroke
+			(width 0.2)
+			(type default)
+		)
+		(layer F.Fab)
+	)
+
+	(fp_arc
+		(start 14.5625 37.5)
+		(mid 23.18454412882101 58.31545587117899)
+		(end 44.0 66.9375)
+		(stroke
+			(width 7.125)
+			(type solid)
+		)
+		(layer "In1.Cu")
+	)
+
+	(fp_arc
+		(start 58.0 66.9375)
+		(mid 78.815455871179 58.31545587117899)
+		(end 87.4375 37.5)
+		(stroke
+			(width 7.125)
+			(type solid)
+		)
+		(layer "In1.Cu")
+	)
+
+	(fp_arc
+		(start 87.4375 0)
+		(mid 78.815455871179 -20.81545587117899)
+		(end 58.0 -29.4375)
+		(stroke
+			(width 7.125)
+			(type solid)
+		)
+		(layer "In1.Cu")
+	)
+
+	(fp_line
+		(start 14.5625 0)
+		(end 14.5625 37.5)
+		(stroke
+			(width 7.125)
+			(type default)
+		)
+		(layer In1.Cu)
+	)
+
+	(fp_line
+		(start 44.0 66.9375)
+		(end 58.0 66.9375)
+		(stroke
+			(width 7.125)
+			(type default)
+		)
+		(layer In1.Cu)
+	)
+
+	(fp_line
+		(start 87.4375 37.5)
+		(end 87.4375 0)
+		(stroke
+			(width 7.125)
+			(type default)
+		)
+		(layer In1.Cu)
+	)
+
+	(fp_line
+		(start 58.0 -29.4375)
+		(end 51.625 -29.4375)
+		(stroke
+			(width 7.125)
+			(type default)
+		)
+		(layer In1.Cu)
+	)
+
+	(fp_arc
+		(start 22.1875 37.5)
+		(mid 28.576233335368432 52.923766664631565)
+		(end 44.0 59.3125)
+		(stroke
+			(width 7.125)
+			(type solid)
+		)
+		(layer "In1.Cu")
+	)
+
+	(fp_arc
+		(start 58.0 59.3125)
+		(mid 73.42376666463157 52.923766664631565)
+		(end 79.8125 37.5)
+		(stroke
+			(width 7.125)
+			(type solid)
+		)
+		(layer "In1.Cu")
+	)
+
+	(fp_arc
+		(start 79.8125 0)
+		(mid 73.42376666463157 -15.423766664631568)
+		(end 58.0 -21.8125)
+		(stroke
+			(width 7.125)
+			(type solid)
+		)
+		(layer "In1.Cu")
+	)
+
+	(fp_line
+		(start 22.1875 0)
+		(end 22.1875 37.5)
+		(stroke
+			(width 7.125)
+			(type default)
+		)
+		(layer In1.Cu)
+	)
+
+	(fp_line
+		(start 44.0 59.3125)
+		(end 58.0 59.3125)
+		(stroke
+			(width 7.125)
+			(type default)
+		)
+		(layer In1.Cu)
+	)
+
+	(fp_line
+		(start 79.8125 37.5)
+		(end 79.8125 0)
+		(stroke
+			(width 7.125)
+			(type default)
+		)
+		(layer In1.Cu)
+	)
+
+	(fp_line
+		(start 58.0 -21.8125)
+		(end 51.625 -21.8125)
+		(stroke
+			(width 7.125)
+			(type default)
+		)
+		(layer In1.Cu)
+	)
+
+	(fp_arc
+		(start 29.8125 37.5)
+		(mid 33.967922541915854 47.532077458084146)
+		(end 44.0 51.6875)
+		(stroke
+			(width 7.125)
+			(type solid)
+		)
+		(layer "In1.Cu")
+	)
+
+	(fp_arc
+		(start 58.0 51.6875)
+		(mid 68.03207745808415 47.532077458084146)
+		(end 72.1875 37.5)
+		(stroke
+			(width 7.125)
+			(type solid)
+		)
+		(layer "In1.Cu")
+	)
+
+	(fp_arc
+		(start 72.1875 0)
+		(mid 68.03207745808415 -10.032077458084142)
+		(end 58.0 -14.1875)
+		(stroke
+			(width 7.125)
+			(type solid)
+		)
+		(layer "In1.Cu")
+	)
+
+	(fp_line
+		(start 29.8125 0)
+		(end 29.8125 37.5)
+		(stroke
+			(width 7.125)
+			(type default)
+		)
+		(layer In1.Cu)
+	)
+
+	(fp_line
+		(start 44.0 51.6875)
+		(end 58.0 51.6875)
+		(stroke
+			(width 7.125)
+			(type default)
+		)
+		(layer In1.Cu)
+	)
+
+	(fp_line
+		(start 72.1875 37.5)
+		(end 72.1875 0)
+		(stroke
+			(width 7.125)
+			(type default)
+		)
+		(layer In1.Cu)
+	)
+
+	(fp_line
+		(start 58.0 -14.1875)
+		(end 51.625 -14.1875)
+		(stroke
+			(width 7.125)
+			(type default)
+		)
+		(layer In1.Cu)
+	)
+
+	(fp_arc
+		(start 37.4375 37.5)
+		(mid 39.35961174846328 42.14038825153672)
+		(end 44.0 44.0625)
+		(stroke
+			(width 7.125)
+			(type solid)
+		)
+		(layer "In1.Cu")
+	)
+
+	(fp_arc
+		(start 58.0 44.0625)
+		(mid 62.64038825153672 42.14038825153672)
+		(end 64.5625 37.5)
+		(stroke
+			(width 7.125)
+			(type solid)
+		)
+		(layer "In1.Cu")
+	)
+
+	(fp_arc
+		(start 64.5625 0)
+		(mid 62.64038825153672 -4.640388251536718)
+		(end 58.0 -6.5625)
+		(stroke
+			(width 7.125)
+			(type solid)
+		)
+		(layer "In1.Cu")
+	)
+
+	(fp_line
+		(start 37.4375 0)
+		(end 37.4375 37.5)
+		(stroke
+			(width 7.125)
+			(type default)
+		)
+		(layer In1.Cu)
+	)
+
+	(fp_line
+		(start 44.0 44.0625)
+		(end 58.0 44.0625)
+		(stroke
+			(width 7.125)
+			(type default)
+		)
+		(layer In1.Cu)
+	)
+
+	(fp_line
+		(start 64.5625 37.5)
+		(end 64.5625 0)
+		(stroke
+			(width 7.125)
+			(type default)
+		)
+		(layer In1.Cu)
+	)
+
+	(fp_arc
+		(start 51.625 -29.4375)
+		(mid 30.80954412882101 -20.81545587117899)
+		(end 22.1875 0)
+		(stroke
+			(width 7.125)
+			(type solid)
+		)
+		(layer "In1.Cu")
+	)
+
+	(fp_arc
+		(start 51.625 -21.8125)
+		(mid 36.201233335368435 -15.423766664631568)
+		(end 29.8125 0)
+		(stroke
+			(width 7.125)
+			(type solid)
+		)
+		(layer "In1.Cu")
+	)
+
+	(fp_arc
+		(start 51.625 -14.1875)
+		(mid 41.592922541915854 -10.032077458084142)
+		(end 37.4375 0)
+		(stroke
+			(width 7.125)
+			(type solid)
+		)
+		(layer "In1.Cu")
+	)
+
+	(fp_line
+		(start 14.5625 0)
+		(end 14.5625 -45.75)
+		(stroke
+			(width 7.125)
+			(type default)
+		)
+		(layer In1.Cu)
+	)
+
+	(fp_line
+		(start 58.0 -6.5625)
+		(end 58.0 -45.75)
+		(stroke
+			(width 7.125)
+			(type default)
+		)
+		(layer In2.Cu)
+	)
+
+	(fp_line
+		(start 76.0 37.5)
+		(end 76.0 0)
+		(stroke
+			(width 31.5)
+			(type default)
+		)
+		(layer B.Cu)
+	)
+
+	(fp_line
+		(start 58.0 -18.0)
+		(end 44.0 -18.0)
+		(stroke
+			(width 31.5)
+			(type default)
+		)
+		(layer B.Cu)
+	)
+
+	(fp_line
+		(start 26.0 0)
+		(end 26.0 37.5)
+		(stroke
+			(width 31.5)
+			(type default)
+		)
+		(layer B.Cu)
+	)
+
+	(fp_arc
+		(start 76.0 0)
+		(mid 70.72792206135786 -12.727922061357855)
+		(end 58.0 -18.0)
+		(stroke
+			(width 31.5)
+			(type solid)
+		)
+		(layer "B.Cu")
+	)
+
+	(fp_arc
+		(start 44.0 -18.0)
+		(mid 31.272077938642145 -12.727922061357855)
+		(end 26.0 0)
+		(stroke
+			(width 31.5)
+			(type solid)
+		)
+		(layer "B.Cu")
+	)
+
+	(fp_arc
+		(start 26.0 37.5)
+		(mid 31.272077938642145 50.22792206135786)
+		(end 44.0 55.5)
+		(stroke
+			(width 31.5)
+			(type solid)
+		)
+		(layer "B.Cu")
+	)
+
+	(fp_line
+		(start 44.0 111.0)
+		(end 44.0 55.5)
+		(stroke
+			(width 31.5)
+			(type default)
+		)
+		(layer B.Cu)
+	)
+
+	(fp_line
+		(start 76.0 37.5)
+		(end 76.0 0)
+		(stroke
+			(width 31.5)
+			(type default)
+		)
+		(layer B.Cu)
+	)
+
+	(fp_line
+		(start 58.0 -18.0)
+		(end 44.0 -18.0)
+		(stroke
+			(width 31.5)
+			(type default)
+		)
+		(layer B.Cu)
+	)
+
+	(fp_line
+		(start 26.0 0)
+		(end 26.0 37.5)
+		(stroke
+			(width 31.5)
+			(type default)
+		)
+		(layer B.Cu)
+	)
+
+	(fp_arc
+		(start 76.0 0)
+		(mid 70.72792206135786 -12.727922061357855)
+		(end 58.0 -18.0)
+		(stroke
+			(width 31.5)
+			(type solid)
+		)
+		(layer "B.Cu")
+	)
+
+	(fp_arc
+		(start 44.0 -18.0)
+		(mid 31.272077938642145 -12.727922061357855)
+		(end 26.0 0)
+		(stroke
+			(width 31.5)
+			(type solid)
+		)
+		(layer "B.Cu")
+	)
+
+	(fp_arc
+		(start 26.0 37.5)
+		(mid 31.272077938642145 50.22792206135786)
+		(end 44.0 55.5)
+		(stroke
+			(width 31.5)
+			(type solid)
+		)
+		(layer "B.Cu")
+	)
+
+	(fp_line
+		(start 76.0 37.5)
+		(end 76.0 0)
+		(stroke
+			(width 31.5)
+			(type default)
+		)
+		(layer F.Cu)
+	)
+
+	(fp_line
+		(start 58.0 -18.0)
+		(end 44.0 -18.0)
+		(stroke
+			(width 31.5)
+			(type default)
+		)
+		(layer F.Cu)
+	)
+
+	(fp_line
+		(start 26.0 0)
+		(end 26.0 37.5)
+		(stroke
+			(width 31.5)
+			(type default)
+		)
+		(layer F.Cu)
+	)
+
+	(fp_arc
+		(start 76.0 0)
+		(mid 70.72792206135786 -12.727922061357855)
+		(end 58.0 -18.0)
+		(stroke
+			(width 31.5)
+			(type solid)
+		)
+		(layer "F.Cu")
+	)
+
+	(fp_arc
+		(start 44.0 -18.0)
+		(mid 31.272077938642145 -12.727922061357855)
+		(end 26.0 0)
+		(stroke
+			(width 31.5)
+			(type solid)
+		)
+		(layer "F.Cu")
+	)
+
+	(fp_arc
+		(start 58.0 55.5)
+		(mid 70.72792206135786 50.22792206135786)
+		(end 76.0 37.5)
+		(stroke
+			(width 31.5)
+			(type solid)
+		)
+		(layer "F.Cu")
+	)
+
+	(fp_line
+		(start 58.0 111.0)
+		(end 58.0 55.5)
+		(stroke
+			(width 31.5)
+			(type default)
+		)
+		(layer F.Cu)
+	)
+
+)

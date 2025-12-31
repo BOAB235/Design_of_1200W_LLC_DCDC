@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "TNY274GN-TL"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2020-08-17-12:48:45)
+    (mountForm default
+        (footprintRef "TNY274GNTL")
+        (spec "System")
+    )
+)

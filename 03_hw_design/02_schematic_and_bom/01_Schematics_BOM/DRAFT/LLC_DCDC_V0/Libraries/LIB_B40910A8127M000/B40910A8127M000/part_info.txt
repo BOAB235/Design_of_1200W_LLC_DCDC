@@ -1,0 +1,9 @@
+Manufacturer=TDK
+PartNumber=B40910A8127M000
+PartCategory=Capacitor Polarised
+PackageCategory=Other
+PinCount=2
+Version=2.2
+Released=2023-10-02 04:00:08
+Downloaded=2025-08-21 17:33:07
+3D=Y

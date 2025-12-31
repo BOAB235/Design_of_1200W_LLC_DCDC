@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LT6654BIS6-2.048#TRMPBF
+D LINEAR TECHNOLOGY - LT6654BIS6-2.048#TRMPBF - Voltage Reference, Series - Fixed, LT6654 Series, 2.048V reference, 0.1 %, +/- 10ppm/C, TSOT-23-6
+K
+F https://www.analog.com/media/en/technical-documentation/data-sheets/lt6654.pdf
+$ENDCMP
+#
+#End Doc Library

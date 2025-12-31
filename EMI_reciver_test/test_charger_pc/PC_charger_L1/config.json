@@ -1,0 +1,10 @@
+{
+    "t_div": 1e-05,
+    "Ts": 1e-08,
+    "v_div": 0.2,
+    "n_pts": 10000.0,
+    "Z": 50,
+    "channel": "CH1",
+    "bytesPeSample": ":DATA:WIDTH 2",
+    "date_time": "2025_10_11_15_55"
+}

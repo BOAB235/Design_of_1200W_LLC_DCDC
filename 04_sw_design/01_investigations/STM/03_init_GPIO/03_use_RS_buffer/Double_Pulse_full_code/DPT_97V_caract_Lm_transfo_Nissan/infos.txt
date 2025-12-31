@@ -1,0 +1,17 @@
+Lm = 16 turns (8+8)
+Lm DCDC Nissan 
+Measurement 
+VL  and IL 
+L is in parallel with heigh side mos
+
+
+
+
+
+2025-11-15_08-57-09-014.png & 2025-11-15_08-58-22-370.png
+DI = 1.82A
+DT = 7.36us 
+E = 928mV ==> 92.8V (x100)
+v = L di/dt 
+L = E DT/DI = 92.8*7.36/1.82 = 375.27uH
+AL = L/N**2= 375.27/16**2 = 1.466 uH = 1466nH

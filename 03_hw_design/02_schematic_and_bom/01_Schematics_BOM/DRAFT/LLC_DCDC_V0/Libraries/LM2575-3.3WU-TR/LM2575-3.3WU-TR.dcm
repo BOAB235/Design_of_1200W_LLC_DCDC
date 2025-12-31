@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LM2575-3.3WU-TR
+D Switching Voltage Regulators
+K
+F http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en579004
+$ENDCMP
+#
+#End Doc Library

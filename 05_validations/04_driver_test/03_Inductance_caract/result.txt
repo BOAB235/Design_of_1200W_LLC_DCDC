@@ -1,0 +1,7 @@
+Lr 2 layers of 0.2mm => gap of 0.8mm
+Lr = 21uH
+Lm of one layer 0.05mm => gap of 0.1mm
+Lm = 83uH
+
+Fr = 1/(sqrt(21e-6*120e-9)*2*pi) = 100258.190321 Hz 
+Lm/Lr = Ln = 83/21=3.95

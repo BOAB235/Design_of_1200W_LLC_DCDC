@@ -1,0 +1,14 @@
+{
+    "general": {
+        "HORIZONTAL:MAIN:SCALE?": ":HORIZONTAL:MAIN:SCALE 4.0E-6",
+        "WFMPRE:NR_Pt?": ":WFMPRE:NR_PT 10000"
+    },
+    "trigger": {
+        "TRIGger:STATE?": ":TRIGGER:STATE SAVE",
+        "TRIGger:MAIn:EDGE:SOURce?": ":TRIGGER:MAIN:EDGE:SOURCE CH1",
+        "TRIGger:MAIn:EDGE:SLOPe?": ":TRIGGER:MAIN:EDGE:SLOPE RISE",
+        "TRIGger:MAIn:EDGE:COUPling?": ":TRIGGER:MAIN:EDGE:COUPLING DC",
+        "TRIGger:MAIn:LEVel?": ":TRIGGER:MAIN:LEVEL 1.8E-1"
+    },
+    "measurements": {}
+}

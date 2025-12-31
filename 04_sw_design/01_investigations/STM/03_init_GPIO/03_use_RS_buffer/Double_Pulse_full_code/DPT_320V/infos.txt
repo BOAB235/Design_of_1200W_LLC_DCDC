@@ -1,0 +1,69 @@
+2025-11-15_13-07-52-872.png
+try to init the current of the mosfet NOK
+2025-11-15_13-37-54-420 
+Inductance current voltage @314V 
+
+2025-11-15_13-40-57-100
+inductance VL IL turning ON 
+Rining fre is 63.8MHz (with snubber 440pF) 
+
+
+2025-11-15_14-30-42-087.png
+current ID with R = 150mOhm 
+this shunt resistor is verified 2 time 
+73.9mv/500ma = 147mohm
+566mv/3.96a = 142.92mohm 
+resistor marking 
+R150     F
+N1941
+Green color transparent smd 
+
+in continue mode i can see V(R150) = CH2 mean = -399mV, cursor -420mV
+but with voltmeter 00.00 mV !!!!!!!!!!
+I shunt input CH2 with gnd in oscillo same value ~-400mV (error in this input) 
+
+
+MOS HIGH SIDE VDS = VL 
+2025-11-15_14-47-31-525
+
+
+2025-11-15_14-50-25-413.png
+Vgs using unsulation 
+
+
+
+2025-11-15_14-59-55-421
+VDS ID IL 316V 
+INDUCTOR = PRIMARY OF THE PRINCIPAL TRANSOFORMER
+
+
+2025-11-15_15-13-18-889.png
+Remove snubber 
+
+
+2025-11-15_15-23-06-834.png
+double pulse 10u 2u 1u current go to the moon  :) 
+
+
+2025-11-15_15-29-00-002
+4u 2u 1u
+
+
+2025-11-15_17-20-44-472.png
+return to Nissan inductance 
+HVp/HVn isolated charged capa 100uF (isolated)
+12V of the dcdc = Battery 
+so isolated 100% 
+Oscilloscope + voltage probe = Power supplies 
+
+2025-11-15_17-39-04-075.png
+Turn off 
+10 perdiodes = 18.5M = Frining = 185Mhz 
+C = 5nF if we take 133p 
+and 17nF if we take 43p
+IL oscillation 7 per =14.5Mhz ==> 14.5*7 = 101Mhz
+57nH , 18.67nH
+
+
+2025-11-15_17-47-10-130.png 
+deltaV = 38V ok 

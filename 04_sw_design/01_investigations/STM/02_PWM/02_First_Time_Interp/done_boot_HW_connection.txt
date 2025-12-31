@@ -1,0 +1,57 @@
+HW CONNECTION WITH WIRE TO GND / 3.3V
+Boot pins:
+
+BOOT0 = 1 (HIGH)
+BOOT1 (PB2) = 0 (LOW) (default on most boards)
+
+
+Reset into bootloader:
+
+Press NRST (reset) and release (with BOOT0=1 already set).
+
+
+
+
+===================================================================
+
+
+Sketch uses 14208 bytes (21%) of program storage space. Maximum is 65536 bytes.
+Global variables use 1120 bytes (5%) of dynamic memory, leaving 19360 bytes for local variables. Maximum is 20480 bytes.
+Selected interface: serial
+      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.20.0                  
+      -------------------------------------------------------------------
+
+Serial Port COM7 is successfully opened.
+Port configuration: parity = even, baudrate = 115200, data-bit = 8,                     stop-bit = 1.0, flow-control = off
+Activating device: OK
+Board       : --
+Chip ID: 0x410 
+BootLoader protocol version: 2.2
+Device name : STM32F101/F102/F103 Medium-density
+Flash size  : 128 KBytes (default)
+Device type : MCU
+Revision ID : --  
+Device CPU  : Cortex-M3
+
+
+Opening and parsing file: First_Time_Interp.ino.bin
+
+
+Memory Programming ...
+  File          : First_Time_Interp.ino.bin
+  Size          : 14.17 KB 
+  Address       : 0x08000000
+
+
+Erasing memory corresponding to segment 0:
+Erasing internal memory sectors [0 14]
+Download in Progress:
+
+
+File download complete
+Time elapsed during download operation: 00:00:02.506
+
+RUNNING Program ... 
+  Address:      : 0x8000000
+Start operation achieved successfully

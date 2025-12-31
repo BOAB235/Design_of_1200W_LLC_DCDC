@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LRMAP2512-R007FT4
+D CURRENT SENSE RES, 0R007, 3W, 2512; Resistance:0.007ohm; Product Range:LRMA P Series; Resistor Case Style:2512 [6432 Metric]; Power Rating:3W; Resistance Tolerance:+/- 1%; Resistor Element Type:Metal Alloy RoHS Compliant: Yes
+K
+F https://ms.componentsearchengine.com/Datasheets/1/LRMAP2512-R007FT4.pdf
+$ENDCMP
+#
+#End Doc Library

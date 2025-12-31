@@ -1,0 +1,4 @@
+bootsrap circuit 
+1u + US2MA + 2.15 ohm 
+UDC =48.86V 
+R_load (Between D and S of heigh side) = 470kohm 

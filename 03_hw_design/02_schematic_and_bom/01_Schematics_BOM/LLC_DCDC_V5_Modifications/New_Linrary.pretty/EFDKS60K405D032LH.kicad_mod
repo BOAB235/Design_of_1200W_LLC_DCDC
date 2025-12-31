@@ -1,0 +1,156 @@
+(footprint "EFDKS60K405D032LH"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "C, Rect series, Radial, pin pitch=27.50mm, length*width=33*13mm^2, Capacitor, http://www.wima.com/EN/WIMA_MKS_4.pdf")
+	(tags "C Rect series Radial pin pitch 27.50mm length 33mm width 13mm Capacitor")
+	(property "Reference" "REF**"
+		(at 13.75 -7.75 0)
+		(layer "F.SilkS")
+		(uuid "c7f7e135-ab9f-4efd-80ec-97bca9f8110a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "EFDKS60K405D032LH"
+		(at 13.75 7.75 0)
+		(layer "F.Fab")
+		(uuid "cb2bba6c-756c-40b2-8faf-f56ecc6a7fcf")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "18916399-4a22-4028-96e9-7d33b7f44d84")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e620e001-10ba-4fe8-b44e-5072dc603347")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -2.87 -6.62)
+		(end 30.37 -6.62)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "3df2f351-058b-48f2-a4ce-790a4acc85d1")
+	)
+	(fp_line
+		(start -2.87 6.62)
+		(end -2.87 -6.62)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1f48587d-3623-40a3-9c78-bfa285e4e47a")
+	)
+	(fp_line
+		(start 30.37 -6.62)
+		(end 30.37 6.62)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "211b56bd-a7fe-420e-8e54-e74238662cfd")
+	)
+	(fp_line
+		(start 30.37 6.62)
+		(end -2.87 6.62)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "adc3579e-1c3d-4992-b673-7933401bd8a4")
+	)
+	(fp_rect
+		(start -3 -6.75)
+		(end 30.5 6.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "43a95e03-bb4b-4d73-9fd0-ae751d4fc740")
+	)
+	(fp_rect
+		(start -2.75 -6.5)
+		(end 30.25 6.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "d65814ef-a0b9-443e-8639-640354d67e4b")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 13.75 0 0)
+		(layer "F.Fab")
+		(uuid "e9bdb29b-7611-4fe2-b846-f46717eb67e9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 2.4 2.4)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "1ad2cec0-d439-43f4-9b53-331304bbcdd3")
+	)
+	(pad "2" thru_hole circle
+		(at 27.5 0)
+		(size 2.4 2.4)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "5657eaad-ba1d-4d02-b9d6-9e4f85468a79")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/creat_simple_stp_files/EFDKS60K405D032LH.step"
+		(offset
+			(xyz 14 0 10)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
+)

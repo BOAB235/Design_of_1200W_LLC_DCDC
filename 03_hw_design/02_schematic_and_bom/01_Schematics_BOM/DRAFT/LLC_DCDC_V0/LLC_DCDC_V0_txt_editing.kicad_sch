@@ -1,0 +1,267 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "856dbdf2-f84a-4a26-871a-e6caa4757467")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 57.15 72.39)
+		(size 57.15 22.86)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+			(color 0 132 132 1)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "4045dcdc-afd8-4c82-9d0f-0c3beb469e2c")
+		(property "Sheetname" "Power_components"
+			(at 57.15 71.6784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Power_components.kicad_sch"
+			(at 57.15 95.8346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "LLC_DCDC_V0"
+				(path "/856dbdf2-f84a-4a26-871a-e6caa4757467"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 180.34 36.83)
+		(size 48.26 24.13)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "4a84b0e5-7cb6-400e-a534-de34c0fb280a")
+		(property "Sheetname" "EMI_Filters"
+			(at 180.34 36.1184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "EMI_Filters.kicad_sch"
+			(at 180.34 61.5446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "LLC_DCDC_V0"
+				(path "/856dbdf2-f84a-4a26-871a-e6caa4757467"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 176.53 76.2)
+		(size 48.26 19.05)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "58fb44fa-2139-4f1c-a58a-5012b7343e05")
+		(property "Sheetname" "MUC_AND_OTHERS"
+			(at 176.53 75.4884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "MUC_AND_OTHERS.kicad_sch"
+			(at 176.53 95.8346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "LLC_DCDC_V0"
+				(path "/856dbdf2-f84a-4a26-871a-e6caa4757467"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 120.65 35.56)
+		(size 49.53 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "bab1fb25-cb37-4b11-a21a-e20e593b1f15")
+		(property "Sheetname" "GateDrivers"
+			(at 120.65 34.8484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "GateDrivers.kicad_sch"
+			(at 120.65 61.5446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "LLC_DCDC_V0"
+				(path "/856dbdf2-f84a-4a26-871a-e6caa4757467"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 119.38 72.39)
+		(size 49.53 24.13)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "e0624156-4fa2-4e57-84b3-684ced375455")
+		(property "Sheetname" "Sensors"
+			(at 119.38 71.6784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Sensors.kicad_sch"
+			(at 119.38 97.1046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "LLC_DCDC_V0"
+				(path "/856dbdf2-f84a-4a26-871a-e6caa4757467"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 57.15 35.56)
+		(size 57.15 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "e6ae4412-3899-497a-ad4e-ef9e3f773d29")
+		(property "Sheetname" "Power_Supplies"
+			(at 57.15 34.8484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Power_Supplies.kicad_sch"
+			(at 57.15 61.5446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "LLC_DCDC_V0"
+				(path "/856dbdf2-f84a-4a26-871a-e6caa4757467"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

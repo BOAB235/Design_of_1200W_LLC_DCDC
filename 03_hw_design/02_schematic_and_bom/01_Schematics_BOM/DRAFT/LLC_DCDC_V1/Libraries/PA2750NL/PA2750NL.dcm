@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP PA2750NL
+D Common Mode Chokes / Filters 9.4mOhms 400uH 6A SMD Toroid Choke
+K
+F https://www.arrow.com/en/products/pa2750nl/pulse-electronics-corporation
+$ENDCMP
+#
+#End Doc Library

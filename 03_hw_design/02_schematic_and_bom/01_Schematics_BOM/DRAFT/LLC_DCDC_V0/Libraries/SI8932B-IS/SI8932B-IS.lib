@@ -1,0 +1,29 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model SI8932B-IS
+#/18238906/1753220/2.50/8/3/Integrated Circuit
+DEF SI8932B-IS IC 0 30 Y Y 1 F N
+F0 "IC" 1050 300 50 H V L CNN
+F1 "SI8932B-IS" 1050 200 50 H V L CNN
+F2 "SOIC127P600X175-8N" 1050 100 50 H I L CNN
+F3 "https://www.skyworksinc.com/-/media/SkyWorks/SL/documents/public/data-sheets/si8931-32-datasheet.pdf" 1050 0 50 H I L CNN
+F4 "Isolation Amplifiers Isolated voltage sensor with single ended input and single ended output. Narrow body S08." 1050 -100 50 H I L CNN "Description"
+F5 "1.75" 1050 -200 50 H I L CNN "Height"
+F6 "873-SI8932B-IS" 1050 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Skyworks-Solutions-Inc/SI8932B-IS?qs=yqaQSyyJnNgaRLq9HA2Jow%3D%3D" 1050 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "Skyworks" 1050 -500 50 H I L CNN "Manufacturer_Name"
+F9 "SI8932B-IS" 1050 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X VDDA 1 0 0 200 R 50 50 0 0 P
+X VIN 2 0 -100 200 R 50 50 0 0 P
+X NC 3 0 -200 200 R 50 50 0 0 N
+X GNDA 4 0 -300 200 R 50 50 0 0 P
+X VDDB 8 1200 0 200 L 50 50 0 0 P
+X AO 7 1200 -100 200 L 50 50 0 0 P
+X GNDB_2 6 1200 -200 200 L 50 50 0 0 P
+X GNDB_1 5 1200 -300 200 L 50 50 0 0 P
+P 5 0 1 6 200 100 1000 100 1000 -400 200 -400 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library

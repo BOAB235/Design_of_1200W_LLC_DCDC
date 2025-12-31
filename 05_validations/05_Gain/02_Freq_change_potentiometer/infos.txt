@@ -1,0 +1,26 @@
+Udc = 49.06V
+Ubat 11.85V
+
+
+Juste FOR YOUR INFO 
+59.95	11.26
+68.05	9.4
+
+
+
+
+
+2025-12-09_14-47-45-457.png ==> Vout = 11.26V 
+
+
+CH1 = Vout (x100 isolated)
+CH2 = Vds secondary low side 
+CH3 = V_Cr
+CH4 = Vds Primary Low side x 10
+
+2025-12-09_14-53-35-369 ==> 0v 0v 0v 0v
+
+
+UDC = 97.2v UOUT = 16.11V
+2025-12-12_11-18-16-855.png
+2025-12-12_11-22-38-405.png

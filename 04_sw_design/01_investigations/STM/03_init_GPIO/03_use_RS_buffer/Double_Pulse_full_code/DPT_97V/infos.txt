@@ -1,0 +1,29 @@
+Gate = 10 ohm 
+Un file court circuit l'inducrance Lr 
+Avant je mesure le courant tension de la self 
+- 2025-11-14_11-03-19-494 sond courant = Id (mos low side)
+	V = Vds low side 
+- 2025-11-14_11-08-54-248.png
+	frequ as Mhz 55.8
+	loop inductance nH =  189.19227948104447
+
+- 2025-11-14_13-41-15-888 add capacitor 18n + 220pF (see photo) to reduce l loop
+small improvement 
+frequ as Mhz 60.4
+loop inductance nH =  52.205317944158494
+
+- 2025-11-14_13-59-19-307 add snubber 220p + 20ohm 
+- 2025-11-14_14-13-49-971.png close the high side jumper with 10 ohm resistor 
+- 2025-11-14_14-22-40-904.png Rg = 3 instead of 10 
+return to 10 ohm 
+
+- 2025-11-14_14-35-40-282.png snubber 220px2+20ohm
+
+
+I used RCD snubber
+R = 150
+C = 18n
+D = US2MA 1000V
+https://e2e.ti.com/cfs-file/__key/communityserver-discussions-components-files/196/Design-Guidelines-for-RCD-Snubber-of-Flyback-Converters_2D00_Fairchild-AN4147.pdf
+see 
+2025-11-14_15-21-37-710.png

@@ -1,0 +1,52 @@
+mini STM32F103C8T6-CH340 
+I use only the USB CABLE 
+
+
+DOWNLOAD and install WIND 64
+https://www.st.com/en/development-tools/stm32cubeprog.html?dl=redirect
+if you use defaut the bin folder must be 
+C:\Program Files\STMicroelectronics\STM32Cube\STM32CubeProgrammer\bin
+
+from admin cmd run 
+C:\Users\Public\Documents>SystemPropertiesAdvanced
+click In button Envir variables
+add in user and system the path 
+name = "Path"
+value = "C:\Program Files\STMicroelectronics\STM32Cube\STM32CubeProgrammer\bin"
+
+
+add https://github.com/stm32duino/BoardManagerFiles/raw/main/package_stmicroelectronics_index.json => done 
+Search for STM32 and install "STM32 MCU based boards" by STMicroelectronics. => done 
+
+In Arduino IDE 
+
+| Option                | Value                     |
+| --------------------- | ------------------------- |
+| **Board**             | `Generic STM32F1 series`  |
+| **Board part number** | `BluePill F103C8`         |
+| **Upload method**     | `CubeProgrammer serial'  |
+| **Port**              | Select COM6 for CH340     |
+
+
+
+// Blink LED on PC13 (Blue Pill onboard LED)
+void setup() {
+  pinMode(PC13, OUTPUT);   // Built-in LED on PC13
+}
+
+void loop() {
+  digitalWrite(PC13, LOW);   // LED ON (inverted logic)
+  delay(500);
+  digitalWrite(PC13, HIGH);  // LED OFF
+  delay(500);
+}
+
+Press 
+BOOT hold + Rest (not hold) + remove BOOT 
+Flash the program 
+
+==========> DONE 
+RUNNING Program ... 
+  Address:      : 0x8000000
+Start operation achieved successfully
+

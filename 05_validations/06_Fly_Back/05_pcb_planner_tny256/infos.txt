@@ -1,0 +1,13 @@
+Trans 
+Np = 8+18
+Ns = 4
+CH1 = vp of trans 
+CH2 = Ip of the trans 
+output around 11v (ziner 10v +1)
+load 40 ohm 
+
+low voltage like 340V or 320...
+2025-12-23_08-54-28-772.png
+
+419v
+2025-12-23_08-56-59-168

@@ -1,0 +1,28 @@
+{
+    "CH1": {
+        "PROBe": "1.0E0",
+        "IMPEDANCE": "FIFTY",
+        "COUPLING": "DC",
+        "OFFSET": "0.0E0",
+        "POSITION": "2.0E-2",
+        "BANDWIDTH": "FULL",
+        "INVERT": "0",
+        "SCALE": "1.0E-2"
+    },
+    "general": {
+        "HORIZONTAL:MAIN:SCALE?": "1.0E-5",
+        "WFMPRE:NR_Pt?": "10000"
+    },
+    "trigger": {
+        "TRIGger:STATE?": "AUTO",
+        "TRIGger:MAIn:EDGE:SOURce?": "CH1",
+        "TRIGger:MAIn:EDGE:SLOPe?": "FALL",
+        "TRIGger:MAIn:EDGE:COUPling?": "DC",
+        "TRIGger:MAIn:LEVel?": "7.64E-2"
+    },
+    "measurements": {
+        "CH1": {
+            "PK2PK": "7.98E-2"
+        }
+    }
+}

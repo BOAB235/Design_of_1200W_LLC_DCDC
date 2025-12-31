@@ -1,0 +1,15 @@
+.param fsw_min=60170.0
+.param fsw_max=156220.0
+.param Re_nom=24.901
+.param Re_110=22.637
+.param Cr=1.16209e-07
+.param Lr=2.1796999999999998e-05
+.param Lm=6.539199999999999e-05
+.param n=4
+.param Ls = {Lm/(n*n)}
+.param Vdc=380
+.param Co=3m
+.param Rload=22.637
+.param Freq=100e3
+.param tsim = {100/Freq}
+.param Ts={0.01/Freq}

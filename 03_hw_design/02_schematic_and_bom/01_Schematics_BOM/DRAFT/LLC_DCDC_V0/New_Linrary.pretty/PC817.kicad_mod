@@ -1,0 +1,103 @@
+(footprint "PC817"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0.5 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "659e2403-7af7-4252-b393-40c4b9129967")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "PC817"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "62ca50e9-6da6-4862-815f-73016d242e85")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f0c52b6b-5952-473a-b9b9-afc974654184")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fc73001a-7300-4c13-9969-04d675ea962f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "6c286c15-5917-4475-a723-33ed9f68206d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -4.15 4.46)
+		(size 1.6 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(thermal_bridge_angle 45)
+		(uuid "dbc1df87-6e62-4e35-b92e-a8152139edb4")
+	)
+	(pad "2" smd rect
+		(at -4.15 7)
+		(size 1.6 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(thermal_bridge_angle 45)
+		(uuid "040d0682-6431-4081-9fa8-eca7bb8b0e91")
+	)
+	(pad "3" smd rect
+		(at 5 7)
+		(size 1.6 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(thermal_bridge_angle 45)
+		(uuid "66cb8f5f-136a-477c-a5a8-de6b48c184c5")
+	)
+	(pad "4" smd rect
+		(at 5 4.46)
+		(size 1.6 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(thermal_bridge_angle 45)
+		(uuid "6379afb1-6781-4314-ad1b-d8a0a9654713")
+	)
+	(group ""
+		(uuid "d699356d-9ca1-4be3-8f71-a44e8f164196")
+		(members "040d0682-6431-4081-9fa8-eca7bb8b0e91" "6379afb1-6781-4314-ad1b-d8a0a9654713"
+			"66cb8f5f-136a-477c-a5a8-de6b48c184c5" "dbc1df87-6e62-4e35-b92e-a8152139edb4"
+		)
+	)
+	(embedded_fonts no)
+)

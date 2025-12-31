@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "LM2575HVT-12_LF03"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2021-03-19-15:35:34)
+    (mountForm default
+        (footprintRef "TO170P470X1028X2142-5P")
+        (spec "System")
+    )
+)

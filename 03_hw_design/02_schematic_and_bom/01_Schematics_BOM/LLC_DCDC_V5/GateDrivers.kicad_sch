@@ -10136,7 +10136,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://eu.mouser.com/datasheet/3/564/1/si8239x_data_sheet.pdf"
 			(at 99.06 342.24 0)
 			(effects
 				(font

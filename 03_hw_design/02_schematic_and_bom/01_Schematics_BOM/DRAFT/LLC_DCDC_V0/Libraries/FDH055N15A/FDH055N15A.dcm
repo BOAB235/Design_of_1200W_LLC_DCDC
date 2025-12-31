@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP FDH055N15A
+D High Power and Current Handling Capability; Fast Switching Speed; High Performance Trench Technology for Extremely Low RDS(on) ; Low Gate Charge, QG = 92nC ( Typ.); RoHS Compliant; RDS(on) = 4.8m ( Typ.)@ VGS = 10V, ID = 120A
+K
+F https://www.onsemi.com/pub/Collateral/FDH055N15A-D.PDF
+$ENDCMP
+#
+#End Doc Library

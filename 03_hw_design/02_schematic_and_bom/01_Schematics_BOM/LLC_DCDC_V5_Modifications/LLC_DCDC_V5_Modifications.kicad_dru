@@ -1,0 +1,92 @@
+(version 1)
+
+
+# Self Insulationgnd
+(rule "5387d791-12e1-45a2-b6f9-5825abadcf88"
+  (constraint clearance (min 0.5mm))
+  (condition "A.NetClass == 'gnd' && B.NetClass == 'gnd' && A.NetName != B.NetName")
+)
+
+# Class to class insulation 48v vs gnd
+(rule "f051f3ac-18ac-412f-bcdc-e44318ddea85"
+  (constraint clearance (min 1.0mm))
+  (condition "(A.NetClass == '48v' && B.NetClass == 'gnd') || (A.NetClass == 'gnd' && B.NetClass == '48v')")
+)
+
+# Self Insulation48v
+(rule "ffec5b8a-946f-4b2a-bbc6-9275613e9be0"
+  (constraint clearance (min 1.0mm))
+  (condition "A.NetClass == '48v' && B.NetClass == '48v' && A.NetName != B.NetName")
+)
+
+# Class to class insulation hvn vs gnd
+(rule "a5fd937c-bb36-49cb-9451-311c2a148c41"
+  (constraint clearance (min 4.0mm))
+  (condition "(A.NetClass == 'hvn' && B.NetClass == 'gnd') || (A.NetClass == 'gnd' && B.NetClass == 'hvn')")
+)
+
+# Class to class insulation hvn vs 48v
+(rule "7b5dbb3a-18af-461d-9576-49f4822b2e1d"
+  (constraint clearance (min 4.0mm))
+  (condition "(A.NetClass == 'hvn' && B.NetClass == '48v') || (A.NetClass == '48v' && B.NetClass == 'hvn')")
+)
+
+# Self Insulationhvn
+(rule "00b751c0-2e6c-45dc-b861-73af47694b18"
+  (constraint clearance (min 0.5mm))
+  (condition "A.NetClass == 'hvn' && B.NetClass == 'hvn' && A.NetName != B.NetName")
+)
+
+# Class to class insulation hvm vs gnd
+(rule "4b14b3fc-3483-4e85-b5f3-029ef07e4f54"
+  (constraint clearance (min 4.0mm))
+  (condition "(A.NetClass == 'hvm' && B.NetClass == 'gnd') || (A.NetClass == 'gnd' && B.NetClass == 'hvm')")
+)
+
+# Class to class insulation hvm vs 48v
+(rule "1c503e4a-bab0-4489-826a-2d2bc1117f35"
+  (constraint clearance (min 4.0mm))
+  (condition "(A.NetClass == 'hvm' && B.NetClass == '48v') || (A.NetClass == '48v' && B.NetClass == 'hvm')")
+)
+
+# Class to class insulation hvm vs hvn
+(rule "ed45870a-78e4-4f95-8a37-259809185735"
+  (constraint clearance (min 3.0mm))
+  (condition "(A.NetClass == 'hvm' && B.NetClass == 'hvn') || (A.NetClass == 'hvn' && B.NetClass == 'hvm')")
+)
+
+# Self Insulationhvm
+(rule "68e79e47-b59b-436e-9973-994cc0a44f6e"
+  (constraint clearance (min 2.0mm))
+  (condition "A.NetClass == 'hvm' && B.NetClass == 'hvm' && A.NetName != B.NetName")
+)
+
+# Class to class insulation hvp vs gnd
+(rule "c941e4b4-221c-4058-8f40-0cb37f9dce4a"
+  (constraint clearance (min 4.0mm))
+  (condition "(A.NetClass == 'hvp' && B.NetClass == 'gnd') || (A.NetClass == 'gnd' && B.NetClass == 'hvp')")
+)
+
+# Class to class insulation hvp vs 48v
+(rule "5ea26f17-0f4a-4436-9095-af10c3bb9885"
+  (constraint clearance (min 4.0mm))
+  (condition "(A.NetClass == 'hvp' && B.NetClass == '48v') || (A.NetClass == '48v' && B.NetClass == 'hvp')")
+)
+
+# Class to class insulation hvp vs hvn
+(rule "a76998d2-6cb4-4fa5-a7c5-7d4f0ab335ba"
+  (constraint clearance (min 3.0mm))
+  (condition "(A.NetClass == 'hvp' && B.NetClass == 'hvn') || (A.NetClass == 'hvn' && B.NetClass == 'hvp')")
+)
+
+# Class to class insulation hvp vs hvm
+(rule "263108e5-606e-4b6c-9c9e-a77bf1b3d81a"
+  (constraint clearance (min 3.0mm))
+  (condition "(A.NetClass == 'hvp' && B.NetClass == 'hvm') || (A.NetClass == 'hvm' && B.NetClass == 'hvp')")
+)
+
+# Self Insulationhvp
+(rule "0ac1bf69-4a86-40f4-a87d-ecd5f2a3c623"
+  (constraint clearance (min 0.5mm))
+  (condition "A.NetClass == 'hvp' && B.NetClass == 'hvp' && A.NetName != B.NetName")
+)

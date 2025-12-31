@@ -1,0 +1,38 @@
+
+(footprint "PlanarTransformer_ELP-102-20-38_4T:1T"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+
+
+	(fp_rect
+		(start 0 0)
+		(end   10 20)
+		(stroke (width 0.2) (type solid))
+		(fill no)
+		(layer "F.Fab")
+	)
+
+	(fp_arc
+		(start 0 1)
+		(mid 0.7 0.7)
+		(end 0 1)
+		(stroke
+			(width 0.23)
+			(type solid)
+		)
+		(layer "F.Cu")
+	)
+
+	(fp_line
+		(start 0 0)
+		(end 10 10)
+		(stroke
+			(width 0.2)
+			(type default)
+		)
+		(layer "F.Fab")
+	)
+
+)

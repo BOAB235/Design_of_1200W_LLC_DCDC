@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP SI8932B-IS
+D Isolation Amplifiers Isolated voltage sensor with single ended input and single ended output. Narrow body S08.
+K
+F https://www.skyworksinc.com/-/media/SkyWorks/SL/documents/public/data-sheets/si8931-32-datasheet.pdf
+$ENDCMP
+#
+#End Doc Library

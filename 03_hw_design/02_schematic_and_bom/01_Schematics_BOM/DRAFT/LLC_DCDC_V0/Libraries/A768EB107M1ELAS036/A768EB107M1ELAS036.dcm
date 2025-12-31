@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP A768EB107M1ELAS036
+D A768, Aluminum, Polymer Aluminum, 100 uF, 20%, 25 VDC, -55/+125C, 125C, -55C, 125C, 2,000 Hrs, 36 mOhms, 500 uA, 6.3mm, 5.7mm, 1000
+K
+F https://content.kemet.com/datasheets/KEM_A4088_A768.pdf
+$ENDCMP
+#
+#End Doc Library

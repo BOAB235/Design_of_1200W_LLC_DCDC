@@ -1,0 +1,744 @@
+
+(kicad_pcb
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(general
+		(thickness 1.6)
+		(legacy_teardrops no)
+	)
+	(paper "A4")
+	(layers
+		(0 "F.Cu" signal)
+		(4 "In1.Cu" signal)
+		(6 "In2.Cu" signal)
+		(2 "B.Cu" signal)
+		(9 "F.Adhes" user "F.Adhesive")
+		(11 "B.Adhes" user "B.Adhesive")
+		(13 "F.Paste" user)
+		(15 "B.Paste" user)
+		(5 "F.SilkS" user "F.Silkscreen")
+		(7 "B.SilkS" user "B.Silkscreen")
+		(1 "F.Mask" user)
+		(3 "B.Mask" user)
+		(17 "Dwgs.User" user "User.Drawings")
+		(19 "Cmts.User" user "User.Comments")
+		(21 "Eco1.User" user "User.Eco1")
+		(23 "Eco2.User" user "User.Eco2")
+		(25 "Edge.Cuts" user)
+		(27 "Margin" user)
+		(31 "F.CrtYd" user "F.Courtyard")
+		(29 "B.CrtYd" user "B.Courtyard")
+		(35 "F.Fab" user)
+		(33 "B.Fab" user)
+		(39 "User.1" user)
+		(41 "User.2" user)
+		(43 "User.3" user)
+		(45 "User.4" user)
+	)
+	(setup
+		(stackup
+			(layer "F.SilkS"
+				(type "Top Silk Screen")
+			)
+			(layer "F.Paste"
+				(type "Top Solder Paste")
+			)
+			(layer "F.Mask"
+				(type "Top Solder Mask")
+				(thickness 0.01)
+			)
+			(layer "F.Cu"
+				(type "copper")
+				(thickness 0.035)
+			)
+			(layer "dielectric 1"
+				(type "prepreg")
+				(thickness 0.1)
+				(material "FR4")
+				(epsilon_r 4.5)
+				(loss_tangent 0.02)
+			)
+			(layer "In1.Cu"
+				(type "copper")
+				(thickness 0.035)
+			)
+			(layer "dielectric 2"
+				(type "core")
+				(thickness 1.24)
+				(material "FR4")
+				(epsilon_r 4.5)
+				(loss_tangent 0.02)
+			)
+			(layer "In2.Cu"
+				(type "copper")
+				(thickness 0.035)
+			)
+			(layer "dielectric 3"
+				(type "prepreg")
+				(thickness 0.1)
+				(material "FR4")
+				(epsilon_r 4.5)
+				(loss_tangent 0.02)
+			)
+			(layer "B.Cu"
+				(type "copper")
+				(thickness 0.035)
+			)
+			(layer "B.Mask"
+				(type "Bottom Solder Mask")
+				(thickness 0.01)
+			)
+			(layer "B.Paste"
+				(type "Bottom Solder Paste")
+			)
+			(layer "B.SilkS"
+				(type "Bottom Silk Screen")
+			)
+			(copper_finish "None")
+			(dielectric_constraints no)
+		)
+        )
+
+
+
+
+
+
+	(gr_rect
+		(start 0 0)
+		(end   43.2 27.9)
+		(stroke (width 0.2) (type solid))
+		(fill no)
+		(layer "F.Fab")
+	)
+
+	(gr_line
+		(start 3.900000000000002 0)
+		(end 3.900000000000002 27.9)
+		(stroke
+			(width 0.2)
+			(type default)
+		)
+		(layer F.Fab)
+	)
+
+	(gr_line
+		(start 17.55 0)
+		(end 17.55 27.9)
+		(stroke
+			(width 0.2)
+			(type default)
+		)
+		(layer F.Fab)
+	)
+
+	(gr_line
+		(start 25.650000000000002 0)
+		(end 25.650000000000002 27.9)
+		(stroke
+			(width 0.2)
+			(type default)
+		)
+		(layer F.Fab)
+	)
+
+	(gr_line
+		(start 39.3 0)
+		(end 39.3 27.9)
+		(stroke
+			(width 0.2)
+			(type default)
+		)
+		(layer F.Fab)
+	)
+
+	(gr_arc
+		(start 8.687500000000002 27.9)
+		(mid 11.283266151734225 34.16673384826577)
+		(end 17.55 36.7625)
+		(stroke
+			(width 3.5749999999999993)
+			(type solid)
+		)
+		(layer "F.Cu")
+	)
+
+	(gr_arc
+		(start 25.650000000000002 36.7625)
+		(mid 31.916733848265775 34.16673384826577)
+		(end 34.512499999999996 27.9)
+		(stroke
+			(width 3.5749999999999993)
+			(type solid)
+		)
+		(layer "F.Cu")
+	)
+
+	(gr_arc
+		(start 34.512499999999996 0)
+		(mid 31.916733848265775 -6.266733848265775)
+		(end 25.650000000000002 -8.862499999999999)
+		(stroke
+			(width 3.5749999999999993)
+			(type solid)
+		)
+		(layer "F.Cu")
+	)
+
+	(gr_line
+		(start 8.687500000000002 0)
+		(end 8.687500000000002 27.9)
+		(stroke
+			(width 3.5749999999999993)
+			(type default)
+		)
+		(layer F.Cu)
+	)
+
+	(gr_line
+		(start 17.55 36.7625)
+		(end 25.650000000000002 36.7625)
+		(stroke
+			(width 3.5749999999999993)
+			(type default)
+		)
+		(layer F.Cu)
+	)
+
+	(gr_line
+		(start 34.512499999999996 27.9)
+		(end 34.512499999999996 0)
+		(stroke
+			(width 3.5749999999999993)
+			(type default)
+		)
+		(layer F.Cu)
+	)
+
+	(gr_line
+		(start 25.650000000000002 -8.862499999999999)
+		(end 21.625 -8.862499999999999)
+		(stroke
+			(width 3.5749999999999993)
+			(type default)
+		)
+		(layer F.Cu)
+	)
+
+	(gr_arc
+		(start 12.762500000000001 27.9)
+		(mid 14.164726285069403 31.285273714930597)
+		(end 17.55 32.6875)
+		(stroke
+			(width 3.5749999999999993)
+			(type solid)
+		)
+		(layer "F.Cu")
+	)
+
+	(gr_arc
+		(start 25.650000000000002 32.6875)
+		(mid 29.035273714930597 31.285273714930593)
+		(end 30.437499999999996 27.9)
+		(stroke
+			(width 3.5749999999999993)
+			(type solid)
+		)
+		(layer "F.Cu")
+	)
+
+	(gr_arc
+		(start 30.437499999999996 0)
+		(mid 29.035273714930597 -3.3852737149305945)
+		(end 25.650000000000002 -4.7875)
+		(stroke
+			(width 3.5749999999999993)
+			(type solid)
+		)
+		(layer "F.Cu")
+	)
+
+	(gr_line
+		(start 12.762500000000001 0)
+		(end 12.762500000000001 27.9)
+		(stroke
+			(width 3.5749999999999993)
+			(type default)
+		)
+		(layer F.Cu)
+	)
+
+	(gr_line
+		(start 17.55 32.6875)
+		(end 25.650000000000002 32.6875)
+		(stroke
+			(width 3.5749999999999993)
+			(type default)
+		)
+		(layer F.Cu)
+	)
+
+	(gr_line
+		(start 30.437499999999996 27.9)
+		(end 30.437499999999996 0)
+		(stroke
+			(width 3.5749999999999993)
+			(type default)
+		)
+		(layer F.Cu)
+	)
+
+	(gr_arc
+		(start 21.625 -8.862499999999999)
+		(mid 15.358266151734224 -6.266733848265776)
+		(end 12.762500000000001 0)
+		(stroke
+			(width 3.5749999999999993)
+			(type solid)
+		)
+		(layer "F.Cu")
+	)
+
+	(gr_arc
+		(start 73.48750000000001 27.9)
+		(mid 76.08326615173424 34.16673384826577)
+		(end 82.35000000000001 36.7625)
+		(stroke
+			(width 3.5749999999999993)
+			(type solid)
+		)
+		(layer "In1.Cu")
+	)
+
+	(gr_arc
+		(start 90.45000000000002 36.7625)
+		(mid 96.71673384826579 34.16673384826577)
+		(end 99.3125 27.9)
+		(stroke
+			(width 3.5749999999999993)
+			(type solid)
+		)
+		(layer "In1.Cu")
+	)
+
+	(gr_arc
+		(start 99.3125 0)
+		(mid 96.71673384826579 -6.266733848265773)
+		(end 90.45000000000002 -8.862499999999999)
+		(stroke
+			(width 3.5749999999999993)
+			(type solid)
+		)
+		(layer "In1.Cu")
+	)
+
+	(gr_line
+		(start 73.48750000000001 0)
+		(end 73.48750000000001 27.9)
+		(stroke
+			(width 3.5749999999999993)
+			(type default)
+		)
+		(layer In1.Cu)
+	)
+
+	(gr_line
+		(start 82.35000000000001 36.7625)
+		(end 90.45000000000002 36.7625)
+		(stroke
+			(width 3.5749999999999993)
+			(type default)
+		)
+		(layer In1.Cu)
+	)
+
+	(gr_line
+		(start 99.3125 27.9)
+		(end 99.3125 0)
+		(stroke
+			(width 3.5749999999999993)
+			(type default)
+		)
+		(layer In1.Cu)
+	)
+
+	(gr_line
+		(start 90.45000000000002 -8.862499999999999)
+		(end 86.42500000000001 -8.862499999999999)
+		(stroke
+			(width 3.5749999999999993)
+			(type default)
+		)
+		(layer In1.Cu)
+	)
+
+	(gr_arc
+		(start 77.56250000000001 27.9)
+		(mid 78.96472628506942 31.285273714930593)
+		(end 82.35000000000001 32.6875)
+		(stroke
+			(width 3.5749999999999993)
+			(type solid)
+		)
+		(layer "In1.Cu")
+	)
+
+	(gr_arc
+		(start 90.45000000000002 32.6875)
+		(mid 93.8352737149306 31.28527371493059)
+		(end 95.2375 27.9)
+		(stroke
+			(width 3.5749999999999993)
+			(type solid)
+		)
+		(layer "In1.Cu")
+	)
+
+	(gr_arc
+		(start 95.2375 0)
+		(mid 93.8352737149306 -3.385273714930592)
+		(end 90.45000000000002 -4.7875)
+		(stroke
+			(width 3.5749999999999993)
+			(type solid)
+		)
+		(layer "In1.Cu")
+	)
+
+	(gr_line
+		(start 77.56250000000001 0)
+		(end 77.56250000000001 27.9)
+		(stroke
+			(width 3.5749999999999993)
+			(type default)
+		)
+		(layer In1.Cu)
+	)
+
+	(gr_line
+		(start 82.35000000000001 32.6875)
+		(end 90.45000000000002 32.6875)
+		(stroke
+			(width 3.5749999999999993)
+			(type default)
+		)
+		(layer In1.Cu)
+	)
+
+	(gr_line
+		(start 95.2375 27.9)
+		(end 95.2375 0)
+		(stroke
+			(width 3.5749999999999993)
+			(type default)
+		)
+		(layer In1.Cu)
+	)
+
+	(gr_arc
+		(start 86.42500000000001 -8.862499999999999)
+		(mid 80.15826615173422 -6.266733848265776)
+		(end 77.56250000000001 0)
+		(stroke
+			(width 3.5749999999999993)
+			(type solid)
+		)
+		(layer "In1.Cu")
+	)
+
+	(gr_arc
+		(start 138.28750000000002 27.9)
+		(mid 140.88326615173426 34.16673384826578)
+		(end 147.15000000000003 36.7625)
+		(stroke
+			(width 3.5749999999999993)
+			(type solid)
+		)
+		(layer "In2.Cu")
+	)
+
+	(gr_arc
+		(start 155.25000000000003 36.7625)
+		(mid 161.5167338482658 34.16673384826577)
+		(end 164.1125 27.9)
+		(stroke
+			(width 3.5749999999999993)
+			(type solid)
+		)
+		(layer "In2.Cu")
+	)
+
+	(gr_arc
+		(start 164.1125 0)
+		(mid 161.5167338482658 -6.266733848265773)
+		(end 155.25000000000003 -8.862499999999999)
+		(stroke
+			(width 3.5749999999999993)
+			(type solid)
+		)
+		(layer "In2.Cu")
+	)
+
+	(gr_line
+		(start 138.28750000000002 0)
+		(end 138.28750000000002 27.9)
+		(stroke
+			(width 3.5749999999999993)
+			(type default)
+		)
+		(layer In2.Cu)
+	)
+
+	(gr_line
+		(start 147.15000000000003 36.7625)
+		(end 155.25000000000003 36.7625)
+		(stroke
+			(width 3.5749999999999993)
+			(type default)
+		)
+		(layer In2.Cu)
+	)
+
+	(gr_line
+		(start 164.1125 27.9)
+		(end 164.1125 0)
+		(stroke
+			(width 3.5749999999999993)
+			(type default)
+		)
+		(layer In2.Cu)
+	)
+
+	(gr_line
+		(start 155.25000000000003 -8.862499999999999)
+		(end 151.22500000000002 -8.862499999999999)
+		(stroke
+			(width 3.5749999999999993)
+			(type default)
+		)
+		(layer In2.Cu)
+	)
+
+	(gr_arc
+		(start 142.3625 27.9)
+		(mid 143.76472628506943 31.2852737149306)
+		(end 147.15000000000003 32.6875)
+		(stroke
+			(width 3.5749999999999993)
+			(type solid)
+		)
+		(layer "In2.Cu")
+	)
+
+	(gr_arc
+		(start 155.25000000000003 32.6875)
+		(mid 158.6352737149306 31.285273714930593)
+		(end 160.03750000000002 27.9)
+		(stroke
+			(width 3.5749999999999993)
+			(type solid)
+		)
+		(layer "In2.Cu")
+	)
+
+	(gr_arc
+		(start 160.03750000000002 0)
+		(mid 158.6352737149306 -3.3852737149305945)
+		(end 155.25000000000003 -4.7875)
+		(stroke
+			(width 3.5749999999999993)
+			(type solid)
+		)
+		(layer "In2.Cu")
+	)
+
+	(gr_line
+		(start 142.3625 0)
+		(end 142.3625 27.9)
+		(stroke
+			(width 3.5749999999999993)
+			(type default)
+		)
+		(layer In2.Cu)
+	)
+
+	(gr_line
+		(start 147.15000000000003 32.6875)
+		(end 155.25000000000003 32.6875)
+		(stroke
+			(width 3.5749999999999993)
+			(type default)
+		)
+		(layer In2.Cu)
+	)
+
+	(gr_line
+		(start 160.03750000000002 27.9)
+		(end 160.03750000000002 0)
+		(stroke
+			(width 3.5749999999999993)
+			(type default)
+		)
+		(layer In2.Cu)
+	)
+
+	(gr_arc
+		(start 151.22500000000002 -8.862499999999999)
+		(mid 144.95826615173425 -6.266733848265778)
+		(end 142.3625 0)
+		(stroke
+			(width 3.5749999999999993)
+			(type solid)
+		)
+		(layer "In2.Cu")
+	)
+
+	(gr_arc
+		(start 203.08750000000003 27.9)
+		(mid 205.68326615173427 34.16673384826578)
+		(end 211.95000000000005 36.7625)
+		(stroke
+			(width 3.5749999999999993)
+			(type solid)
+		)
+		(layer "B.Cu")
+	)
+
+	(gr_arc
+		(start 220.05000000000004 36.7625)
+		(mid 226.3167338482658 34.16673384826577)
+		(end 228.91250000000002 27.9)
+		(stroke
+			(width 3.5749999999999993)
+			(type solid)
+		)
+		(layer "B.Cu")
+	)
+
+	(gr_arc
+		(start 228.91250000000002 0)
+		(mid 226.3167338482658 -6.266733848265773)
+		(end 220.05000000000004 -8.862499999999999)
+		(stroke
+			(width 3.5749999999999993)
+			(type solid)
+		)
+		(layer "B.Cu")
+	)
+
+	(gr_line
+		(start 203.08750000000003 0)
+		(end 203.08750000000003 27.9)
+		(stroke
+			(width 3.5749999999999993)
+			(type default)
+		)
+		(layer B.Cu)
+	)
+
+	(gr_line
+		(start 211.95000000000005 36.7625)
+		(end 220.05000000000004 36.7625)
+		(stroke
+			(width 3.5749999999999993)
+			(type default)
+		)
+		(layer B.Cu)
+	)
+
+	(gr_line
+		(start 228.91250000000002 27.9)
+		(end 228.91250000000002 0)
+		(stroke
+			(width 3.5749999999999993)
+			(type default)
+		)
+		(layer B.Cu)
+	)
+
+	(gr_line
+		(start 220.05000000000004 -8.862499999999999)
+		(end 216.02500000000003 -8.862499999999999)
+		(stroke
+			(width 3.5749999999999993)
+			(type default)
+		)
+		(layer B.Cu)
+	)
+
+	(gr_arc
+		(start 207.16250000000002 27.9)
+		(mid 208.56472628506944 31.2852737149306)
+		(end 211.95000000000005 32.6875)
+		(stroke
+			(width 3.5749999999999993)
+			(type solid)
+		)
+		(layer "B.Cu")
+	)
+
+	(gr_arc
+		(start 220.05000000000004 32.6875)
+		(mid 223.43527371493062 31.285273714930593)
+		(end 224.83750000000003 27.9)
+		(stroke
+			(width 3.5749999999999993)
+			(type solid)
+		)
+		(layer "B.Cu")
+	)
+
+	(gr_arc
+		(start 224.83750000000003 0)
+		(mid 223.43527371493062 -3.3852737149305945)
+		(end 220.05000000000004 -4.7875)
+		(stroke
+			(width 3.5749999999999993)
+			(type solid)
+		)
+		(layer "B.Cu")
+	)
+
+	(gr_line
+		(start 207.16250000000002 0)
+		(end 207.16250000000002 27.9)
+		(stroke
+			(width 3.5749999999999993)
+			(type default)
+		)
+		(layer B.Cu)
+	)
+
+	(gr_line
+		(start 211.95000000000005 32.6875)
+		(end 220.05000000000004 32.6875)
+		(stroke
+			(width 3.5749999999999993)
+			(type default)
+		)
+		(layer B.Cu)
+	)
+
+	(gr_line
+		(start 224.83750000000003 27.9)
+		(end 224.83750000000003 0)
+		(stroke
+			(width 3.5749999999999993)
+			(type default)
+		)
+		(layer B.Cu)
+	)
+
+	(gr_arc
+		(start 216.02500000000003 -8.862499999999999)
+		(mid 209.75826615173426 -6.266733848265778)
+		(end 207.16250000000002 0)
+		(stroke
+			(width 3.5749999999999993)
+			(type solid)
+		)
+		(layer "B.Cu")
+	)
+
+)

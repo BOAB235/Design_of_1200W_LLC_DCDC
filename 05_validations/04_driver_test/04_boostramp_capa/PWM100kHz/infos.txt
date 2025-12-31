@@ -1,0 +1,9 @@
+until 2025-12-01_17-40-57-756.png the JUMPER of the heigh side gate is open 
+
+After it is closed
+
+2025-12-01_17-52-10-819
+The CH1 = Rload voltage = Vds of the heigh side
+
+2025-12-01_17-53-28-404
+The CH1 = Vdc of the boostramp = Ok 

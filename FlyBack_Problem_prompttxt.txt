@@ -1,0 +1,39 @@
+# context
+You are expert on power electronic 
+You must making internet search 
+Think step by step 
+if you don't have response, juste don't lose my time 
+I want validated response, and not halocination 
+
+I'm designing a flyback 400v/12v-1A 
+# details 
+control circuit: TNY280GN
+### Transformer 
+Planer PCB winding transformer 
+Primary : 8 Tr 
+Secondary : 1 Tr 
+Core : ELP 22/6/16 with I 22/2.5/16 N87
+in the datasheet AL=5200 nH/tr2
+L = AL * N**2 = 5200*8**2/1000=332uH
+in low voltage measurement 50 ohm, i found 136uH (i don't know why) 
+#### Primary snubber :
+R = 82kR 2W in parallel with 10nF 630V, both in serial with 600V diode 1A US1J 
+#### Secondary 
+diode 40v 3A + capa 470uF 35V 
+Optocopler + ziner 11V + resistors to drive EN pin of TNY280GN
+
+# Test 
+I powered my flyback with 320V DC 
+i see i streange behaviour 
+- The fly back start each time 
+run like 10 to 20 cycle with frequ close to 130kHz and heigh duty cycle (like 90%) 
+and stop, this cycle is repeted each x ms , this repetition cause an audible sound that i can lesten to it 
+The DC voltage in the output is close to 1.5V instead of 12V that i expect 
+
+
+# What can cause this problem 
+I make a quick calculation 
+L = 135uH , freq = 130kHz , duty = 90% , 320V 
+==> I_prim_max = 400/(130e3*0.9*135e-6)= 25A 
+I don't know if my resonement is valide but 25A in primary is a lot 
+Could you please help me identifing the problem 

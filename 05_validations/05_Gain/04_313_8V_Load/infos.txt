@@ -1,0 +1,17 @@
+UDC = 313.8
+RGs = 1.1ohm 
+UOUT open = 38V (around) 128kHz 
+CH1 = VDC L SECON
+CH4 = VGS L SECON (befor 1.1 ohm, driver output) 
+CH2 = VGS H SECON
+
+
+No load 
+2025-12-12_21-04-59-234.png
+Load 52 ohm 
+2025-12-12_21-07-09-791.png
+Load 35.8 ohm 
+2025-12-12_21-08-47-672
+Loaf 22.8 ohm
+2025-12-12_21-09-48-585.png
+

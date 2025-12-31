@@ -1,0 +1,26 @@
+(version 1)
+
+(rule "HVP1 vs GND2"
+    (constraint clearance (min 4mm))
+    (condition "(A.Net == 'HVP1') && (B.Net == 'GND2')")
+)
+
+(rule "HVP2 vs GND2"
+    (constraint clearance (min 4mm))
+    (condition "(A.Net == 'HVP2') && (B.Net == 'GND2')")
+)
+
+(rule "HVN1 vs GND2"
+    (constraint clearance (min 4mm))
+    (condition "(A.Net == 'HVN1') && (B.Net == 'GND2')")
+)
+
+(rule "HVP_IN vs GND2"
+    (constraint clearance (min 4mm))
+    (condition "(A.Net == 'HVP_IN') && (B.Net == 'GND2')")
+)
+
+(rule "HVN_IN vs GND2"
+    (constraint clearance (min 4mm))
+    (condition "(A.Net == 'HVN_IN') && (B.Net == 'GND2')")
+)

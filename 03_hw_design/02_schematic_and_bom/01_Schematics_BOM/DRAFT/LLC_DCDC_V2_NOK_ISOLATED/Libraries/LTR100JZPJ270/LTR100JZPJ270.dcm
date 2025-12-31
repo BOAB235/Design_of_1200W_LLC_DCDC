@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LTR100JZPJ270
+D 27 Ohms +/-5% 3W Chip Resistor Wide 2512 (6432 Metric), 1225 Automotive AEC-Q200, Pulse Withstanding Thick Film
+K
+F https://fscdn.rohm.com/jp/products/databook/datasheet/passive/resistor/chip_resistor/ltr-j.pdf
+$ENDCMP
+#
+#End Doc Library

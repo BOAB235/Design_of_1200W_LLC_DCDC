@@ -1,0 +1,5 @@
+(design_block_lib_table
+  (version 7)
+  (lib (name "B40910A8127M000")(type "KiCad")(uri "${KIPRJMOD}/Libraries/LIB_B40910A8127M000/B40910A8127M000")(options "")(descr ""))
+  (lib (name "MCR1101-50-5")(type "KiCad")(uri "${KIPRJMOD}/Libraries/LIB_MCR1101-50-5/MCR1101-50-5")(options "")(descr ""))
+)

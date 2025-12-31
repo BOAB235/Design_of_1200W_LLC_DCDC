@@ -1,0 +1,12 @@
+
+.param Freq =100000.0
+.param Vdc=380 
+.param Cr=1.16209e-07
+.param Lr=2.1797e-05
+.param Lm=6.5392e-05
+.param Ls=4.087e-06 
+.param Co=0.001
+.param Rload=1.92
+.param Ts=1e-07
+.param Tsim=0.01
+.param Tsave=0.00995

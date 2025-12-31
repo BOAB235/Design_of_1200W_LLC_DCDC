@@ -1,0 +1,24 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model TX08F103F3435ER
+#/13908548/1753220/2.50/2/3/Thermistor
+DEF TX08F103F3435ER RT 0 30 Y Y 1 F N
+F0 "RT" 550 250 50 H V L CNN
+F1 "TX08F103F3435ER" 550 150 50 H V L CNN
+F2 "THRMC2012X65N" 550 50 50 H I L CNN
+F3 "https://www.ohmite.com/assets/docs/res_tx.pdf?r=false" 550 -50 50 H I L CNN
+F4 "NTC Thermistors THERMISTOR 0805 10K/3435" 550 -150 50 H I L CNN "Description"
+F5 "0.65" 550 -250 50 H I L CNN "Height"
+F6 "588-TX08F103F3435ER" 550 -350 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Ohmite/TX08F103F3435ER?qs=vEM7xhTegWiti1BXKGM%252B2A%3D%3D" 550 -450 50 H I L CNN "Mouser Price/Stock"
+F8 "Ohmite" 550 -550 50 H I L CNN "Manufacturer_Name"
+F9 "TX08F103F3435ER" 550 -650 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X ~ 1 0 0 200 R 50 50 0 0 P
+X ~ 2 700 0 200 L 50 50 0 0 P
+P 5 0 1 6 200 50 500 50 500 -50 200 -50 200 50 N
+P 3 0 1 6 220 -80 280 -80 420 80 N
+ENDDRAW
+ENDDEF
+#
+#End Library
