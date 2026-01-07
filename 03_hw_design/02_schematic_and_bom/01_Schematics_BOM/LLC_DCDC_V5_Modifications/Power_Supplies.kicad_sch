@@ -4301,6 +4301,223 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Regulator_Switching:TNY264G"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "TNY264G"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_DIP:PowerIntegrations_SMD-8B"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.powerint.com/sites/default/files/product-docs/tny263_268.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "TinySwitch-II Family, 6W Output Power, SMD-8B"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Enhanced, Energy Efficient, Low Power Off-line Switcher"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "PowerIntegrations?SMD?8B*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TNY264G_0_1"
+				(rectangle
+					(start -7.62 5.08)
+					(end 7.62 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "TNY264G_1_1"
+				(pin open_collector line
+					(at -5.08 7.62 270)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -5.08 -7.62 90)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -7.62 90)
+					(length 2.54)
+					(hide yes)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -7.62 90)
+					(length 2.54)
+					(hide yes)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -7.62 90)
+					(length 2.54)
+					(hide yes)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 10.16 2.54 180)
+					(length 2.54)
+					(name "EN/UV"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 10.16 -2.54 180)
+					(length 2.54)
+					(name "BP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "TNY280GN-TL:TNY280GN-TL"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -5070,6 +5287,28 @@
 		)
 		(uuid "46233081-2d50-4213-9816-7c18ad52321e")
 	)
+	(text "TNY-264\n"
+		(exclude_from_sim no)
+		(at 56.642 78.486 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 0 0 1)
+			)
+		)
+		(uuid "49885e8c-9c26-4ac4-9cb9-4a9375379fc7")
+	)
+	(text "100nF (of flyback charger, i measure it, 5.877v measurement)\n"
+		(exclude_from_sim no)
+		(at 28.956 101.854 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 0 0 1)
+			)
+		)
+		(uuid "7d6a181b-116a-4c0b-a52a-3936b0cd07e5")
+	)
 	(text "https://www.power.com/products/tinyswitch/tinyswitch-iii/tny280p"
 		(exclude_from_sim no)
 		(at 120.142 102.108 0)
@@ -5079,6 +5318,17 @@
 			)
 		)
 		(uuid "a37be07c-5f3e-429a-9674-8e3b1431cd53")
+	)
+	(text "TBC"
+		(exclude_from_sim no)
+		(at 161.798 65.532 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 0 0 1)
+			)
+		)
+		(uuid "aaf1cd74-4f79-4fe6-885b-2646642b52cf")
 	)
 	(text "Ref generator"
 		(exclude_from_sim no)
@@ -10872,6 +11122,92 @@
 			(project "LLC_DCDC_V1"
 				(path "/856dbdf2-f84a-4a26-871a-e6caa4757467/e6ae4412-3899-497a-ad4e-ef9e3f773d29"
 					(reference "C47")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Regulator_Switching:TNY264G")
+		(at 69.85 111.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "61f63c6a-36a4-4990-a177-9c8e09627783")
+		(property "Reference" "U3"
+			(at 60.96 110.4899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TNY264G"
+			(at 60.96 113.0299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Package_DIP:PowerIntegrations_SMD-8B"
+			(at 69.85 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.powerint.com/sites/default/files/product-docs/tny263_268.pdf"
+			(at 69.85 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "TinySwitch-II Family, 6W Output Power, SMD-8B"
+			(at 69.85 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "76dee378-2f7d-43b4-a04f-b00a7a22dee6")
+		)
+		(pin "7"
+			(uuid "3de4848a-ee2e-489d-9b74-56977a65fa26")
+		)
+		(pin "3"
+			(uuid "3f5a2eb8-e37a-454e-9191-a9f21fd30842")
+		)
+		(pin "8"
+			(uuid "345a612f-7b8f-465e-b4eb-7907605265b8")
+		)
+		(pin "5"
+			(uuid "406e8c75-2c57-4388-8f86-94ef59e8064a")
+		)
+		(pin "4"
+			(uuid "730351cd-fd9d-44cc-961c-09e874232d52")
+		)
+		(pin "2"
+			(uuid "622b847b-5c84-427f-94e2-0b544faa0fa9")
+		)
+		(instances
+			(project ""
+				(path "/856dbdf2-f84a-4a26-871a-e6caa4757467/e6ae4412-3899-497a-ad4e-ef9e3f773d29"
+					(reference "U3")
 					(unit 1)
 				)
 			)

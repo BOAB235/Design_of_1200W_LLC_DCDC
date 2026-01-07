@@ -1,0 +1,16 @@
+LTspice 24.1.9 for Windows
+Circuit: C:\Users\a037702\NotSynchronized\git\Design_of_1200W_LLC_DCDC\05_validations\06_Fly_Back\06_tny_264_last_modifs\sim\Sim2.net
+Start Time: Wed Jan  7 10:32:22 2026
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration for .op point succeeded.
+Total elapsed time: 0.139 seconds.
+
+Files loaded:
+C:\Users\a037702\NotSynchronized\git\Design_of_1200W_LLC_DCDC\05_validations\06_Fly_Back\06_tny_264_last_modifs\sim\Sim2.net
+C:\Users\a037702\AppData\Local\LTspice\lib\cmp\standard.dio
+C:\Users\a037702\NotSynchronized\git\Design_of_1200W_LLC_DCDC\05_validations\06_Fly_Back\06_tny_264_last_modifs\sim\sb2100_spice.lib
+

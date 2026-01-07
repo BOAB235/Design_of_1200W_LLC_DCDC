@@ -1,0 +1,43 @@
+0V 0A 
+2026-01-06_15-43-03-839.csv
+& 2026-01-06_15-44-18-512.csv
+CH1 = HV x100
+CH4 = LV x10
+CH2 = Current
+
+
+OLD DIODE 
+NO load 
+Minimum voltage must be like 345v (not mesured) 
+2026-01-06_15-58-48-465.csv
+2026-01-06_16-00-21-095.png 740ns ==> 740e-9*132e3=0.097 ~10% < 5%
+
+
+350.9v no load 
+Réparer le problème de masse Sonde CH4
+2026-01-06_17-16-25-122.png
+Calibration après réparation  0V 0A
+2026-01-06_17-17-57-819
+
+New output diode 
+SB2100 (Vf multimeter is low like 0.34v...)
+https://www.sangdest.com.cn/propdf/SB2100%20N0154%20REV.C.pdf
+https://diotec.com/request/datasheet/sb220.pdf
+351.2 11.35v
+2026-01-06_17-43-30-844.png
+
+377.5v
+2026-01-06_17-45-21-093
+
+401.9v
+2026-01-06_17-46-24-611.txt
+
+427.4v
+2026-01-06_17-48-22-544
+
+
+
+Vout rump up 11.35V meas 
+2026-01-06_18-02-47-513
+best measurement 11.34v
+2026-01-06_18-10-59-970

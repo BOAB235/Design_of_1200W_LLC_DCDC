@@ -1,0 +1,58 @@
+Trans 
+Np = 8+18
+Ns = 4
+CH1 = vp of trans 
+CH2 = Ip of the trans 
+output around 11v (ziner 10v +1)
+load 40 ohm 
+
+low voltage like 340V or 320...
+2025-12-23_08-54-28-772.png
+
+419v
+2025-12-23_08-56-59-168
+
+vin 47.50
+2026-01-03_20-13-08-982.csv
+CH4 Vds of IC TNY ( no isolated x10)
+CH2 = Current of the Primary 
+CH3 = Kathode / Gnd (secondary) :  no isolated x1
+2026-01-03_20-17-37-295.png 4.3u 4.3/7.24(138khz)=59% (max duty)
+
+TNY280 47.5 V 
+2026-01-03_20-25-49-597
+
+Vin out 97 11.28
+CH1 = vp of trans (HV+/D)
+CH2 = Ip of the trans 
+2026-01-03_20-37-01-334
+
+Vin out 350.6 11.28
+2026-01-03_20-43-43-679.csv
+
+
+48V default 
+CH4 x10 Vp (already x10 in setup)
+CH2 Ip 
+2026-01-04_12-16-21-026
+
+
+tny264 with 100nF capa + diode change using 36
+349.6v in
+5.878bp (5.877 for48v)
+11.35v out
+2026-01-04_13-05-46-636
+ch1= vds
+580ns 350v supp 250mA
+v = L di/dt ==>L =1e6*350/(0.25/580e-9)=812uH???
+
+426.9V
+2026-01-04_13-13-59-933
+
+in out 350.5 11.35
+Load Fan 12v/0.13A 1.6w (datasheet)
+2026-01-04_13-38-06-701.csv
+
+in out 350.8 11.34
+load 2 x Fan 12v/0.13A 1.6w (datasheet)
+2026-01-04_13-52-05-845.csv
