@@ -1,0 +1,15 @@
+LTspice 24.1.9 for Windows
+Circuit: C:\Users\a037702\NotSynchronized\git\Design_of_1200W_LLC_DCDC\03_hw_design\01_design_justification\power_supp\simpleFlybackOKK_v5.net
+Start Time: Tue Jan  6 21:52:55 2026
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration for .op point succeeded.
+Total elapsed time: 1.061 seconds.
+
+Files loaded:
+C:\Users\a037702\NotSynchronized\git\Design_of_1200W_LLC_DCDC\03_hw_design\01_design_justification\power_supp\simpleFlybackOKK_v5.net
+C:\Users\a037702\AppData\Local\LTspice\lib\cmp\standard.dio
+
