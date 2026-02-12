@@ -1,0 +1,103 @@
+SW = PI_V12
+Vin around 176V
+no load 
+2026-02-03_11-28-12-193.png
+3 screen shot 
+all (bootstrap charge = 100us)
+zoom in big dead time (100us)
+zoom in small dead time (100us)
+CH1 = vds of low side prim
+CH4 = vgs of low side prim
+CH2 = inp current
+
+2026-02-03_11-32-26-832.png
+same config regim etablie plus de resolution 
+time between vds off and vgs on = 44ns enogh marging 
+vin 176.2
+vout 21.25v
+Freq 99.87khz 
+### in the first test we have Vin Vout = 176.1 19.14V 149.7khz
+## So vout target =20v is faisable 
+
+2026-02-03_11-35-12-068
+same confi
+load = 22.3 ohm 
+almost the same behavior 
+
+
+PI_V13: PI regulator target = 20v out
+vout vin 20.18 176.1 around 114khz 
+2026-02-03_11-44-53-532.png
+
+Same config 
+ch4 = vout 
+shot 1: 
+2026-02-03_11-47-38-590.csv
+sho2 : 
+2026-02-03_11-48-30-941.csv
+shot3:
+2026-02-03_11-49-25-218.png
+Régime établi to check the freq jitter 
+2026-02-03_11-50-27-013.png
+FREQ = AROUND 140KHZ AND VOUT AROUND 19V NOOOOOOOOOK
+RESTART MUC ALL IS OK 
+
+20.16 VOUT 
+CHECK AGAIN THE JIITTER
+2026-02-03_11-55-09-582
+
+
+Estimation of 400V 
+20*380/176= 43V target 
+
+
+
+MORE CLEAN SW (almost the same)
+PI_V14
+VOUT AROUND 19V FREQ AROUND 150KHZ !!!!!! no regulation 
+I change speed of slew rate x3 work but i heard sound not good 
+i will pass to 110 fix freq more safe
+
+
+PI_V15 fix freq 
+2026-02-03_13-10-28-904.png
+not good 
+freq change very quick 
+2026-02-03_13-11-56-223
+vs
+2026-02-03_13-12-26-099.png
+
+
+
+PI_V16_manual_slow_rate
+2026-02-03_13-25-04-628.png
+vin vout 176.2 20.43
+2026-02-03_13-26-31-487
+CH4 = VDS low second no load 
+2026-02-03_13-26-57-963
+
+VIN VOUT 404.7 47.23V
+109.9KHZ 
+2026-02-03_13-39-31-576.png
+
+
+
+PI_V17_periode_decreasing_control
+target 20v
+VDS = LOW SIDE PRIMARY = CH1 
+CH3 CH4 = RSIL LISN VOLTAGE (see EMI_infos.txt) 
+2026-02-06_18-57-36-832.csv
+
+PI_V17_periode_decreasing_control
+target 42v
+VDS = LOW SIDE PRIMARY = CH1 
+Vgs= LOW SIDE PRIMARY = CH4 (x10)
+2026-02-07_12-51-28-508.png
+vin vout freq 378.5 41.78 121.6khz 
+2026-02-07_12-51-28-508.png 
+
+
+
+
+
+

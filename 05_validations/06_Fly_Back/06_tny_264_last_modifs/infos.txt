@@ -36,7 +36,7 @@ https://diotec.com/request/datasheet/sb220.pdf
 2026-01-06_17-48-22-544
 
 
-
+The Vin is the min (around 345V)
 Vout rump up 11.35V meas 
 2026-01-06_18-02-47-513
 best measurement 11.34v

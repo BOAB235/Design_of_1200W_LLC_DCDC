@@ -81,6 +81,8 @@ void loop() {
   Serial.print(a5); Serial.print(' ');
   Serial.print(a6); Serial.print(' ');
   Serial.println(a7);
+  float vin= 0.3212 * a7 - 7.2289;
+  Serial.println(vin);
 
   delay(200);
 }
