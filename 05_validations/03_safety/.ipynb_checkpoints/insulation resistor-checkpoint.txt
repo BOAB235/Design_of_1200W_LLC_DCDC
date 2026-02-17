@@ -1,0 +1,10 @@
+vdc 501.4V
+current HVP/HVN to ground seondary 
+Or to the comminication insulation 
+less than 0.1µA (some time multimeter show 0.1uA some time 0.0) 
+
+Resistor more than > 501.4/0.1= 5000Mohm = 5Gohm  
+
+
+micrometer is tested wih 990kohm and 404V ==> 414µA (expected 408µA) 
+micrometer have 100 ohm resistor 

@@ -39,8 +39,33 @@ SW 19
 
 CH4 = Voutput of comparator 
 2026-02-10_17-04-17-293
-no trig but noise !!!s
+no trig but noise !!!
+
+=======================================
+PI_V21_fix_freq_100khz
+load of bouillard 2200w noire
+27.2 ohm measur
+2026-02-15_13-35-20-878.png
+what is this mesterious frequency of 1.45khz :) hhh 
+
+CH1 = Vtransfo x 100 prim low side
+CH4 = vgs of prim low side x10
 
 
+2026-02-15_13-42-54-486
+ch2 = current input HVP 
+trans voltage is null initially 
+
+
+regime etablie ce que le transfo voir 
+2026-02-15_13-45-43-950
+
+ch4 = vds of low side secondary 
+2026-02-15_13-47-24-481
+
+
+2026-02-15_13-50-39-607
+ch4 = vd-d heigh side low side secondary 
+voltage everwhe = max = around 404V
 
 

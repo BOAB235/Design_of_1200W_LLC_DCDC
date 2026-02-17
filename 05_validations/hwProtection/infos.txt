@@ -1,0 +1,44 @@
+PI_V20_fix_freq_100khz
+81V around vinp 
+
+CH1 = VDS LOW SIDE PRIM 
+CH4 = Vout copparator x10
+check the HW protection problem
+2026-02-15_12-10-19-208
+
+shot 2
+2026-02-15_12-11-41-625
+
+
+CH3 = out of ampli isolated of Vout measurement 
+2026-02-15_12-15-08-852
+
+
+
+2026-02-15_12-20-10-536
+CH3 = PB11 (HW protection disable)
+
+PI_V21_fix_freq_100khz_HWprot_Correction
+no hw protection problem 
+ch3= open air 
+
+disable HW protection of secondary voltage 
+3.011 as ref to avoid 2.8xxv 
+for the moment
+to 3.292v max 
+
+2026-02-15_12-54-49-324
+CH4 = Vout copparator x10
+a lot of noise 
+
+
+
+2026-02-15_13-14-37-137
+prim fault 
+res parallel 55k see excel file 
+CH4 = Vo the resistor 
+ch3 = out comparator 
+ch1 = vgs or high side 
+
+
+2026-02-15_13-14-37-137

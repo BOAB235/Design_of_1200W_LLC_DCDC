@@ -102,5 +102,14 @@ EMI_2026-02-10_11-46-43-797
 REMOVE CM SNUB ADD DIF SNUB 
 EMI_2026-02-10_11-51-32-964
 
+=========================================
+depuis 2026-02-10  16-59-38
+on utilize le SW 19  (PI_V19_periode_decreasing_control) 
+
+
+new measurement  HVP around 380 after demonting and mounting the setup 
+2026-02-12_21-58-40-610
+
+
 
 

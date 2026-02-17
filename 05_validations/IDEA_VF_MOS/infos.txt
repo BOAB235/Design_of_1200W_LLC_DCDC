@@ -1,0 +1,29 @@
+404v vin around 
+load 27 ohm
+100khz fix control 
+
+
+CH1 vds of low side mos prim x100 isolated
+CH4 vgs " " " 
+CH2 = inp current 
+CH3 = V_ziner diode (Between resistor and Source)
+
+a R-Ziner is used between Vds to clump vds 
+R = 990kohm (around 1Mega)
+Zinner 10V (bzx 85 10.0v)
+Drain Res K-ziner A-ziner source 
+2026-02-16_11-29-17-563
+
+
+
+This time 
+Diode = 2x  US2MA 
+2026-02-16_11-48-34-969
+
+ZOOM 
+2026-02-16_11-54-09-770
+
+
+0 voltage 
+2026-02-16_11-55-19-204
+

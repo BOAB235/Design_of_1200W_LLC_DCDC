@@ -1,0 +1,6 @@
+404.8V as inp
+27.2 ohm as load output 
+
+CH1 = V capa Cr x 100 (isolated) 
+CH2 = Current input HVP +
+CH3 = V boucle 
