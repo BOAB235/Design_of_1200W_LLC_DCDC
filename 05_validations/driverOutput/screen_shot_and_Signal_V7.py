@@ -37,16 +37,14 @@ scope_ip = '169.254.104.98'
 
 #import requests
 def get_image(title, scope_ip ):
-    url = url = f"http://{scope_ip}/Image.png"
+    url = f"http://{scope_ip}/Image.png"
     
-    # Download the image as binary you can add timout=10
+    # Download the image as binary you can add timeout=10
     response = requests.get(url, stream=True)
     response.raise_for_status()  # check for HTTP errors
     with open(f"{title}.png", "wb") as f:
         f.write(response.content)
 
-get_image(filename, scope_ip )
-print(f"{filename }.png saved")
 
 
 
@@ -95,6 +93,51 @@ except Exception as e:
     print("Connection failed:", e)
     _=input("Press any key to exit")
     exit()
+
+
+def force_color_hardcopy(scope):
+    """Best-effort: try common Tek hardcopy/display commands to avoid monochrome screenshots."""
+    candidates = [
+        # Hardcopy palette / inksaver (varies by model/firmware)
+        ("HARDCOPY:PALETTE COLOR", "HARDCOPY:PALETTE?"),
+        ("HARDCOPY:PALETTE COL", "HARDCOPY:PALETTE?"),
+        ("HARDCOPY:PALETTE NORMAL", "HARDCOPY:PALETTE?"),
+        ("HARDCOPY:INKSAVER OFF", "HARDCOPY:INKSAVER?"),
+        ("HARDCOPY:INKSAVER 0", "HARDCOPY:INKSAVER?"),
+
+        # Some firmwares use PRINT:* instead
+        ("PRINT:COLOR ON", "PRINT:COLOR?"),
+        ("PRINT:INKSAVER OFF", "PRINT:INKSAVER?"),
+
+        # Display color toggles (if supported)
+        ("DISPLAY:COLOR ON", "DISPLAY:COLOR?"),
+        ("DISPLAY:COLORS ON", "DISPLAY:COLORS?"),
+    ]
+
+    applied = []
+    for set_cmd, query_cmd in candidates:
+        try:
+            scope.write(set_cmd)
+            time.sleep(0.05)
+            try:
+                _ = scope.query(query_cmd)
+            except Exception:
+                pass
+            applied.append(set_cmd)
+        except Exception:
+            pass
+
+    if applied:
+        print("Hardcopy/display color attempted:")
+        for c in applied:
+            print("  ", c)
+
+
+force_color_hardcopy(scope)
+
+
+get_image(filename, scope_ip )
+print(f"{filename }.png saved")
 
 def get_active_channels():
     active_channels = []

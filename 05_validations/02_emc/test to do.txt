@@ -1,3 +1,0 @@
-discharge 400v active passive 
-
-resistor primary secondary 
