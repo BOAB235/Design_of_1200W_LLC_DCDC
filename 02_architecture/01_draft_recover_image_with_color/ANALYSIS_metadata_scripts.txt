@@ -1,0 +1,78 @@
+================================================================================
+ANALYSIS: Metadata Removal Scripts and Backup Folders
+================================================================================
+
+SCRIPTS FOUND:
+--------------
+
+1. ✗ PROBLEMATIC: remove_metadata_img_V3.py (ROOT FOLDER)
+   - Location: C:\Users\a037702\NotSynchronized\git\Design_of_1200W_LLC_DCDC\remove_metadata_img_V3.py
+   - Backup folder: 'Images_no_Meta'
+   - BUG: Lines 32-36 use np.array() + Image.fromarray() which destroys palette colors
+   - This is the ONLY script causing grayscale conversion
+
+2. ✓ SAFE: removeCheckpointsFolder.py (ROOT FOLDER)
+   - Purpose: Removes .ipynb_checkpoints and __pycache__ folders
+   - Does NOT touch images - SAFE
+
+3. ✓ SAFE: All scripts in 99_archive/01_Oscilloscope_python_script/
+   - screen_shot_V1.py
+   - screen_shot_and_Signal_V9.py  
+   - screen_shot_and_Signal_V6.py
+   - EMI_saving_3CH.py
+   - EMI_saving_1CH.py
+   - Purpose: Download screenshots from oscilloscope via HTTP
+   - Do NOT modify existing images - SAFE
+
+
+BACKUP FOLDERS FOUND:
+---------------------
+Location: C:\Users\a037702\Downloads\recouver_images\
+
+1. Images_no_Meta_0           (816 PNG files, 546 in color)
+2. Images_no_Meta_2           (744 PNG files, 744 in color) ← BEST BACKUP
+3. Images_no_Meta_3           (0 PNG files - EMPTY)
+4. Images_no_Meta_4           (0 PNG files - EMPTY)
+5. old_images_with_metadata_5 (127 PNG files, 127 in color)
+
+
+THE PROBLEM:
+------------
+Script: remove_metadata_img_V3.py
+Lines 32-36:
+    arr = np.array(img)              # Converts palette PNG to 2D array of indexes
+    img_no_meta = Image.fromarray(arr)  # Interprets indexes as grayscale values
+    
+This destroys the color palette for PNG images in mode 'P' (palette mode).
+
+
+BACKUP STRATEGY:
+----------------
+Your script saved originals BEFORE overwriting:
+- Line 52: img.save(buckup_path)      ← Saves original to Images_no_Meta folder
+- Line 53: img_no_meta.save(img_path)  ← Overwrites original with grayscale
+
+The script creates: Images_no_Meta/<full_path_of_image>
+
+
+RUN HISTORY (guessed from folder names):
+-----------------------------------------
+You probably ran the script multiple times:
+- Run 1 → Created Images_no_Meta      (recovered as Images_no_Meta_0)
+- Run 2 → Created Images_no_Meta      (recovered as Images_no_Meta_2)
+- Run 3 → Created Images_no_Meta      (recovered as Images_no_Meta_3 - empty?)
+- Run 4 → Created Images_no_Meta      (recovered as Images_no_Meta_4 - empty?)
+- Run 5 → Created old_images_with_metadata (you renamed it?)
+
+The _0, _2, _3, _4, _5 suffixes were likely added by Windows when recovering
+multiple folders with the same name from Recycle Bin.
+
+
+CONCLUSION:
+-----------
+✓ ONLY ONE problematic script: remove_metadata_img_V3.py
+✓ Backup folder name: Images_no_Meta
+✓ All images have been successfully recovered using Images_no_Meta_2 and Images_no_Meta_0
+✓ No other scripts in your project cause this problem
+
+================================================================================

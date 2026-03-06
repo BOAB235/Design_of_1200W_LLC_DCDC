@@ -1,0 +1,4 @@
+I USE GBF TO GENERATE CURRENT 
+CH2 = CURRENT SENSOR (TCP202)
+CH3 = TCP0150
+N = 5 turns same current for both current sensors 

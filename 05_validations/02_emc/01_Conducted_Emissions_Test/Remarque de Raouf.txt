@@ -1,0 +1,1 @@
+je pense qu au dela de 10MHz c'est le rayonnement de la carte sur les fils entre la carte et le RSIL

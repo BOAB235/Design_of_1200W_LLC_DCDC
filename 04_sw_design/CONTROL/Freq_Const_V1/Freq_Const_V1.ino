@@ -1,0 +1,345 @@
+#include "stm32f1xx.h"
+
+
+
+#define _Ena_drv PB10
+#define _Dis_drv PB12
+#define disable_HW_OVP_OUT PB11 // Conflict with timer use PB11
+#define PWM_FANS PA10
+
+
+/*
+Outputs:
+TIM1_CH2 → PA9  
+TIM1_CH2N → PB14 
+
+Dead time resolution:
+With Fclk = 72 MHz → 1 step ≈ 13.888 ns
+DTG = 4 → ~55.6 ns
+DTG = 5 → ~69.4 ns
+DTG = 6 → ~83.3 ns
+*/
+
+
+
+
+
+static inline uint16_t adc_read(uint8_t ch) {
+  ADC1->SQR1 = 0;                 // 1 conversion
+  ADC1->SQR3 = (ch & 0x1F);       // select channel 0..17
+  ADC1->CR2  |= ADC_CR2_SWSTART;  // start
+  while (!(ADC1->SR & ADC_SR_EOC));
+  return ADC1->DR;                // 12-bit (right-aligned)
+}
+
+void init_ADC(){
+  // Clocks
+  RCC->APB2ENR |= RCC_APB2ENR_IOPAEN | RCC_APB2ENR_ADC1EN;
+
+  // PA0..PA7 analog
+  GPIOA->CRL = 0x00000000;
+
+  // ADC clk = PCLK2/6 (~12 MHz if PCLK2=72 MHz)
+  RCC->CFGR &= ~RCC_CFGR_ADCPRE;
+  RCC->CFGR |=  RCC_CFGR_ADCPRE_DIV6;
+
+  // Fastest sampling (1.5 cycles). Increase if source impedance is high.
+  ADC1->SMPR2 = 0x00000000;
+
+  // Power on -> reset cal -> calibrate
+  ADC1->CR2 |= ADC_CR2_ADON;
+  ADC1->CR2 |= ADC_CR2_RSTCAL; while (ADC1->CR2 & ADC_CR2_RSTCAL);
+  ADC1->CR2 |= ADC_CR2_CAL;    while (ADC1->CR2 & ADC_CR2_CAL);
+
+  // Single conversion via SWSTART (F1 needs EXTTRIG + EXTSEL=111)
+  ADC1->CR2 &= ~ADC_CR2_CONT;
+  ADC1->CR2 &= ~ADC_CR2_EXTSEL;
+  ADC1->CR2 |=  ADC_CR2_EXTSEL;     // set EXTSEL=111 (SWSTART)
+  ADC1->CR2 |=  ADC_CR2_EXTTRIG;
+
+  // Mandatory second ADON after calibration
+  ADC1->CR2 |= ADC_CR2_ADON;
+
+
+
+
+  
+}
+
+
+
+
+void setup() {
+ // Enable clocks
+ RCC->APB2ENR |= RCC_APB2ENR_IOPAEN | RCC_APB2ENR_IOPBEN | RCC_APB2ENR_AFIOEN | RCC_APB2ENR_TIM1EN;
+
+ // GPIOA PA9 -> AF Push-Pull 50 MHz (PA9 is CRH nibble 1, shift 4)
+ GPIOA->CRH &= ~(0xF << 4);
+ GPIOA->CRH |= (0xB << 4);
+
+ // GPIOB PB14 -> AF Push-Pull 50 MHz (PB14 is CRH nibble 6, shift 24)
+ GPIOB->CRH &= ~(0xF << ((14-8)*4));
+ GPIOB->CRH |= (0xB << ((14-8)*4));
+
+ // Timer base config
+ TIM1->PSC = 0;
+ TIM1->ARR = 480;    // 150 kHz (edge-aligned): f = 72MHz / (PSC+1) / (ARR+1)
+ TIM1->CCR2 = 240;    // 50% duty (CHANGED to CCR2)
+
+ // PWM mode 1 + preload (CHANGED to OC2M and OC2PE)
+ TIM1->CCMR1 |= (6 << TIM_CCMR1_OC2M_Pos) | TIM_CCMR1_OC2PE; // OC2M=110 (PWM1), preload
+ TIM1->CR1  |= TIM_CR1_ARPE;                // ARR preload
+
+ // Enable CH2 + CH2N (CHANGED to CC2E and CC2NE)
+ //TIM1->CCER |= TIM_CCER_CC2E | TIM_CCER_CC2NE;
+ // Explicitly ensure outputs are disabled to guarantee starting low
+TIM1->CCER &= ~(TIM_CCER_CC2E | TIM_CCER_CC2NE);
+
+
+/*
+
+Dead time resolution:
+With Fclk = 72 MHz → 1 step ≈ 13.888 ns
+DTG = 4 → 55.6 ns
+DTG = 5 → 69.4 ns
+DTG = 6 → 83.3 ns
+DTG = 7 → 97.2 ns
+DTG = 10 → 138.9 ns
+DTG = 15 → 208.3 ns
+DTG = 20 → 277.8 ns
+*/
+ // Dead-time (~70 ns) + MOE
+ TIM1->BDTR = (5 << TIM_BDTR_DTG_Pos) | TIM_BDTR_MOE;
+
+ // Force update to load preloaded regs initially
+ TIM1->EGR = TIM_EGR_UG;
+
+ // Start counter
+ TIM1->CR1 |= TIM_CR1_CEN;
+
+ // Only overflow/underflow generate UEV (ignore UG for IRQ/DMA)—keeps latching clean
+ TIM1->CR1 |= TIM_CR1_URS;
+
+ // === A1 marker pin: PA1 as push-pull 50 MHz ===
+ RCC->APB2ENR |= RCC_APB2ENR_IOPAEN;
+ GPIOA->CRL &= ~(GPIO_CRL_MODE1 | GPIO_CRL_CNF1);
+ GPIOA->CRL |= (0b11 << GPIO_CRL_MODE1_Pos); // MODE1=11 (50 MHz), CNF1=00 (PP)
+
+ // Clear any pending UIF from the initial UG so first sync waits properly
+ TIM1->SR &= ~TIM_SR_UIF;
+
+   pinMode(disable_HW_OVP_OUT, OUTPUT); 
+   digitalWrite( disable_HW_OVP_OUT, HIGH);
+
+// Force PB12 HIGH in output data register BEFORE pinMode changes the mode
+// digitalWrite(_Dis_drv, HIGH);   // preload ODR = 1 (float high in open-drain mode)
+//digitalWrite(PB12, LOW)  | Pin pulled to **GND**
+//digitalWrite(PB12, HIGH) | Pin is **floating**    
+digitalWrite(_Dis_drv, LOW); 
+pinMode(_Dis_drv, OUTPUT_OPEN_DRAIN);
+//pinMode(PB12, OUTPUT_OPEN_DRAIN_PULLUP); 
+//pinMode(PB12, OUTPUT_OPEN_DRAIN_NOPULL);
+digitalWrite(_Dis_drv, LOW); // redundancy
+digitalWrite( _Ena_drv, HIGH); 
+pinMode(_Dis_drv, OUTPUT);
+digitalWrite( _Ena_drv, HIGH); 
+
+
+
+
+  // initialize serial communication at 9600 bits per second:
+  //Serial.begin(115200);
+
+   analogReadResolution(12);
+
+
+
+
+
+
+
+
+   init_ADC();  
+
+   //Serial.begin(115200);
+   // you can't use Serial with PWM (conflict)
+
+
+  
+pinMode(PWM_FANS, OUTPUT);
+
+
+
+
+}
+
+static inline void toggle_A1_fast() {
+ // Toggle via BSRR (deterministic, no digitalWrite jitter)
+ if (GPIOA->ODR & (1u << 1)) {
+  GPIOA->BSRR = GPIO_BSRR_BR1; // low
+ } else {
+  GPIOA->BSRR = GPIO_BSRR_BS1; // high
+ }
+}
+
+// Function updated to handle CCR2
+static inline void set_arr_ccr2_synced(uint16_t arr, uint16_t ccr2) // FUNCTION NAME CHANGED and uses ccr2
+{
+ // --- Critical ordering to avoid the race ---
+ uint32_t prim = __get_PRIMASK(); __disable_irq();
+ TIM1->CR1 |= TIM_CR1_UDIS;   // 1) Block update transfers (no latching while we stage)
+ TIM1->SR &= ~TIM_SR_UIF;    // 2) Clear UIF *after* blocking updates (so we wait for the next real UEV)
+ TIM1->ARR = arr;        // 3) Stage ARR
+ TIM1->CCR2 = ccr2;       // 3) Stage CCR2 (e.g., (arr+1)/2 for 50%)
+ TIM1->CR1 &= ~TIM_CR1_UDIS;   // 4) Re-enable update transfers
+ if (!prim) __enable_irq();
+
+ // 5) Wait for the *next* UEV — this is when ARR/CCR2 actually latch
+ while (!(TIM1->SR & TIM_SR_UIF)) { /* wait for latch boundary */ }
+ TIM1->SR &= ~TIM_SR_UIF;    // acknowledge
+
+ // 6) Mark the latching instant on A1 (few CPU cycles after boundary)
+ toggle_A1_fast();
+
+
+}
+
+void loop() {
+
+delay (20);
+ float vin=0;
+ while(vin<100){//START AT 100V min 
+  vin=0.3212 * adc_read(7) - 7.2289;
+ };
+
+//analogWrite(PWM_FANS,120); //255=100%
+// AVOID THIS OR CHECK CONFLICT WITH ACTUAL TIMER 
+// USE SIMPLE 
+digitalWrite(PWM_FANS,HIGH); 
+
+
+
+//////////// ENABLE DRIVER 
+delayMicroseconds(10); 
+digitalWrite(_Dis_drv, HIGH); // redundancy
+digitalWrite( _Ena_drv, LOW); 
+delayMicroseconds(10); 
+digitalWrite( _Ena_drv, HIGH); 
+
+float vout;
+
+
+// whait activation of the ouput voltage sensor to get error 2.8xx (Vout = 109)
+digitalWrite( disable_HW_OVP_OUT, HIGH);
+vout = 0;
+while (vout<95 ){
+// vout conversion 
+// Vout of insulation amp default is 2.81..V 
+// 2.81 * 2**12/3.31 =  3477 (read ADC)
+vout =0.03081*adc_read(1)+ -0.09761;
+//Serial.println(vout);
+}
+
+///////////////// INITIALISATION OF OUTPUT VOLTAGE
+int per = (int) 72E3/150; // 150 kHz, 50% (FUNCTION CALL CHANGED)
+//int per = (int)72E3/95;
+set_arr_ccr2_synced(per, (int) per/ 2); 
+// Enable CH2 + CH2N (CHANGED to CC2E and CC2NE)
+TIM1->CCER |= TIM_CCER_CC2E | TIM_CCER_CC2NE;
+
+
+
+
+// wait initialization of output voltage AMP
+
+// Wait activation of output voltage (instead of 0)
+// AT 0V the AMP send error voltage 2.8xxV so this make HW OVP
+while (vout>95 ){
+// vout conversion 
+// Vout of insulation amp default is 2.81..V 
+// 2.81 * 2**12/3.31 =  3477 (read ADC)
+vout =0.03081*adc_read(1)+ -0.09761;
+//Serial.println(vout);
+}
+
+//RESET FLIPFLOP 
+digitalWrite( _Ena_drv, LOW); 
+delayMicroseconds(10); 
+digitalWrite( _Ena_drv, HIGH); 
+
+//only for test
+//digitalWrite( disable_HW_OVP_OUT, HIGH);
+//while (1); 
+//only for test
+
+
+pinMode(disable_HW_OVP_OUT, INPUT); // Enable the Vout HW OVP
+
+int Periode, Periode__; 
+
+
+
+
+
+// Fixe freq
+Periode = (int) 72E3/95; 
+Periode = (int) Periode/2; 
+Periode = (int) Periode*2;
+set_arr_ccr2_synced(Periode, (int) Periode / 2); 
+while(1);
+
+
+
+float vout_target= 48;
+
+float error, u ;  
+float integ_error = 0.0f;
+float integ_error__ = 0.0f;
+float dt = 1e-5f;
+float kp = 0.1;//kp = 3; 
+float ki= 50; //ki = 9375.0;
+
+
+unsigned long time0, time1; 
+int min_periode = (int) 72E3/150; //=480 , 150 kHz
+int max_periode = (int) 72E3/95; 
+
+
+
+
+
+
+while(1){
+time0= micros(); 
+// vout conversion 
+vout =0.03081*adc_read(1)+ -0.09761;
+// error 
+error =  vout_target-vout; 
+// integral
+integ_error__= integ_error+error*dt;
+// PI controller
+u = 719.0f * (kp*error + ki*integ_error__);
+Periode__ = (int)u;
+
+if (Periode__ < min_periode) Periode = min_periode;
+else if (Periode__ > max_periode) Periode = max_periode;
+else {
+
+  Periode= Periode__; 
+  integ_error = integ_error__; 
+}
+integ_error = integ_error__; 
+// FORCE periode to be even (x2)
+Periode = (int) Periode/2; 
+Periode = (int) Periode*2;
+set_arr_ccr2_synced(Periode, (int) Periode / 2); 
+time1= micros();
+dt= 1e-6*(time1-time0);  
+}
+
+
+
+
+
+
+}

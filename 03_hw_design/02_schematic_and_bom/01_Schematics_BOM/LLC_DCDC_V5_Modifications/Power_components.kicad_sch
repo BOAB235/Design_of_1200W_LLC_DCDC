@@ -2174,12 +2174,6 @@
 		(uuid "45aa7ed4-6b20-42c2-9e3c-58510b142029")
 	)
 	(junction
-		(at 209.55 118.11)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4b442881-c750-483d-b79f-af1bdb28564c")
-	)
-	(junction
 		(at 251.46 140.97)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2190,6 +2184,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4c653030-34cb-4c52-a118-b93563606204")
+	)
+	(junction
+		(at 209.55 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4df3a398-60b7-4701-8859-f33b86772fb7")
 	)
 	(junction
 		(at 138.43 121.92)
@@ -2327,7 +2327,7 @@
 		(at 67.31 137.16)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "e6d0f9dd-8a19-4b4c-916b-eddcca6e7536")
+		(uuid "e6104bd5-d366-47c0-a8dc-20ba5c6d83b5")
 	)
 	(junction
 		(at 209.55 111.76)
@@ -2483,16 +2483,6 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 137.16) (xy 67.31 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "416f9fe5-8e2c-4bd2-a96d-be0039afa5b0")
-	)
-	(wire
-		(pts
 			(xy 114.3 109.22) (xy 123.19 109.22)
 		)
 		(stroke
@@ -2570,6 +2560,16 @@
 			(type default)
 		)
 		(uuid "4b7284be-3150-4d2e-b91c-713ca3abdeba")
+	)
+	(wire
+		(pts
+			(xy 67.31 137.16) (xy 95.25 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ca3f041-cfe2-4ef4-9d21-44d1d74fc65c")
 	)
 	(wire
 		(pts
@@ -6277,7 +6277,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "FDH055N15A"
+		(property "Value" "IRFP4568PBF"
 			(at 213.36 64.7701 0)
 			(effects
 				(font
@@ -6296,7 +6296,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/FDH055N15A-D.PDF"
+		(property "Datasheet" "https://www.infineon.com/assets/row/public/documents/24/49/infineon-irfp4568-datasheet-en.pdf?fileId=5546d462533600a40153562c7c32201b"
 			(at 213.36 -135.23 0)
 			(effects
 				(font
@@ -6306,7 +6306,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "150 V 167 A 4.8mOhm"
+		(property "Description" "150 V 171 A 4.8mOhm"
 			(at 224.536 67.31 0)
 			(effects
 				(font
@@ -6324,7 +6324,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "512-FDH055N15A"
+		(property "Mouser Part Number" ""
 			(at 213.36 -435.23 0)
 			(effects
 				(font
@@ -6334,7 +6334,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/onsemi-Fairchild/FDH055N15A?qs=r2Ui%2FjbkGg%2FwTUHq7txgCw%3D%3D"
+		(property "Mouser Price/Stock" ""
 			(at 213.36 -535.23 0)
 			(effects
 				(font
@@ -6344,7 +6344,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "onsemi"
+		(property "Manufacturer_Name" ""
 			(at 213.36 -635.23 0)
 			(effects
 				(font
@@ -6354,7 +6354,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "FDH055N15A"
+		(property "Manufacturer_Part_Number" ""
 			(at 213.36 -735.23 0)
 			(effects
 				(font
@@ -6867,6 +6867,165 @@
 		)
 	)
 	(symbol
+		(lib_id "FDH055N15A:FDH055N15A")
+		(at 201.93 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b13201ce-33f6-4796-b73d-c415c4bb3f29")
+		(property "Reference" "Q4"
+			(at 213.868 130.302 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "IRFP4568PBF"
+			(at 213.36 126.9999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "New_Linrary:TO-247-3_Horizontal_TabDown_v2"
+			(at 213.36 227 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.infineon.com/assets/row/public/documents/24/49/infineon-irfp4568-datasheet-en.pdf?fileId=5546d462533600a40153562c7c32201b"
+			(at 213.36 327 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "150 V 171 A 4.8mOhm"
+			(at 224.536 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" "4.82"
+			(at 213.36 527 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 213.36 627 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 213.36 727 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" ""
+			(at 213.36 827 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" ""
+			(at 213.36 927 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer part code" ""
+			(at 201.93 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number " ""
+			(at 201.93 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SheetName" ""
+			(at 201.93 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FirstOrderDone" "yes"
+			(at 201.93 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "aaa0de30-2b92-4efe-8526-3c57ca384679")
+		)
+		(pin "2"
+			(uuid "c4a7b5bf-a222-4553-9b32-3730bf8b6e22")
+		)
+		(pin "1"
+			(uuid "a32abdd2-e8f6-4d97-bd7c-73d835044503")
+		)
+		(instances
+			(project "LLC_DCDC_V5_Modifications"
+				(path "/856dbdf2-f84a-4a26-871a-e6caa4757467/4045dcdc-afd8-4c82-9d0f-0c3beb469e2c"
+					(reference "Q4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 53.34 73.66 0)
 		(unit 1)
@@ -7164,7 +7323,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "IPW60R037CM8XKSA1"
+		(property "Value" "IPW60R037P7"
 			(at 71.12 86.3599 0)
 			(effects
 				(font
@@ -7183,7 +7342,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.mouser.fr/datasheet/3/70/1/Infineon-IPW60R037CM8-DataSheet-v02_01-EN.pdf"
+		(property "Datasheet" "https://www.infineon.com/assets/row/public/documents/24/49/infineon-ipw60r037p7-ds-en.pdf?fileId=5546d46259d9a4bf015a5bb7bab83ca7"
 			(at 71.12 286.36 0)
 			(effects
 				(font
@@ -7193,7 +7352,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "600 V 64A 37mOhm"
+		(property "Description" "600V 76A 37mOhm"
 			(at 81.026 88.646 0)
 			(effects
 				(font
@@ -7201,7 +7360,7 @@
 				)
 			)
 		)
-		(property "Height" "5.21"
+		(property "Height" ""
 			(at 71.12 486.36 0)
 			(effects
 				(font
@@ -7211,7 +7370,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "726-IPW60R037CM8XKSA"
+		(property "Mouser Part Number" ""
 			(at 71.12 586.36 0)
 			(effects
 				(font
@@ -7221,7 +7380,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Infineon-Technologies/IPW60R037CM8XKSA1?qs=2wMNvWM5ZX6iR5SSpR9OjA%3D%3D"
+		(property "Mouser Price/Stock" ""
 			(at 71.12 686.36 0)
 			(effects
 				(font
@@ -7241,7 +7400,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "IPW60R037CM8XKSA1"
+		(property "Manufacturer_Part_Number" ""
 			(at 71.12 886.36 0)
 			(effects
 				(font
@@ -7273,165 +7432,6 @@
 			(project ""
 				(path "/856dbdf2-f84a-4a26-871a-e6caa4757467/4045dcdc-afd8-4c82-9d0f-0c3beb469e2c"
 					(reference "Q1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "FDH055N15A:FDH055N15A")
-		(at 201.93 128.27 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "bea956d4-447a-4c2d-b85c-b1ba78c4486e")
-		(property "Reference" "Q4"
-			(at 213.36 124.4599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "FDH055N15A"
-			(at 213.36 126.9999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "New_Linrary:TO-247-3_Horizontal_TabDown_v2"
-			(at 213.36 227 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/FDH055N15A-D.PDF"
-			(at 213.36 327 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "150 V 167 A 4.8mOhm"
-			(at 222.25 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Height" "4.82"
-			(at 213.36 527 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "512-FDH055N15A"
-			(at 213.36 627 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/onsemi-Fairchild/FDH055N15A?qs=r2Ui%2FjbkGg%2FwTUHq7txgCw%3D%3D"
-			(at 213.36 727 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "onsemi"
-			(at 213.36 827 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "FDH055N15A"
-			(at 213.36 927 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer part code" ""
-			(at 201.93 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number " ""
-			(at 201.93 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SheetName" ""
-			(at 201.93 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "FirstOrderDone" "yes"
-			(at 201.93 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "1a347913-1f72-4b39-8623-1c816a5c8a23")
-		)
-		(pin "2"
-			(uuid "548fb006-21b7-4f38-8677-a71baa478c7f")
-		)
-		(pin "1"
-			(uuid "1b9ef11f-7e10-486c-a6a6-da27f01fa5e2")
-		)
-		(instances
-			(project ""
-				(path "/856dbdf2-f84a-4a26-871a-e6caa4757467/4045dcdc-afd8-4c82-9d0f-0c3beb469e2c"
-					(reference "Q4")
 					(unit 1)
 				)
 			)
@@ -7499,6 +7499,138 @@
 			(project "LLC_DCDC_V0"
 				(path "/856dbdf2-f84a-4a26-871a-e6caa4757467/4045dcdc-afd8-4c82-9d0f-0c3beb469e2c"
 					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "IPW60R037CM8XKSA1:IPW60R037CM8XKSA1")
+		(at 59.69 132.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c9a50a73-9fd6-422c-9bba-3b0ab9cc5ffb")
+		(property "Reference" "Q2"
+			(at 71.12 128.2699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "IPW60R037P7"
+			(at 71.12 130.8099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "New_Linrary:TO-247-3_Horizontal_TabDown_v2"
+			(at 71.12 230.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.infineon.com/assets/row/public/documents/24/49/infineon-ipw60r037p7-ds-en.pdf?fileId=5546d46259d9a4bf015a5bb7bab83ca7"
+			(at 71.12 330.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "600V 76A 37mOhm"
+			(at 81.026 133.096 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" ""
+			(at 71.12 530.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 71.12 630.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 71.12 730.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Infineon"
+			(at 71.12 830.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" ""
+			(at 71.12 930.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "FirstOrderDone" "yes"
+			(at 59.69 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b1d1b54b-2a68-4a8c-aa37-5f0b043f8fbd")
+		)
+		(pin "3"
+			(uuid "1f9a3f2e-8cce-4803-8dd1-b48cdd7cf39c")
+		)
+		(pin "2"
+			(uuid "21c0c390-a8dd-48d2-971c-f3afe974ef9f")
+		)
+		(instances
+			(project "LLC_DCDC_V5_Modifications"
+				(path "/856dbdf2-f84a-4a26-871a-e6caa4757467/4045dcdc-afd8-4c82-9d0f-0c3beb469e2c"
+					(reference "Q2")
 					(unit 1)
 				)
 			)
@@ -7836,138 +7968,6 @@
 			(project "LLC_DCDC_V1"
 				(path "/856dbdf2-f84a-4a26-871a-e6caa4757467/4045dcdc-afd8-4c82-9d0f-0c3beb469e2c"
 					(reference "C5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "IPW60R037CM8XKSA1:IPW60R037CM8XKSA1")
-		(at 59.69 132.08 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ebcbdabe-62b9-4496-99a7-79bc3f6f73db")
-		(property "Reference" "Q2"
-			(at 71.12 128.2699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "IPW60R037CM8XKSA1"
-			(at 71.12 130.8099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "New_Linrary:TO-247-3_Horizontal_TabDown_v2"
-			(at 71.12 230.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.mouser.fr/datasheet/3/70/1/Infineon-IPW60R037CM8-DataSheet-v02_01-EN.pdf"
-			(at 71.12 330.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "600 V 64A 37mOhm"
-			(at 80.264 133.096 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Height" "5.21"
-			(at 71.12 530.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "726-IPW60R037CM8XKSA"
-			(at 71.12 630.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Infineon-Technologies/IPW60R037CM8XKSA1?qs=2wMNvWM5ZX6iR5SSpR9OjA%3D%3D"
-			(at 71.12 730.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Infineon"
-			(at 71.12 830.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "IPW60R037CM8XKSA1"
-			(at 71.12 930.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "FirstOrderDone" "yes"
-			(at 59.69 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1a01c07e-a838-44b9-a9ab-f1c98ef32892")
-		)
-		(pin "3"
-			(uuid "4e79b344-bf42-4070-8f2c-a2ef659a8b75")
-		)
-		(pin "2"
-			(uuid "18c77b3d-c239-44c4-846e-19892fae56b6")
-		)
-		(instances
-			(project "LLC_DCDC_V1"
-				(path "/856dbdf2-f84a-4a26-871a-e6caa4757467/4045dcdc-afd8-4c82-9d0f-0c3beb469e2c"
-					(reference "Q2")
 					(unit 1)
 				)
 			)

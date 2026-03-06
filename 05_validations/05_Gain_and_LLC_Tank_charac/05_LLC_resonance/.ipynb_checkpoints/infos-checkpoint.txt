@@ -1,0 +1,115 @@
+Vin = 96.2 V
+Cmd relay = 6v 
+CH1 = ISOLATED PROB x 100 Vcapa
+CH2 = Current prob = I_relay vers point milieu 
+CH3 = isolated I_shunt 50 ohm 
+CH4 = Vdd (Vout composé, drain heigh - drain low x 10 no isolated)
+
+Lm + Lr 
+2026-01-12_17-05-29-193.png2026-01-12_17-08-29-072.png => 5*8.93 = 44.65kHz 
+
+shot 2 
+2026-01-12_17-09-27-883
+
+shot 3
+2026-01-12_17-10-50-655
+
+vin = 145.2V
+No current to calibrate sensor for 145.2v
+0v for ch1 is to done
+2026-01-12_17-17-01-155
+
+shot1 145v
+2026-01-12_17-17-57-259
+
+2026-01-12_17-18-47-334 8.83khz*5 = 44.15khz
+
+
+shot 2 
+2026-01-12_17-20-05-266
+
+shot 3
+2026-01-12_17-20-48-790
+
+
+
+Short circuit Lm 
+only Lr + Cr
+
+shot 1
+2026-01-12_17-26-26-541
+
+shot 2
+2026-01-12_17-28-05-327
+2026-01-12_17-29-13-721.png==> 17.2*5= 86khz
+17.3
+
+shot 3 
+2026-01-12_17-29-53-710.txt
+
+shot 4
+2026-01-12_17-30-26-003.png
+
+
+short circuit Lr 
+shot 1
+2026-01-12_17-35-52-092.csv
+11.8*4= 47.2kHz 
+
+
+shot 2
+2026-01-12_17-37-13-951.png
+
+
+shot 3
+2026-01-12_17-37-55-165.csv
+
+
+
+OV calibration (relay claused 
+2026-01-12_17-39-34-446.png
+
+
+
+current sensor calibration 
+Lr + Lm + Cr
+Setup 2 (see photo) 
+2026-01-12_17-47-35-714.png
+
+shot 2
+transitory
+2026-01-12_17-48-09-795.png
+
+
+shot3
+Res 20k fumé (done) 
+2026-01-12_17-49-19-711.png
+
+
+
+Lm+Lr+Cr ==> 44.15khz
+Lr+Cr ==> 86khz (short Lm)
+Lm + Cr ==> 47.2kHz  (short Lr)
+
+
+
+
+
+----------------------------
+CH3 = 19.68 k ohm instead of 50
+2026-01-17_17-08-05-537.csv
+2026-01-17_17-09-09-451
+
+
+
+no transfo ch3 = 1mega 
+2026-01-17_17-12-54-609
+
+No transfo ch3 = 50 ohm 
+2026-01-17_17-14-04-627.csv
+2026-01-17_17-14-32-620
+2026-01-17_17-15-22-907
+
+
+
+
