@@ -5,7 +5,7 @@ import glob
 base_dir = os.path.dirname(os.path.abspath(__file__))
 
 # Patterns to search for
-patterns = ["**/*.raw", "**/*.log" , "**/*.fft"]
+patterns = ["**/*.raw", "**/*.log" , "**/*.fft", "**/.gitkeep" ]
 
 for pattern in patterns:
     files = glob.glob(os.path.join(base_dir, pattern), recursive=True)

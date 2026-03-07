@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "LLC 400V/48V 1200W 100kHz")
-		(date "2025-10-14")
-		(rev "5")
+		(date "2026-02-01")
+		(rev "6")
 		(company "Abdelaziz BOUZIANI")
 	)
 	(lib_symbols
@@ -6944,7 +6944,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "11.5k 1% 1/4W 1206"
+		(property "Description" "203 20k"
 			(at 66.04 40.6399 0)
 			(effects
 				(font
@@ -10728,7 +10728,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "11.5k 1% 1/4W 1206"
+		(property "Description" "203 20k"
 			(at 196.85 40.6399 0)
 			(effects
 				(font

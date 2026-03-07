@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "LLC 400V/48V 1200W 100kHz")
-		(date "2025-10-14")
-		(rev "5")
+		(date "2026-02-01")
+		(rev "6")
 		(company "Abdelaziz BOUZIANI")
 	)
 	(lib_symbols)

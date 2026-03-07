@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "LLC 400V/48V 1200W 100kHz")
-		(date "2025-10-14")
-		(rev "5")
+		(date "2026-02-01")
+		(rev "6")
 		(company "Abdelaziz BOUZIANI")
 	)
 	(lib_symbols
@@ -1158,6 +1158,12 @@
 		(uuid "06110002-2b8b-43ef-b80a-226739448405")
 	)
 	(junction
+		(at 157.48 171.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "09e02982-9d18-45fc-b08f-be2aa82ca190")
+	)
+	(junction
 		(at 53.34 161.29)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1278,12 +1284,6 @@
 		(uuid "e415a983-ff01-47d1-a8c4-4937dbae2b37")
 	)
 	(junction
-		(at 157.48 171.45)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f46e99c6-2d40-4123-ac3b-717d66ff306d")
-	)
-	(junction
 		(at 92.71 171.45)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1367,7 +1367,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 171.45) (xy 85.09 171.45)
+			(xy 80.01 171.45) (xy 85.09 171.45)
 		)
 		(stroke
 			(width 0)
@@ -1497,7 +1497,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 171.45) (xy 73.66 173.99)
+			(xy 80.01 171.45) (xy 80.01 173.99)
 		)
 		(stroke
 			(width 0)
@@ -2158,7 +2158,7 @@
 	(netclass_flag ""
 		(length 2.54)
 		(shape diamond)
-		(at 76.2 171.45 0)
+		(at 85.09 166.37 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2169,7 +2169,7 @@
 		)
 		(uuid "58f6d38d-1310-4e4d-a540-d6c20e82b398")
 		(property "Netclass" "gnd"
-			(at 77.4065 168.91 0)
+			(at 86.2965 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2179,7 +2179,7 @@
 			)
 		)
 		(property "Component Class" ""
-			(at -119.38 96.52 0)
+			(at -110.49 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2480,6 +2480,116 @@
 		)
 	)
 	(symbol
+		(lib_id "B81123C1222M:B81123C1222M")
+		(at 53.34 167.64 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "03a31c8a-a6e1-4673-a0ca-39a2d3a03e1b")
+		(property "Reference" "C33"
+			(at 57.15 172.7199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "JY102KY5P Y2"
+			(at 63.5 177.546 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P10.00mm"
+			(at -42.85 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at -142.85 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "400VAC 102M 1NF"
+			(at 57.15 175.2599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Height" "8"
+			(at -342.85 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at -442.85 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at -542.85 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Vishay"
+			(at -642.85 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "aa3702a8-644c-479d-9fbf-61560f05494e")
+		)
+		(pin "1"
+			(uuid "374c714c-117d-40da-9f0d-3bcb73e03497")
+		)
+		(instances
+			(project "LLC_DCDC_V5_Modifications"
+				(path "/856dbdf2-f84a-4a26-871a-e6caa4757467/4a84b0e5-7cb6-400e-a534-de34c0fb280a"
+					(reference "C33")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
 		(at 41.91 115.57 0)
 		(unit 1)
@@ -2680,118 +2790,6 @@
 			(project "LLC_DCDC_V5_Modifications"
 				(path "/856dbdf2-f84a-4a26-871a-e6caa4757467/4a84b0e5-7cb6-400e-a534-de34c0fb280a"
 					(reference "C50")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "B81123C1222M:B81123C1222M")
-		(at 53.34 167.64 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1095a354-7580-4a41-9f02-efab61a2805a")
-		(property "Reference" "C33"
-			(at 57.15 172.7199 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "VY1221K31Y5SQ6TV0"
-			(at 58.42 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P10.00mm"
-			(at -42.85 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/28537/vy1series.pdf"
-			(at -142.85 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "220pF Y1"
-			(at 57.15 175.2599 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Height" "8"
-			(at -342.85 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "72-VY1221K31Y5SQ6TV0"
-			(at -442.85 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" ""
-			(at -542.85 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Vishay"
-			(at -642.85 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "b2842b7b-9d07-4e00-9d1d-7c2b6a6facd5")
-		)
-		(pin "1"
-			(uuid "edb63ee7-1519-4b2f-a445-8e8dd51769e9")
-		)
-		(instances
-			(project "LLC_DCDC_V4"
-				(path "/856dbdf2-f84a-4a26-871a-e6caa4757467/4a84b0e5-7cb6-400e-a534-de34c0fb280a"
-					(reference "C33")
 					(unit 1)
 				)
 			)
@@ -3976,6 +3974,116 @@
 		)
 	)
 	(symbol
+		(lib_id "B81123C1222M:B81123C1222M")
+		(at 127 171.45 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6adbf412-e729-4ab4-8422-7b687f699102")
+		(property "Reference" "C74"
+			(at 130.81 176.5299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "JY102KY5P Y2"
+			(at 137.16 181.356 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P10.00mm"
+			(at 30.81 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at -69.19 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "400VAC 102M 1NF"
+			(at 130.81 179.0699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Height" "8"
+			(at -269.19 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at -369.19 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at -469.19 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Vishay"
+			(at -569.19 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "35244c88-8270-49bc-9e21-5dad9b11ed6a")
+		)
+		(pin "1"
+			(uuid "f6b091f8-45b2-4ae0-b46d-748bd8f6e3ac")
+		)
+		(instances
+			(project "LLC_DCDC_V5_Modifications"
+				(path "/856dbdf2-f84a-4a26-871a-e6caa4757467/4a84b0e5-7cb6-400e-a534-de34c0fb280a"
+					(reference "C74")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND2")
 		(at 156.21 127 0)
 		(unit 1)
@@ -4103,118 +4211,6 @@
 			(project "LLC_DCDC_V0"
 				(path "/856dbdf2-f84a-4a26-871a-e6caa4757467/4a84b0e5-7cb6-400e-a534-de34c0fb280a"
 					(reference "#PWR047")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "B81123C1222M:B81123C1222M")
-		(at 127 171.45 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "803465de-bd84-46fc-81d8-3c64db847144")
-		(property "Reference" "C74"
-			(at 130.81 176.5299 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "VY1221K31Y5SQ6TV0"
-			(at 132.08 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P10.00mm"
-			(at 30.81 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/28537/vy1series.pdf"
-			(at -69.19 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "220pF Y1"
-			(at 130.81 179.0699 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Height" "8"
-			(at -269.19 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "72-VY1221K31Y5SQ6TV0"
-			(at -369.19 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" ""
-			(at -469.19 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Vishay"
-			(at -569.19 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "73eb1db0-c96f-48c5-b51e-514bd0e93387")
-		)
-		(pin "1"
-			(uuid "ec0f458c-3877-48c3-976c-8bfd4a70f8e7")
-		)
-		(instances
-			(project "LLC_DCDC_V1"
-				(path "/856dbdf2-f84a-4a26-871a-e6caa4757467/4a84b0e5-7cb6-400e-a534-de34c0fb280a"
-					(reference "C74")
 					(unit 1)
 				)
 			)
@@ -5090,8 +5086,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b69c2581-a64e-4aea-afda-0846875f2a7e")
+		(uuid "bc216f55-2dbd-431f-8b8b-eb80a353eb89")
 		(property "Reference" "C73"
 			(at 161.29 176.5299 90)
 			(effects
@@ -5101,13 +5096,12 @@
 				(justify left)
 			)
 		)
-		(property "Value" "VY1221K31Y5SQ6TV0"
-			(at 162.56 177.8 0)
+		(property "Value" "JY102KY5P Y2"
+			(at 167.64 181.356 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P10.00mm"
@@ -5120,7 +5114,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/28537/vy1series.pdf"
+		(property "Datasheet" ""
 			(at -38.71 180.34 0)
 			(effects
 				(font
@@ -5130,7 +5124,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "220pF Y1"
+		(property "Description" "400VAC 102M 1NF"
 			(at 161.29 179.0699 90)
 			(effects
 				(font
@@ -5149,7 +5143,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "72-VY1221K31Y5SQ6TV0"
+		(property "Mouser Part Number" ""
 			(at -338.71 180.34 0)
 			(effects
 				(font
@@ -5180,13 +5174,13 @@
 			)
 		)
 		(pin "2"
-			(uuid "25c59aad-711f-4552-94f3-a9ea2fd0e25d")
+			(uuid "0d256a4e-384f-4b81-b6ec-1683543f022d")
 		)
 		(pin "1"
-			(uuid "ebce9957-0ca9-41b5-8fe5-1bd1854e75bd")
+			(uuid "a8ca88a6-8bd5-4f83-868f-4989efc4c6a7")
 		)
 		(instances
-			(project "LLC_DCDC_V1"
+			(project "LLC_DCDC_V5_Modifications"
 				(path "/856dbdf2-f84a-4a26-871a-e6caa4757467/4a84b0e5-7cb6-400e-a534-de34c0fb280a"
 					(reference "C73")
 					(unit 1)
@@ -5256,118 +5250,6 @@
 			(project "LLC_DCDC_V1"
 				(path "/856dbdf2-f84a-4a26-871a-e6caa4757467/4a84b0e5-7cb6-400e-a534-de34c0fb280a"
 					(reference "H5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "B81123C1222M:B81123C1222M")
-		(at 92.71 171.45 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "dfea65e5-ef2c-4cc9-9728-b3a83fca7ac6")
-		(property "Reference" "C26"
-			(at 96.52 176.5299 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "VY1221K31Y5SQ6TV0"
-			(at 97.79 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P10.00mm"
-			(at -3.48 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/28537/vy1series.pdf"
-			(at -103.48 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "220pF Y1"
-			(at 96.52 179.0699 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Height" "8"
-			(at -303.48 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "72-VY1221K31Y5SQ6TV0"
-			(at -403.48 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" ""
-			(at -503.48 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Vishay"
-			(at -603.48 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "75c43568-d45c-4a15-959b-c976259de6b4")
-		)
-		(pin "1"
-			(uuid "77ae3813-b8ce-4514-8d3b-8f24e25cb800")
-		)
-		(instances
-			(project "LLC_DCDC_V3"
-				(path "/856dbdf2-f84a-4a26-871a-e6caa4757467/4a84b0e5-7cb6-400e-a534-de34c0fb280a"
-					(reference "C26")
 					(unit 1)
 				)
 			)
@@ -5777,7 +5659,7 @@
 	)
 	(symbol
 		(lib_id "power:GND2")
-		(at 73.66 173.99 0)
+		(at 80.01 173.99 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5786,7 +5668,7 @@
 		(fields_autoplaced yes)
 		(uuid "f25f3739-d150-49b5-ae77-392a62fc7539")
 		(property "Reference" "#PWR032"
-			(at 73.66 180.34 0)
+			(at 80.01 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5795,7 +5677,7 @@
 			)
 		)
 		(property "Value" "GND2"
-			(at 73.66 179.07 0)
+			(at 80.01 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5803,7 +5685,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 173.99 0)
+			(at 80.01 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5812,7 +5694,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 173.99 0)
+			(at 80.01 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5821,7 +5703,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND2\" , ground"
-			(at 73.66 173.99 0)
+			(at 80.01 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5836,6 +5718,116 @@
 			(project "LLC_DCDC_V1"
 				(path "/856dbdf2-f84a-4a26-871a-e6caa4757467/4a84b0e5-7cb6-400e-a534-de34c0fb280a"
 					(reference "#PWR032")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "B81123C1222M:B81123C1222M")
+		(at 92.71 171.45 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f313f5bf-1b53-4abf-8260-bf3c0ccc5f86")
+		(property "Reference" "C26"
+			(at 96.52 176.5299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "JY102KY5P Y2"
+			(at 102.87 181.356 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P10.00mm"
+			(at -3.48 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at -103.48 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "400VAC 102M 1NF"
+			(at 96.52 179.0699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Height" "8"
+			(at -303.48 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at -403.48 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at -503.48 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Vishay"
+			(at -603.48 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6bbd0ace-a68a-4a7b-a4ef-8216fbe51f7f")
+		)
+		(pin "1"
+			(uuid "5efb68eb-8e29-4694-b764-dfe67ae94df8")
+		)
+		(instances
+			(project "LLC_DCDC_V5_Modifications"
+				(path "/856dbdf2-f84a-4a26-871a-e6caa4757467/4a84b0e5-7cb6-400e-a534-de34c0fb280a"
+					(reference "C26")
 					(unit 1)
 				)
 			)
@@ -5916,7 +5908,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "fe7ba237-e06b-4d21-a2bb-ec1306327ccc")
 		(property "Reference" "C77"
 			(at 29.21 172.7199 90)
@@ -5927,13 +5918,12 @@
 				(justify left)
 			)
 		)
-		(property "Value" "VY1221K31Y5SQ6TV0"
-			(at 30.48 173.99 0)
+		(property "Value" "JY102KY5P Y2"
+			(at 35.56 177.546 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P10.00mm"
@@ -5946,7 +5936,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/28537/vy1series.pdf"
+		(property "Datasheet" ""
 			(at -170.79 176.53 0)
 			(effects
 				(font
@@ -5956,7 +5946,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "220pF Y1"
+		(property "Description" "400VAC 102M 1NF"
 			(at 29.21 175.2599 90)
 			(effects
 				(font
@@ -5975,7 +5965,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "72-VY1221K31Y5SQ6TV0"
+		(property "Mouser Part Number" ""
 			(at -470.79 176.53 0)
 			(effects
 				(font

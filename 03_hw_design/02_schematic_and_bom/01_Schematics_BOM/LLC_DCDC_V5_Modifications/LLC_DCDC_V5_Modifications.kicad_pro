@@ -559,6 +559,9 @@
       "D_S_L": [
         "48v"
       ],
+      "DisableHpVout": [
+        "hvn"
+      ],
       "EN1": [
         "hvn"
       ],
