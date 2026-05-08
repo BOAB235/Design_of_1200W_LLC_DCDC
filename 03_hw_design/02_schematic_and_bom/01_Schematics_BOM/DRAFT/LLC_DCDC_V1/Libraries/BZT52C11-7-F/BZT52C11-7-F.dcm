@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP BZT52C11-7-F
+D Diodes Inc BZT52C11-7-F Zener Diode, 11V 5% 500 mW SMT 2-Pin SOD-123
+K
+F https://www.diodes.com//assets/Datasheets/ds18004.pdf
+$ENDCMP
+#
+#End Doc Library

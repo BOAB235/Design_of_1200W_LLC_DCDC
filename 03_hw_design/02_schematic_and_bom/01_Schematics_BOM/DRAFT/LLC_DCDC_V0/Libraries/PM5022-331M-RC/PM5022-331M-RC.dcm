@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP PM5022-331M-RC
+D Fixed Inductors 330uH 20% ,,
+K
+F https://datasheet.datasheetarchive.com/originals/distributors/Datasheets-DGA11/2187790.pdf
+$ENDCMP
+#
+#End Doc Library

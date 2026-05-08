@@ -1,0 +1,56 @@
+UDC = 97.1V
+
+
+UOUT = 12.58v
+12Vsec = 11.40v
+2025-12-12_14-52-55-994 
+
+
+Rload = 40 ohm instead of 1kohm 
+2025-12-12_15-38-31-658
+
+Low freq (heigh output) 
+2025-12-12_15-45-11-354.png
+
+CH1 = VDS LOW SEC 
+CH2 = VGS H SEC 
+CH4 = VGS L SEC
+2025-12-12_15-50-55-668.txt
+
+
+
+2025-12-12_17-33-55-660.png
+Adding R_cs = 220 ohm for both Secondaries mos controller 
+CH1 = VDS LOW SEC 
+CH2 = VGoud_Cs (Pin 6 of the ic)
+
+
+
+48V UDC
+/!\/!\/!\/!\
+I maked i very big mistake 
+in all this folde 
+VDS = VDG actually 
+I found that i measure VDG why : beachase before adding ic controller i have S = G (short circuit) 
+Since 2025-12-12_18-00-00-677.png i correct CH1 = Real VDS
+
+
+2025-12-12_18-12-36-329.png
+CH1 = VDS LOW SEC 
+CH2 = VGS H SEC 
+CH4 = VGS L SEC
+
+Open the jumpers Gates are floting 
+2025-12-12_18-16-57-016.png
+
+RCS = 1kom no impact 
+1k*100u = 100mV
+2025-12-12_18-22-07-801.png
+
+return to RC = 0 
+some time the Ton is normal but some time is juste 1us 
+see
+2025-12-12_18-35-36-396.png
+see 2025-12-12_18-36-56-210.png (not repatable) 
+
+

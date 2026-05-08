@@ -1,0 +1,17 @@
+VIN VOUT 175.9V 20.39V
+NO LOAD 
+EMI_2026-02-03_17-53-31-358
+
+EMI_2026-02-03_18-00-38-109
+Load around 22Ohm 
+HV-=ch4
+
+after HV+/HV-
+EMI_2026-02-03_20-13-15-004
+without sleep 
+EMI_2026-02-03_20-14-23-349
+with sleep 0.1 for each read (stop / start)
+HV- =ch4
+HV+ = CH3
+
+

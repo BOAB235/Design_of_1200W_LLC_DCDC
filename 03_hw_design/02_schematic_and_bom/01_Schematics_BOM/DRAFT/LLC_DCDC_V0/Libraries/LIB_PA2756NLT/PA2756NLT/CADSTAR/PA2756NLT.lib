@@ -1,0 +1,16 @@
+.PA2756NLT :1 ;Common Mode Chokes / Filters 484 UH 8A
+PA2756NLT
+*STM FL
+*NGS
+*PLB 1="N1+" 2="N1-" 3="N2+" 4="N2-"
+*MXP 4
+*DFN PA2756NLT
+~!Mouser Part Number (673-PA2756NLT)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Pulse-Electronics/PA2756NLT?qs=EU6FO9ffTwfuV3zHiQJj4A%3D%3D)
+~!Manufacturer_Name (PULSE)
+~!Manufacturer_Part_Number (PA2756NLT)
+~!Link Datasheet (-)
+~!Height (9.91mm)
+~!3D_Model (PA2756NLT)
+PA2756NLT
+1.1!U 2.1!U 3.1!U 4.1!U 

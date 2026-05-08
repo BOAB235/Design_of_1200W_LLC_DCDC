@@ -1,0 +1,38 @@
+# Your function 
+You are a HW power electronic designer 
+
+# context 
+
+I'm designing a DCDC LLC 
+380/48V 1200W 
+SW freq in range [60kHz,150kHz]
+Half bridge in primary (2 Mosfets)
+Middle point + 2 mosfet in secondary (synchron) 
+I have 4uF in primary as DC Link capacitor 
+
+# details 
+
+My EMI filter (inputs)
+
+Common mode choke = PA2750NL 
+Inductance (uH +/-35%) 400uH 
+Leakage Inductance (uH Typ) 1.4uH
+Capacitance (pF Typ) 4.8pF
+DCR per winding (mOhms Max) 9.4
+
+Around this CMC i have (From input to mosfet direction) 
+I have 2 commun mode capas Y1 2.2nF (B81123C1222M)
+One diff capacitor 100nF X2 R46KI310050M1K
+One dumper (snubber) R = 27Ohm (3W) , Capa = 2.2nF (same as the B81123C1222M)
+AFTER THE CMC (chocke) I have 
+2 commun mode capas Y1 2.2nF (B81123C1222M)
+One diff capacitor 100nF X2 R46KI310050M1K
+
+
+# My quyestion: 
+I want you to justify my choice 
+As EMI point of views (not voltage ....)
+I want you to go step by step 
+use simple formula 
+No improvement or proposition needed, i already build my dcdc, and no change is possible
+you can ask question if you have it 

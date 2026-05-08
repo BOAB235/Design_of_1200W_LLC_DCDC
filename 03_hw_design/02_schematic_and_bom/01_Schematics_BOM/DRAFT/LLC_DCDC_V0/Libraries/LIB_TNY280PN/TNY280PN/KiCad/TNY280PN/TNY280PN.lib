@@ -1,0 +1,28 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model TNY280PN
+#/314284/1753220/2.50/7/4/Switch
+DEF TNY280PN S 0 30 Y Y 1 F N
+F0 "S" 1050 500 50 H V L CNN
+F1 "TNY280PN" 1050 400 50 H V L CNN
+F2 "DIP-8C" 1050 300 50 H I L CNN
+F3 "https://www.digikey.ph/en/products/detail/power-integrations/TNY280PN/1007189?msockid=39f1ec84d77b6f4428b7f904d6676eed" 1050 200 50 H I L CNN
+F4 "Power Integrations TNY280PN Intelligent Power Switch, Off Line Switcher, 2550mA, 28.5W 8-Pin, DIPC" 1050 100 50 H I L CNN "Description"
+F5 "" 1050 0 50 H I L CNN "Height"
+F6 "869-TNY280PN" 1050 -100 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Power-Integrations/TNY280PN?qs=WS5Jv%252B%252Bx1qW1eUCHvoKBfA%3D%3D" 1050 -200 50 H I L CNN "Mouser Price/Stock"
+F8 "Power Integrations" 1050 -300 50 H I L CNN "Manufacturer_Name"
+F9 "TNY280PN" 1050 -400 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X EN/UV 1 1200 0 200 L 50 50 0 0 P
+X BP/M 2 0 0 200 R 50 50 0 0 P
+X D 4 600 500 200 D 50 50 0 0 P
+X S_1 5 400 -600 200 U 50 50 0 0 P
+X S_2 6 500 -600 200 U 50 50 0 0 P
+X S_3 7 600 -600 200 U 50 50 0 0 P
+X S_4 8 700 -600 200 U 50 50 0 0 P
+P 5 0 1 6 200 300 1000 300 1000 -400 200 -400 200 300 N
+ENDDRAW
+ENDDEF
+#
+#End Library

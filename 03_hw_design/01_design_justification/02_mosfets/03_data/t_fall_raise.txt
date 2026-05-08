@@ -1,0 +1,31 @@
+Mfr. No:IXTH240N15X4
+Fall Time:	7 ns
+Rise Time:	8 ns
+
+Mfr. No:IXFH120N15P
+Fall Time:	26 ns
+Rise Time:	42 ns
+
+Mfr. No:IXFH160N15T2
+Fall Time:	26 ns
+Rise Time:	15 ns
+
+Mfr. No:AUIRFP4568
+Fall Time:	84 ns
+Rise Time:	119 ns
+
+Mfr. No:FDH055N15A
+Fall Time:	21 ns
+Rise Time:	67 ns
+
+Mfr. No:SUG80050E-GE3
+Fall Time:	55 ns
+Rise Time:	44 ns
+
+Mfr. No:IRF150P221AKMA1
+Fall Time:	62 ns
+Rise Time:	90 ns
+
+Mfr. No:IXFH150N15P
+Fall Time:	28 ns
+Rise Time:	33 ns

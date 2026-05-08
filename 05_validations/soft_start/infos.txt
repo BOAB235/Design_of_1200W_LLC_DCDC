@@ -1,0 +1,71 @@
+380v inp 
+
+actual start 
+CH1= Vds 
+CH2= Inp current 
+2026-02-10_16-05-49-985
+
+
+
+CH1 = V_Cr (Gnd of prob = HVn)
+2026-02-10_16-09-27-087
+
+
+CH1 = V_Lr (Gnd = Trans side , red = Drain side)
+2026-02-10_16-12-50-922.png
+
+79.7V vin 
+CH1 = Vds 
+pld sw 
+PI_V17_periode_decreasing_control
+2026-02-10_16-37-38-586
+
+new sw PI_V18....
+2026-02-10_16-42-22-078.png
+
+Freq 
+2026-02-10_16-43-28-557.png
+2026-02-10_16-44-34-558
+
+
+
+380V
+2026-02-10_16-47-25-801.png
+
+
+SW 19 
+2026-02-10_16-59-38-669
+
+
+CH4 = Voutput of comparator 
+2026-02-10_17-04-17-293
+no trig but noise !!!
+
+=======================================
+PI_V21_fix_freq_100khz
+load of bouillard 2200w noire
+27.2 ohm measur
+2026-02-15_13-35-20-878.png
+what is this mesterious frequency of 1.45khz :) hhh 
+
+CH1 = Vtransfo x 100 prim low side
+CH4 = vgs of prim low side x10
+
+
+2026-02-15_13-42-54-486
+ch2 = current input HVP 
+trans voltage is null initially 
+
+
+regime etablie ce que le transfo voir 
+2026-02-15_13-45-43-950
+
+ch4 = vds of low side secondary 
+2026-02-15_13-47-24-481
+
+
+2026-02-15_13-50-39-607
+ch4 = vd-d heigh side low side secondary 
+voltage everwhe = max = around 404V
+
+

@@ -1,0 +1,77 @@
+IP_controller_V3
+2026-01-25_11-22-16-052.png
+i don't know why CH4 return to input instead of 3.3V 
+
+IP_controller_V4
+2026-01-25_11-38-00-218
+ok 
+
+vin 49.06
+vout 5.95
+SW freq min = 100khz
+freq 99.86khz , vref = 8v
+2026-01-25_12-27-46-948
+estimation of Vout 
+1: 5.95*(350/49.06)=42.44
+2: 5.95*(380/49.06)=46.08V
+3: 5.95*(400/49.06)=48.51v
+
+IP_controller_V5
+min freq 95.10
+5.95=>6.116 
+49.06=>49.03
+6.116*(350/49.03)=43.64
+6.116*(380/49.03)=47.40
+6.116*(400/49.03)=49.92
+2026-01-25_12-37-30-578
+
+2026-01-25_12-40-36-874
+CH3 = current of ID (0.007 ohm)
+
+2026-01-25_12-42-25-298
+CH4 = voltage of capacitor Cr 
+
+
+
+
+------------------------------ 
+CHANGE OF MOSFET 
+VIN = 79.8V
+2026-01-31_17-09-17-057.csv
+
+VIN = 128V
+2026-01-31_17-11-21-522.csv
+
+VIN = 176V
+2026-01-31_17-12-46-709.csv
+
+Same input voltage
+vout dc = 21.74V 
+2026-01-31_17-47-18-597.png
+no load 
+CH4 = Vg of low side primary 
+CH1 = Vds of low side primary 
+
+2026-01-31_17-53-24-619.csv
+CH4 = Vg of low side primary 
+CH1 = Vds of low side primar
+CH3= VinpA of driver (of same mos)
+
+same and load ouput 51.9 ohm (same)
+2026-01-31_17-56-09-532.csv
+
+
+Same iput for CH4 and CH1
+2026-01-31_18-03-10-391.png
+delay in insulation probe = 5.84ns 
+
+
+same input 
+2026-01-31_20-09-34-892
+CH4 = vout
+CH1 = Vds of low side primar
+no load
+turn on 
+
+
+

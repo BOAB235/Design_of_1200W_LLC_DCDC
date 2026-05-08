@@ -1,0 +1,18 @@
+OUTA = Driver output for low side 
+
+INA = A9
+
+INA zoom out init voltage = 360mV , therorical value = 3.3*11.5/(11.5+102)= 334mV 
+(I add 11.5k pull down HW, i suppose that the initial pin is pull up with 102k internaly)
+Driver threshold min is 0.5V so 360mV will not pass ok 
+3.3V/11.5k = 286µA ok 
+
+DIS_DRV = The disable pin of the driver (\Q of the flip flop as expected) 
+High = Disable = Output low 
+
+
+
+Vmiddle = (power middle point of the power model) 
+with resistor 20k between middle and 12V (HV+) 
+power HV+ = 12V (same as the low voltage control)
+power HV- = 0V of the control board 

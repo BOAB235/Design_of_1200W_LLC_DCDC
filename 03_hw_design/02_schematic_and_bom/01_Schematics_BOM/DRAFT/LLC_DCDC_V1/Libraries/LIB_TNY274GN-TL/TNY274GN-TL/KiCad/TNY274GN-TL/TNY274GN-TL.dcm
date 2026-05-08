@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TNY274GN-TL
+D AC/DC Converters 8.5W 85-265 VAC 11W/230 VAC
+K
+F https://www.power.com/sites/default/files/product-docs/tny274-280.pdf
+$ENDCMP
+#
+#End Doc Library

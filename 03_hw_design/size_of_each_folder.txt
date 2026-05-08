@@ -1,0 +1,3 @@
+01_design_justification - 0.05 GB
+02_schematic_and_bom - 0.68 GB
+03_components - 0.02 GB

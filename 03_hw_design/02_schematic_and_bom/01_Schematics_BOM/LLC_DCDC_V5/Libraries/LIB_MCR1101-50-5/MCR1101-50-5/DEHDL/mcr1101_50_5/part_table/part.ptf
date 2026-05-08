@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'MCR1101_50_5'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "ACEINNA", "MCR1101-50-5" (!) = "", "MCR1101505", "Other", "438-MCR1101-50-5", "https://www.mouser.co.uk/ProductDetail/ACEINNA/MCR1101-50-5?qs=0lSvoLzn4L865aaRCd1YBg%3D%3D", "Board Mount Current Sensors High Accuracy 50A Current Sensor, 5V, Ratiometric, 1.5MHz 3dB BW, OCP, Galvanic Isolation. UL/IEC/EN60950-1 and UL1577 certified. SOIC-16", "https://www.aceinna.com/current-sensors/MCR1101-50-5", "2.64 mm"
+END_PART
+
+END.

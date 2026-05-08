@@ -1,0 +1,12 @@
+I (283) main_task: Started on CPU0
+I (293) main_task: Calling app_main()
+Sample 0: 38980 µs
+Sample 1: 39006 µs
+Sample 2: 39106 µs
+Sample 3: 39205 µs
+Sample 4: 39306 µs
+Sample 5: 39405 µs
+Sample 6: 39505 µs
+Sample 7: 39606 µs
+Sample 8: 39705 µs
+Sample 9: 39805 µs

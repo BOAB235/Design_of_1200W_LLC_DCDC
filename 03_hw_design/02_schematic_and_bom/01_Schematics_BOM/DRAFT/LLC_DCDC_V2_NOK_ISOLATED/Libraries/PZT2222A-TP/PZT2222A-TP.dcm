@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP PZT2222A-TP
+D Medium Power Bipolar Transistors
+K
+F https://www.mccsemi.com/pdf/Products/PZT2222A(SOT-223).pdf
+$ENDCMP
+#
+#End Doc Library

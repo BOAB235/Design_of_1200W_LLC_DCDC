@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP SI82397BD-IS
+D Gate Drivers 5 kV 8 V UVLO dual isolated gate drive
+K
+F https://www.skyworksinc.com/-/media/SkyWorks/SL/documents/public/data-sheets/si8239x-data-sheet.pdf
+$ENDCMP
+#
+#End Doc Library

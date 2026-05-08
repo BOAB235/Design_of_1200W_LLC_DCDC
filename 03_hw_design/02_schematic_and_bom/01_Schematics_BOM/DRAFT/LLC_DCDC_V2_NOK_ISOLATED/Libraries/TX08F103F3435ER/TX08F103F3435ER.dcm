@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TX08F103F3435ER
+D NTC Thermistors THERMISTOR 0805 10K/3435
+K
+F https://www.ohmite.com/assets/docs/res_tx.pdf?r=false
+$ENDCMP
+#
+#End Doc Library

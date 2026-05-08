@@ -1,0 +1,11 @@
+see video for this flyback 
+https://www.youtube.com/watch?v=GICw2HpsInU
+2025-12-21_12-40-09-517.png
+Vin = 307.8V
+Vout = 12.21V
+Rload (out) = 10 ohm x 4
+CH1 = Islated sensor = Vp_trans
+CH2 = Current of the primary of the trans 
+CH3 = Vs of the trans (x10)
+
+2025-12-21_12-42-45-746.png QUALIBRATION (0V 0A)

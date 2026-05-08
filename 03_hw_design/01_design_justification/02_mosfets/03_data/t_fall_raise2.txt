@@ -1,0 +1,19 @@
+Mfr. No:IPW60R060P7XKSA1
+Fall Time:	12 ns
+Rise Time:	23 ns
+
+Mfr. No:IPW60R037CM8XKSA1
+Fall Time:	5.8 ns
+Rise Time:	11 ns
+
+Mfr. No:IPW65R045C7FKSA1
+Fall Time:	7 ns
+Rise Time:	14 ns
+
+Mfr. No:IPW60R045P7XKSA1
+Fall Time:	12 ns
+Rise Time:	4 ns
+
+Mfr. No:SIHG039N60EF-GE3
+Fall Time:	78 ns
+Rise Time:	172 ns

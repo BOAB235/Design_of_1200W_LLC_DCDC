@@ -1,0 +1,7 @@
+# RC circuit 
+deltaT (62%) = 488ns = L/R 
+R = 50 ohm 
+L = 24u ?  NOOKK i will try wil LC circuit 
+
+# LC 
+frq = 147MHz and C= 50µF , L = ?

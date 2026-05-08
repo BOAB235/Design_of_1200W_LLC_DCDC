@@ -1,0 +1,16 @@
+.TNY280PN :1 ;Power Integrations TNY280PN Intelligent Power Switch, Off Line Switcher, 2550mA, 28.5W 8-Pin, DIPC
+DIP-8C
+*STM S
+*NGS
+*PLB 1="EN/UV" 2="BP/M" 4="D" 5="S_1" 6="S_2" 7="S_3" 8="S_4"
+*MXP 7
+*DFN TNY280PN
+~!Mouser Part Number (869-TNY280PN)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Power-Integrations/TNY280PN?qs=WS5Jv%252B%252Bx1qW1eUCHvoKBfA%3D%3D)
+~!Manufacturer_Name (Power Integrations)
+~!Manufacturer_Part_Number (TNY280PN)
+~!Link Datasheet (https://www.digikey.ph/en/products/detail/power-integrations/TNY280PN/1007189?msockid=39f1ec84d77b6f4428b7f904d6676eed)
+~!Height (-)
+~!3D_Model (TNY280PN)
+TNY280PN
+1.1!U 2.1!U 4.1!U 5.1!U 6.1!U 7.1!U 8.1!U 

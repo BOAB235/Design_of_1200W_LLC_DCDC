@@ -1,0 +1,163 @@
+Freq_Const_V1
+
+vin around 176v
+ch1= vds of low side prim
+ch4 = vout 
+no load 
+2026-01-31_20-48-56-858.txt
+2026-01-31_20-50-47-224
+
+
+Freq_Const_V2
+2026-01-31_21-02-44-983
+2026-01-31_21-03-51-280
+80V no demarrer
+
+
+Freq_Const_V3_slew_rate.ino
+2026-02-01_12-52-08-874.csv
+slew rate is ok see preProcessing.ipynb
+
+Same slow rate code  (like spread spectrum)
+no load 
+Vin around 127.9v
+CH1= Vds of low side primary 
+CH4 = output (AC)
+2026-02-01_13-02-37-631.csv
+
+Fix freq 105khz
+Freq_Const_V4 
+HW protection i think 
+DISABLE OF DRIVER = 3.3 so HW protecition 
+CH1= Vds of low side primary 
+CH4 = vg " " " "
+CH2 = Input current 
+
+2026-02-01_13-41-42-823
+and 2026-02-01_13-56-37-752
+same condit
+CH3=vout of the current sensor input 
+max peak =1.1V but HW protection lim is 2.359????
+
+2026-02-01_13-53-56-949
+same condit
+CH3=Vout of comparator we can see the default 
+
+
+same condit (ground of CH3 is not close , so i this we must see some spike)
+CH3=Vout insulation Vout ampli
+2026-02-01_14-00-58-588
+
+
+same condit (ground of CH3 is not close , so i this we must see some spike)
+CH3=vout of output sensor 
+2026-02-01_14-02-43-837.png
+
+same condit (ground of CH3 is not close , so i this we must see some spike)
+CH3=B10 of SMT32 (reset flip flop pin /PRE) 
+2026-02-01_14-18-03-117.png
+
+
+i found 2 problem 
+not declaration as output (corrected)
+pinMode(_Ena_drv, OUTPUT);
+solering problem in this pin
+2026-02-01_14-33-42-420
+
+2026-02-01_14-36-40-723
+ch3= vout comparator
+
+
+Freq_Const_V6 (charging boostrap)
+2026-02-01_15-04-38-605
+
+
+adding dead time no impact 
+Freq_Const_V7
+2026-02-01_15-12-10-586
+
+Freq_Const_V8
+2026-02-02_12-17-00-793
+CH1 Vgs heigh side prim
+CH2 input current 
+CH4 Vgs low side prim
+dead time around 680ns (code 694.4 ns)
+see 2026-02-02_12-18-32-569
+
+
+Retour à Freq_Const_V1
+CH4 = Vgs, CH1 = VDS low side prim
+Comparateur fermé , pas de problème !!!!!!!!!!
+peut être il faut creuser le SW 
+2026-02-02_14-07-29-903
+vout meas 15.73V
+j'ai répété 3 fois !!!!!!
+
+
+retour Freq_Const_V4
+NOK 
+2026-02-02_14-15-37-684.png
+NOK
+Freq_Const_V3_slew_rate
+
+
+retour Freq_Const_V10
+2026-02-02_15-34-51-643.png
+OK mais bruit !!!!!!!!!!!!
+le Vds prim low side n'est pas clin 
+le Vds high side secondary ch4 est plus au moins propre 
+à rechecker !!!!!
+
+
+=================================
+DEEP CHECK 
+=================================
+2026-02-02_15-51-13-369.png 
+(20ticks =277ns, meas =266ns of dead time)
+ch4 = INA , ch3 =INB of driver OK 
+
+2026-02-02_16-31-22-535 (dead =268ns ok )
+ch4 = Vout_INA , ch3 =Vout_INB of driver OK 
+Driver heigh side open 
+
+
+réparation comp out (file)
+2026-02-02_17-47-23-221.png
+CH4 = B0 (reset pin)
+CH3 = B10 (disable)
+
+
+sw Freq_Const_V11
+2026-02-02_17-54-12-963.png
+vin 80 vout 8.67v
+
+
+2026-02-03_10-11-18-589
+170V inp
+start but stop (i must check why HW protection is on)
+
+
+Sow ZVS 
+(reminder same sw as (20ticks =277ns, meas =266ns of dead time))
+CH4 = VGS LOW SIDE PRIM
+CH1= VDS SAME
+CH2 = Inp current
+2026-02-03_10-35-10-080.png
+Vgs come after Vds ==> Zvs 
+
+Same + CH4 = VIA of driver (PA9 of STM32)
+2026-02-03_10-40-17-222 (23.2ns delay between VIA and OUTA)
+157ns between Vds = off and vgs start 
+2026-02-03_10-41-22-926
+at this condition min dead time is 
+277-157=120ns to see Vgs full off before vgs start 
+of corse vgs => vds of heigh side some delay 
+so even 110ns or even 100ns must be safe 
+
+I removed HW protection 
+Normal on 
+Vin Vout = 176.1 19.14V 149.7khz
+
+
+
+

@@ -1,0 +1,30 @@
+PI_V22_adaptive_step_delay target =42
+vin vout 204.1 25.29V no load
+
+at 95khz no load ZVS
+2026-02-28_13-07-00-173
+
+Freq 95k
+2026-02-28_13-07-50-104
+
+404.9 47.83 113-117khz
+2026-02-28_13-15-03-825
+
+see the freq instability
+2026-02-28_13-15-51-309
+
+380.1v 47.38v 95khz +-
+390.2v 47.81v  100khz +-
+
+vin max (like 404) ==> ok
+room temperature
+2026-02-28_14-44-49-644					
+							
+							
+							
+
+
+
+
+
+

@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LM2575HVS-ADJ_NOPB
+D IC,regulator,voltage,switching,step-down,adjustable,TO263-5,LM2575HVS-ADJ/NOPB
+K
+F https://datasheet.datasheetarchive.com/originals/distributors/Datasheets-SFU2/DSASFU100036590.pdf
+$ENDCMP
+#
+#End Doc Library

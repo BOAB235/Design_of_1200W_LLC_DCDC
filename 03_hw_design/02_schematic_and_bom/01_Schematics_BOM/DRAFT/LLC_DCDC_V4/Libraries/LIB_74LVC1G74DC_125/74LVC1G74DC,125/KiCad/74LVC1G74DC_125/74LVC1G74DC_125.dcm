@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 74LVC1G74DC,125
+D 74LVC1G74 - Single D-type flip-flop with set and reset; positive edge trigger@en-us
+K
+F https://assets.nexperia.com/documents/data-sheet/74LVC1G74.pdf
+$ENDCMP
+#
+#End Doc Library

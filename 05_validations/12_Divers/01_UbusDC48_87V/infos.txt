@@ -1,0 +1,21 @@
+Udc = 48.87V
+Ubootsrap 11.7V
+
+Output no mos no capa open secondary 
+
+2025-12-02_14-52-26-546
+CH1 = Vout comp D_MOS1 - D_MOS2 
+CH3 = Vgs low side Mos primary
+CH4 = Vds low side Mos primary
+
+2025-12-02_15-15-48-845.png
+CH1 = Vout comp D_MOS1 - D_MOS2 
+CH2 = Id low side Mos primary
+CH3 = Voltage of capa Cr 
+
+Add Secondary mosfets + 120uF x 7 + 1kohm Rload
+2025-12-09_09-57-58-345.png
+CH3 = Vds of the primary low side 
+CH4 = Vds of the secondary same side 
+vmeas_out/inp (DC) = 8.63v 49.04v
+49.04/4/sqrt(2)=8.669V

@@ -1,0 +1,16 @@
+.B40910A8127M000 :1 ;63V, 120uF (M) d10x12,5 mm SMD HP
+B40910A8127M000
+*STM C
+*NGS
+*PLB 1="+" 2="-"
+*MXP 2
+*DFN B40910A8127M000
+~!Mouser Part Number (-)
+~!Mouser Price/Stock (-)
+~!Manufacturer_Name (TDK)
+~!Manufacturer_Part_Number (B40910A8127M000)
+~!Link Datasheet (https://product.tdk.com/system/files/dam/doc/product/capacitor/aluminum-electrolytic/hybrid-polymer/data_sheet/20/30/db/aec/b40910.pdf)
+~!Height (12.8mm)
+~!3D_Model (B40910A8127M000)
+B40910A8127M000
+1.1!U 2.1!U 

@@ -1,0 +1,32 @@
+(version 1)
+
+# 0.5 mm BETWEEN DIFFERENT nets inside class_gnd_iso
+(rule "LowVoltageSpacing"
+  (constraint clearance (min 0.5mm))
+  (condition "A.NetClass == 'class_gnd_iso' && B.NetClass == 'class_gnd_iso' && A.NetName != B.NetName")
+)
+
+# 4 mm BETWEEN class_hvp and class_gnd_iso (symmetric)
+(rule "LVHV1_HVP_vs_GNDISO"
+  (constraint clearance (min 4mm))
+  (condition "(A.NetClass == 'class_hvp' && B.NetClass == 'class_gnd_iso') || (A.NetClass == 'class_gnd_iso' && B.NetClass == 'class_hvp')")
+)
+
+# 4 mm BETWEEN class_hvn and class_gnd_iso (symmetric)
+(rule "LVHV2_HVN_vs_GNDISO"
+  (constraint clearance (min 4mm))
+  (condition "(A.NetClass == 'class_hvn' && B.NetClass == 'class_gnd_iso') || (A.NetClass == 'class_gnd_iso' && B.NetClass == 'class_hvn')")
+)
+
+# 3 mm BETWEEN class_hvn and class_hvp (symmetric)
+(rule "LVHV3_HVN_vs_HVP"
+  (constraint clearance (min 3mm))
+  (condition "(A.NetClass == 'class_hvn' && B.NetClass == 'class_hvp') || (A.NetClass == 'class_hvp' && B.NetClass == 'class_hvn')")
+)
+
+# 3 mm BETWEEN class_hvn and class_hvp (symmetric)
+(rule "LVHV3_HVN_vs_HVP"
+  (constraint clearance (min 3mm))
+  (condition "(A.NetClass == 'class_hvn' && B.NetClass == 'class_hvm') || (A.NetClass == 'class_hvm' && B.NetClass == 'class_hvm')")
+)
+

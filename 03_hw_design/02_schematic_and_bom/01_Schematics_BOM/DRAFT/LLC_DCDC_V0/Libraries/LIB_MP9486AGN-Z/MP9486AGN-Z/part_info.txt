@@ -1,0 +1,9 @@
+Manufacturer=Monolithic Power Systems (MPS)
+PartNumber=MP9486AGN-Z
+PartCategory=Integrated Circuit
+PackageCategory=Small Outline Packages
+PinCount=9
+Version=1.1
+Released=2020-01-10 16:56:47
+Downloaded=2025-08-22 17:28:40
+3D=Y

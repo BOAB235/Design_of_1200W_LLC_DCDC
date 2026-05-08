@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP DPC817S-B-TR
+D Transistor Output Optocouplers Photo Coupler SL-4 T&R 2K
+K
+F https://www.diodes.com/assets/Datasheets/DPC817-Series.pdf
+$ENDCMP
+#
+#End Doc Library

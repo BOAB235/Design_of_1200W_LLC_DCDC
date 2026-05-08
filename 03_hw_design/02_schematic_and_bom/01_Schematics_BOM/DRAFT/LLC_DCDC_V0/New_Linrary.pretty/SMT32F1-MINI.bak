@@ -1,0 +1,64 @@
+
+
+(kicad_symbol_lib (version 20211014) (generator SamacSys_ECAD_Model)
+  (symbol "STM32F1-MINI" (in_bom yes) (on_board yes) (pin_names hide)
+    (property "Reference" "U" (at 26.67 7.62 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (property "Value" "SMT32F1-MINI" (at 26.67 5.08 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+
+
+    (pin passive line (at 0 10.0 0 ) (length 5.08)
+      (name "A0" (effects (font (size 1.27 1.27))))
+      (number "0" (effects (font (size 1.27 1.27))))
+    )
+
+    (pin passive line (at 0 12.54 0 ) (length 5.08)
+      (name "A1" (effects (font (size 1.27 1.27))))
+      (number "1" (effects (font (size 1.27 1.27))))
+    )
+
+    (pin passive line (at 0 15.08 0 ) (length 5.08)
+      (name "A2" (effects (font (size 1.27 1.27))))
+      (number "2" (effects (font (size 1.27 1.27))))
+    )
+
+    (pin passive line (at 0 17.62 0 ) (length 5.08)
+      (name "A3" (effects (font (size 1.27 1.27))))
+      (number "3" (effects (font (size 1.27 1.27))))
+    )
+
+    (pin passive line (at 0 20.16 0 ) (length 5.08)
+      (name "A4" (effects (font (size 1.27 1.27))))
+      (number "4" (effects (font (size 1.27 1.27))))
+    )
+
+    (pin passive line (at 0 22.7 0 ) (length 5.08)
+      (name "A5" (effects (font (size 1.27 1.27))))
+      (number "5" (effects (font (size 1.27 1.27))))
+    )
+
+    (pin passive line (at 0 25.240000000000002 0 ) (length 5.08)
+      (name "A6" (effects (font (size 1.27 1.27))))
+      (number "6" (effects (font (size 1.27 1.27))))
+    )
+
+    (pin passive line (at 0 27.78 0 ) (length 5.08)
+      (name "A7" (effects (font (size 1.27 1.27))))
+      (number "7" (effects (font (size 1.27 1.27))))
+    )
+
+    (pin passive line (at 0 30.32 0 ) (length 5.08)
+      (name "A8" (effects (font (size 1.27 1.27))))
+      (number "8" (effects (font (size 1.27 1.27))))
+    )
+
+    (pin passive line (at 0 32.86 0 ) (length 5.08)
+      (name "A9" (effects (font (size 1.27 1.27))))
+      (number "9" (effects (font (size 1.27 1.27))))
+    )
+
+
+))

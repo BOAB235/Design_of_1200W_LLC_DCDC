@@ -1,0 +1,16 @@
+# vin 48.08v vbat 12.08v  vout 5.98v  150khz  no load 
+vds of secondary low side 
+2026-01-08_18-08-35-224
+vds of secondary heigh side 
+2026-01-08_18-11-58-206
+
+vds of secondary low side load 52.7 ohm
+2026-01-08_18-14-19-064
+vds of secondary low side load 36.1 ohm
+2026-01-08_18-15-00-617.png
+vds of secondary low side load 22.6 ohm
+2026-01-08_18-15-57-961
+vds of secondary low side, Vin 349.9V Vout 40.81V no load 
+2026-01-08_18-20-50-509
+load 52.7 ohm
+2026-01-08_18-23-12-315

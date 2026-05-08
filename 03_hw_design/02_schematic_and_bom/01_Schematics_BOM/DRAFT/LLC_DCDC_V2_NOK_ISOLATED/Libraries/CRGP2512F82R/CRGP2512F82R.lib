@@ -1,0 +1,23 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model CRGP2512F82R
+#/2206825/1753220/2.50/2/3/Resistor
+DEF CRGP2512F82R R 0 30 Y Y 1 F N
+F0 "R" 550 250 50 H V L CNN
+F1 "CRGP2512F82R" 550 150 50 H V L CNN
+F2 "RESC6432X65N" 550 50 50 H I L CNN
+F3 "https://componentsearchengine.com/Datasheets/1/CRGP2512F82R.pdf" 550 -50 50 H I L CNN
+F4 "Thick Film Resistors - SMD CRGP 2512 82R 1% SMD Resistor" 550 -150 50 H I L CNN "Description"
+F5 "0.65" 550 -250 50 H I L CNN "Height"
+F6 "279-CRGP2512F82R" 550 -350 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.com/Search/Refine.aspx?Keyword=279-CRGP2512F82R" 550 -450 50 H I L CNN "Mouser Price/Stock"
+F8 "TE Connectivity" 550 -550 50 H I L CNN "Manufacturer_Name"
+F9 "CRGP2512F82R" 550 -650 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X ~ 1 0 0 200 R 50 50 0 0 P
+X ~ 2 700 0 200 L 50 50 0 0 P
+P 5 0 1 6 200 50 500 50 500 -50 200 -50 200 50 N
+ENDDRAW
+ENDDEF
+#
+#End Library

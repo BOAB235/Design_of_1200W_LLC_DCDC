@@ -1,0 +1,4 @@
+pull up 20k
+62% time = 560ns = RC 
+Internal capacitor (oscillo + STM32)
+Capa = 560n/20k = 28pF (oscillo 13p so STM like 15pF)

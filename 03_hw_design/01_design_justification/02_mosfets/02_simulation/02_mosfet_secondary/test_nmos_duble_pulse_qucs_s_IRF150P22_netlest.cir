@@ -1,0 +1,23 @@
+.INCLUDE "C:\Users\a037702\OneDrive - Alliance\12_personnel\05_GIT\Design_of_1200W_LLC_DCDC\03_hw_design\03_components\05_Mosfet\02_Secondary\Spice_irf150p221\StrongIRFET\StrongIRFET_Spice.lib"
+
+XX3  out _net0 0 IRF150P221_L0
+V1 _net1  0 40
+R1 out _net1  100 
+R2 _net0 _net2  3 
+V2 _net2 0 DC 0 PULSE( 0 10 0N 1N 1N 0.2M {(0.2M)+(0.2M)+(1N)+(1N)} )  AC 0
+
+
+.tran 1e-06 0.001
+
+.control
+save V(out) I(R2)
+run
+display
+wrdata output_txt.txt v(out)
+write output.raw
+*plot V(out) I(R2)
+*plot V(_net2)
+plot V(out) 
+
+.endc
+.END

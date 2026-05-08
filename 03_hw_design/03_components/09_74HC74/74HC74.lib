@@ -1,0 +1,29 @@
+* D-filp-flop with asynchronous set and reset
+* CP->Q Tpd 47n/17n/14n
+* R/S->Q Tpd 52n/19n/15n
+* CP/R/S Tw 19n/7n/6n
+* D->CP Ts 6n/2n/2n 
+* D->CP Th -6n/-2n/-2n
+* R,S Trem 3n/1n/1n
+.SUBCKT 74HC74  S C D R Q QN  VCC VGND  vcc1={vcc} speed1={speed} tripdt1={tripdt}
+.param td1=1e-9*(17-5-3-3)*4.0/({vcc1}-0.5)*{speed1}
+.param td2=1e-9*(19-5-3-3)*4.0/({vcc1}-0.5)*{speed1}
+.param td3=1e-9*(17+2-5-3-3)*4.0/({vcc1}-0.5)*{speed1}
+.param td4=1e-9*(5)*4.0/({vcc1}-0.5)*{speed1}
+*
+XIN1  S Si  VCC VGND  74HC_IN_1  vcc2={vcc1}  speed2={speed1}  tripdt2={tripdt1} 
+XIN2  C Ci  VCC VGND  74HC_IN_1  vcc2={vcc1}  speed2={speed1}  tripdt2={tripdt1} 
+XIN3  D Di  VCC VGND  74HC_IN_1  vcc2={vcc1}  speed2={speed1}  tripdt2={tripdt1} 
+XIN4  R Ri  VCC VGND  74HC_IN_1  vcc2={vcc1}  speed2={speed1}  tripdt2={tripdt1} 
+*
+ACDEL  Ci 0 0  0  0   0   Cp 0  BUF  tripdt={tripdt1}  td={td1} 
+ADDEL  Di 0 0  0  0   0   Dp 0  BUF  tripdt={tripdt1}  td={td3} 
+ARINV  Ri 0 0  0  0   Rn  0  0  BUF  tripdt={tripdt1}  td={td2}
+ASINV  Si 0 0  0  0   Sn  0  0  BUF  tripdt={tripdt1}  td={td2}
+A1     Di 0 Cp Sn Rn  QNi Qi 0  DFLOP  tripdt={tripdt1} td={td4}
+*
+XOUT1  Qi  Q   VCC VGND  74HC_OUT_1X  vcc2={vcc1} speed2={speed1}  tripdt2={tripdt1}
+XOUT2  QNi QN  VCC VGND  74HC_OUT_1X  vcc2={vcc1} speed2={speed1}  tripdt2={tripdt1}
+.ends
+*
+*

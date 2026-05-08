@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP BCP5616H6327XTSA1
+D For AF driver and output stages  High collector current  Low collector-emitter saturation voltage  Complementary types: BCP51...BCP53 (PNP)  Pb-free (RoHS compliant) package  Qualified according AEC Q10
+K
+F https://www.mouser.fr/datasheet/2/196/Infineon_BCP54_BCP55_BCP56_DS_v01_01_en-1731078.pdf
+$ENDCMP
+#
+#End Doc Library

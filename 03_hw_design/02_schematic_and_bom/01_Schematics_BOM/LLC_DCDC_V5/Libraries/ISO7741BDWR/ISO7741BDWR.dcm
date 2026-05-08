@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ISO7741BDWR
+D Digital Isolators Robust EMC, quad-channel, 3/1, reinforced digital isolator 16-SOIC -55 to 125
+K
+F https://www.ti.com/lit/gpn/ISO7741
+$ENDCMP
+#
+#End Doc Library

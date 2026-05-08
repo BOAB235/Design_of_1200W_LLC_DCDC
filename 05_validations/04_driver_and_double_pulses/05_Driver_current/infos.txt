@@ -1,0 +1,23 @@
+Vin = 48.03V
+Vout = 8.03V (regulation)
+Vflyback= 11.35v
+
+CH4 = Vgs of MOS LOW SIDE PRIMARY 
+CH2 = Ioutput of the driver (Ig in the jumper) of the same mos
+No load Rg = 3Ohm 
+2025-12-31_09-53-33-832.csv 
+Secondary R_Tmin= 20k ==> Ton_min = 2us 
+see 
+2025-12-31_09-57-54-241.png
+Turn on off see next screenshoots 
+
+Freq of regulation 
+2025-12-31_10-09-07-719.png
+
+
+-------------------------------
+CH4 = Vgs of MOS LOW SIDE PRIMARY 
+CH2 = Ioutput of the driver (Ig in the jumper) of the high side mos (prim)
+
+Driver: VDD LOW SIDE = 11.35 VDD HEIGH SIDE = 10.79 
+2025-12-31_10-15-14-895.png

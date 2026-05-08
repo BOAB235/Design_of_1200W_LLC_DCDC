@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART '11328_T074'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Sumida", "11328-T074" (!) = "", "11328T074", "Other", "851-11328-T074", "https://www.mouser.co.uk/ProductDetail/Sumida/11328-T074?qs=DRkmTr78QASTM1HSK8DGZg%3D%3D", "Power Transformers Flyback Transformer for LT8316", "https://www.mouser.co.cr/datasheet/2/390/LT8316_PQ2620_Datasheet_ver_3_20190825-2199694.pdf", "23.5 mm"
+END_PART
+
+END.

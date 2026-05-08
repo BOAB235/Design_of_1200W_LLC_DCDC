@@ -1,0 +1,109 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.0 Chrome/140.0.7339.249 Electron/38.7.2 Safari/537.36" version="29.3.0">
+  <diagram name="Page-1" id="jLeq7sir0wkjHYwQJhkb">
+    <mxGraphModel dx="822" dy="489" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="GmVtCT_DzMKxvk4P79FP-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;HV INSOLATION IC&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="300" width="130" x="370" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="GmVtCT_DzMKxvk4P79FP-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="250" width="60" x="370" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="GmVtCT_DzMKxvk4P79FP-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="250" width="60" x="440" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="GmVtCT_DzMKxvk4P79FP-4" edge="1" parent="1" source="GmVtCT_DzMKxvk4P79FP-1" style="endArrow=classic;html=1;rounded=0;exitX=-0.007;exitY=0.083;exitDx=0;exitDy=0;exitPerimeter=0;" value="NSS">
+          <mxGeometry height="50" relative="1" width="50" x="1" y="20" as="geometry">
+            <mxPoint x="-20" y="-20" as="offset" />
+            <mxPoint x="400" y="340" as="sourcePoint" />
+            <mxPoint x="310" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GmVtCT_DzMKxvk4P79FP-5" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" value="SCK">
+          <mxGeometry height="50" relative="1" width="50" x="1" y="20" as="geometry">
+            <mxPoint x="-20" y="-20" as="offset" />
+            <mxPoint x="370" y="210" as="sourcePoint" />
+            <mxPoint x="310" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GmVtCT_DzMKxvk4P79FP-6" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" value="MOSI">
+          <mxGeometry height="50" relative="1" width="50" x="1" y="20" as="geometry">
+            <mxPoint x="-20" y="-20" as="offset" />
+            <mxPoint x="370" y="250" as="sourcePoint" />
+            <mxPoint x="310" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GmVtCT_DzMKxvk4P79FP-7" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;startArrow=classic;startFill=1;endFill=0;" value="MISO">
+          <mxGeometry height="50" relative="1" width="50" x="1" y="20" as="geometry">
+            <mxPoint x="-20" y="-20" as="offset" />
+            <mxPoint x="370" y="290" as="sourcePoint" />
+            <mxPoint x="310" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GmVtCT_DzMKxvk4P79FP-8" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" value="Ext-NSS">
+          <mxGeometry height="50" relative="1" width="50" x="-1" y="-30" as="geometry">
+            <mxPoint x="30" y="30" as="offset" />
+            <mxPoint x="560" y="169.64" as="sourcePoint" />
+            <mxPoint x="500" y="169.64" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GmVtCT_DzMKxvk4P79FP-9" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" value="Ext-SCK">
+          <mxGeometry height="50" relative="1" width="50" x="-1" y="30" as="geometry">
+            <mxPoint x="30" y="-30" as="offset" />
+            <mxPoint x="560" y="209.64" as="sourcePoint" />
+            <mxPoint x="500" y="209.64" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GmVtCT_DzMKxvk4P79FP-10" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" value="Ext-MOSI">
+          <mxGeometry height="50" relative="1" width="50" x="-1" y="30" as="geometry">
+            <mxPoint x="30" y="-30" as="offset" />
+            <mxPoint x="560" y="249.64" as="sourcePoint" />
+            <mxPoint x="500" y="249.64" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GmVtCT_DzMKxvk4P79FP-11" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;startArrow=classic;startFill=1;endFill=0;" value="Ext-MISO">
+          <mxGeometry height="50" relative="1" width="50" x="-1" y="-30" as="geometry">
+            <mxPoint x="30" y="30" as="offset" />
+            <mxPoint x="560" y="289.64" as="sourcePoint" />
+            <mxPoint x="500" y="289.64" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GmVtCT_DzMKxvk4P79FP-12" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;endFill=0;" value="3.3v">
+          <mxGeometry height="50" relative="1" width="50" x="1" y="20" as="geometry">
+            <mxPoint x="-20" y="-20" as="offset" />
+            <mxPoint x="370" y="335" as="sourcePoint" />
+            <mxPoint x="310" y="335" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GmVtCT_DzMKxvk4P79FP-13" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;endFill=0;" value="GND-HVN">
+          <mxGeometry height="50" relative="1" width="50" x="1" y="20" as="geometry">
+            <mxPoint x="-20" y="-20" as="offset" />
+            <mxPoint x="370" y="375" as="sourcePoint" />
+            <mxPoint x="310" y="375" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GmVtCT_DzMKxvk4P79FP-14" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;endFill=0;" value="Ext-3.3v">
+          <mxGeometry height="50" relative="1" width="50" x="-1" y="-30" as="geometry">
+            <mxPoint x="30" y="30" as="offset" />
+            <mxPoint x="560" y="340" as="sourcePoint" />
+            <mxPoint x="500" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GmVtCT_DzMKxvk4P79FP-15" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;endFill=0;" value="Ext-GND">
+          <mxGeometry height="50" relative="1" width="50" x="-1" y="-30" as="geometry">
+            <mxPoint x="30" y="30" as="offset" />
+            <mxPoint x="560" y="380" as="sourcePoint" />
+            <mxPoint x="500" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GmVtCT_DzMKxvk4P79FP-17" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 21px;&quot;&gt;MUC side&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="170" y="255" as="geometry" />
+        </mxCell>
+        <mxCell id="GmVtCT_DzMKxvk4P79FP-18" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 21px;&quot;&gt;Exterior&amp;nbsp;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 21px;&quot;&gt;Side&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="639" y="255" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

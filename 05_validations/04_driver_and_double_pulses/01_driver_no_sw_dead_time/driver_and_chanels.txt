@@ -1,0 +1,6 @@
+Driver = ucc21520Q
+RT = 11.5k 
+CH1 = INA 
+CH2 = INB 
+CH3 = OUTA 
+CH4 = OUTB

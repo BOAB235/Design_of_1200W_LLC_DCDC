@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'TNY274GN_TL'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Power Integrations", "TNY274GN-TL" (!) = "", "TNY274GNTL", "Other", "869-TNY274GN-TL", "https://www.mouser.co.uk/ProductDetail/Power-Integrations/TNY274GN-TL?qs=%252Bk6%2F5FB6qrlpHJoVM01SMg%3D%3D", "AC/DC Converters 8.5W 85-265 VAC 11W/230 VAC", "https://www.power.com/sites/default/files/product-docs/tny274-280.pdf", "3.98 mm"
+END_PART
+
+END.

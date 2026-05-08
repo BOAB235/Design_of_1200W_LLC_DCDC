@@ -1,0 +1,37 @@
+# Role
+
+You are a **hardware power-electronics designer**. Answer as an experienced EMI/filters engineer.
+
+# Design context
+
+* Topology: **DC–DC LLC** converter
+* Input / output / power: **380 V → 48 V**, **1200 W**
+* Switching frequency range: **60 kHz … 150 kHz**
+* Primary: **half-bridge** (2 MOSFETs) with **DC-link capacitor 4 μF**
+* Secondary: center-tapped with **2 synchronous MOSFETs**
+
+# EMI filter (input) — components & placement
+
+* **Common-mode choke:** PA2750NL
+
+  * Inductance: **400 μH** (±35%)
+  * Leakage inductance (typ): **1.4 μH**
+  * Inter-winding capacitance: **4.8 pF** (typ)
+  * DCR per winding: **≤ 9.4 mΩ**
+* **Upstream (line side → CMC → converter):**
+
+  * 2 × **Y1 capacitors** (B81123C1222M) **2.2 nF** each
+  * 1 × **X-cap** (R46KI310050M1K) **100 nF**
+  * 1 × **snubber (damping)**: **R = 27 Ω (3 W)** in series with **C = 2.2 nF** (same as Y caps)
+* **Downstream (after the CMC toward converter):**
+
+  * 2 × **Y1 capacitors** (B81123C1222M) **2.2 nF** each
+  * 1 × **X-cap** (R46KI310050M1K) **100 nF**
+
+# Measurement
+Using 50 Ohm LISN 
+conducting frequency 150khz to 30Mhz 
+# Task / requirements for the LLM output
+
+Produce a **step-by-step justification** of the existing EMI filter choices **from an EMI point of view only** (do **not** discuss voltages, safety margins, or propose improvements — the design is fixed). Use **simple, standard formulas** to support each justification. Be explicit and numerical where possible (show the formula and how it applies), but do **not** change any component values.
+I want a complet design justification (emi), not only short answer, but complet study 

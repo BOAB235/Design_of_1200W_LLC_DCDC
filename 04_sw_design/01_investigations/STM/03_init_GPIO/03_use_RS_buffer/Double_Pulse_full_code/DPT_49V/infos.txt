@@ -1,0 +1,11 @@
+screen_2025-11-11_11-43-52-214.png ==> 1us 1us 1us 
+screen_2025-11-11_12-55-23-448.png ==> 3us 2us 2us
+screen_2025-11-11_13-09-09-205.png ==> 10us 2us 2us
+screen_2025-11-11_13-23-28-142.png ==> 20us 2us 2us
+screen_2025-11-11_13-31-40-064.png ==> 15us 2us 2us
+screen_2025-11-11_13-35-21-275.png ==> 15us 2us 2us zoom turn off 240ns
+screen_2025-11-11_13-41-28-555.png ==> 15us 2us 2us current ID with 7mOhm 
+screen_2025-11-11_13-44-54-451.png ==> 
+	Loop inductance : 
+	f_ringMhz = 1e-6/(2*pi*sqrt(L_loop*C_oss)) # Mhz 
+	76.9Mhz , and 43pF ==> L_loop= 99nH !!!!!!!!!!!

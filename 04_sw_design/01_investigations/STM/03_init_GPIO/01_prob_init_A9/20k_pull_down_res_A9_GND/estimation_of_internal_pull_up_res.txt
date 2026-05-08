@@ -1,0 +1,6 @@
+Estimation of the internal pull up res of the STM32F1 
+no external res:  3.26V
+20kohm : 540mv
+
+==> 102k 
+berif 3.3*20/(102+20) = 540.9 mV 
