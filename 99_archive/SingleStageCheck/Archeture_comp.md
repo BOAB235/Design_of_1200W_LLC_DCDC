@@ -38,6 +38,8 @@ HW complexity and cost
 
 * We can add big capacitor like LLC to block the DC current 
 * Split L1 in both side for symetry L1/2 Lm L1/2
+* Dual Active Bridge with Current Doubler Rectifier (a DAB with Current Doubler Rectifier)
+<img src = "https://www.e-magnetica.pl/lib/exe/fetch.php/current_doubler_diagram_magnetica.png?w=500&tok=cb7619">
 
 # Phase-Shifted full bridge
 
