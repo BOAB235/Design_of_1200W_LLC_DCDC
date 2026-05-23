@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>1200W 400V/48V LLC DC-DC</title>
+  <link rel="stylesheet" href="styles.css">
+
+  
+</head>
+<body>
+<div class="page">
+
+
+  <!-- ╔══════════════════════════════════════╗
+       ║  HEADER                              ║
+       ╚══════════════════════════════════════╝ -->
+  <header class="page-header">
+    <h1>Design of a 1200 W LLC Resonant DC-DC Converter (400 V to 48 V)</h1>
+    <!--div class="subtitle">Design, Prototyping, and Testing</div-->
+  </header>
+
+  <!-- ╔══════════════════════════════════════════════════════════╗
+       ║  SECTIONS — just add more .section blocks here          ║
+       ║  They fill left column first, then right automatically  ║
+       ║  No manual placement needed                             ║
+       ╚══════════════════════════════════════════════════════════╝ -->
+  <div class="columns">
+
+
+    <!-- ✏️ SECTION 1 — Electrical Specs table -->
+    <div class="section">
+      <div class="section-title">Electrical Specifications</div>
+      <div class="section-body">
+        <table class="kv-table">
+          <tr><td>Input Voltage</td>    <td>360V – 400V (nom. 380V)</td></tr>
+          <tr><td>Output Voltage</td>   <td>42V – 54V (nom. 48V)</td></tr>
+          <tr><td>Output Power</td>     <td>1200W</td></tr>
+          <tr><td>Switching Freq.</td>  <td>95 kHz to 150 kHz</td></tr>
+          <tr><td>Output Ripple</td>    <td>&lt; 0.25V pk-pk</td></tr>
+          <tr><td>Insulation Resistance</td> <td>&gt; 100MΩ</td></tr>
+          <tr><td>HV Side Discharge</td> <td>Below 60V @ 5s</td></tr>
+          <tr><td>Efficiency</td> <td>Up to 91% at full load</td></tr>
+          <tr><td>Ambient Temperature</td> <td> -20/60°C</td></tr>        
+    
+
+        </table>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="section">
+      <div class="section-title">Hardware and Software Tools</div>
+      <div class="section-body">
+        <table class="kv-table">
+          <tr><td>Schematic and Layout</td>    <td>kiCad (PCB-Maker : JLCPCB)</td></tr>
+          <tr><td>Simulation</td>    <td>LTspice / Ngspice / PySpice</td></tr>
+          <tr><td>Calculation and reporting</td>    <td>Python / Jupyterlab / VsCode</td></tr>
+          <tr><td>Firmware Development</td>    <td>STM32CubeIDE and Arduino IDE</td></tr>
+          <tr><td>Measurement Equipment</td>    <td>TDS3034b, TCP202, Yokogawa 700924</td></tr>
+
+        </table>
+
+      </div>
+    </div>
+
+
+
+
+    <!-- ✏️ SECTION 2 — Schematic image
+         TO REPLACE: delete the <div class="img-box">...</div>
+         and write:  <img src="your-file.png" alt="Schematic">    -->
+    <div class="section">
+      <div class="section-title">Schematic / Topology</div>
+      <div class="section-body">
+        <table class="kv-table">
+          <tr><td>Primary Topology</td>    <td>Half Bridge</td></tr>
+          <tr><td>Secondary Topology</td>    <td>Synchronous rectifier with center tap</td></tr>  
+          <tr><td>Magnetic cores</td>    <td>TDK Planar ELP</td></tr>    
+          <tr><td>Communication</td>    <td>Isolated SPI 9Mbps</td></tr>    
+          <tr><td>Power supplies</td>    <td>FLyBack 400V/12V, buck 12V/3.3V, buck 48V/12V, LDO 12v/3.3v</td></tr>   
+
+        </table>
+        <div class="img-box">
+
+
+            <img src="figs/une2.png" alt="Schematic">
+  
+
+        </div>
+      </div>
+    </div>
+
+    
+
+
+
+
+
+
+
+
+    <div class="section">
+      <div class="section-title">Assembled DC-DC converter</div>
+      <div class="section-body">
+        <div class="img-box">
+            <img src="figs/ass.png" alt="Schematic">
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- ✏️ SECTION 3 — Key Components table -->
+    <div class="section">
+      <div class="section-title">Key Components</div>
+      <div class="section-body">
+        <table class="kv-table">
+          <tr><td>Controller IC</td>   <td>STM32F103C8T6 (MINI)</td></tr>
+          <tr><td>Primary MOSFET (TO-247-3) </td>   <td>IPW60R037P7 600V 76A 37mΩ</td></tr>
+          <tr><td>Second MOSFET (TO-247-3)</td>   <td>IRFP4568PBF 150 V 171A 4.8mΩ</td></tr>
+          <tr><td>Primary Driver</td>   <td>UCC21520Q (Source 4A Sink 6A)</td></tr>
+          <tr><td>Transformer core</td>   <td>ELP102/20/38 with I102/7/38 N97</td></tr>
+          <tr><td>Resonant Inductor core</td>   <td>ELP43/10/28 N87</td></tr>
+
+          <tr><td>PCB</td>    <td>FR4, 4 layers, 1.6 mm, 35µm/70µm</td></tr>
+        </table>
+      </div>
+    </div>
+
+
+    
+
+
+
+
+
+
+
+
+    <div class="section">
+      <div class="section-title">Tests and validations</div>
+      <div class="section-body">
+        <table class="kv-table">
+          <tr><td>Efficiency</td>    <td>100W up to 1 kW at 380 V</td></tr>
+          <tr><td>MOSFET characterization</td>    <td>Double pulse test</td></tr>
+          <tr><td>Magnetic core characterization</td>    <td>Saturation curve</td></tr>
+          <tr><td>EMI test</td>    <td>Conducted emission 0.15 MHz to 30 MHz</td></tr>
+          <tr><td>Flyback test</td>    <td>Validation of the design 400V / 12V</td></tr>
+        </table>
+
+
+        <p class="small-title">Double Pulse Test</p>
+        <div class="img-box">
+            <img src="figs/double.png" alt="Schematic">
+        </div>
+
+        <p class="small-title">EMI conducted emissions with and without filter</p>
+        <div class="img-box">
+            <img src="figs/emi.png" alt="Schematic">
+        </div>
+
+        <p class="small-title">Efficiency Test</p>
+        <div class="img-box">
+            <img src="figs/eff.png" alt="Schematic">
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="section">
+      <div class="section-title">Project Website</div>
+      <div class="section-body">
+
+        <div class="row-right">
+          <div class="row-text">
+                <p>For more information, visit the DC-DC website at
+                  <a href="https://boab235.github.io/pages/llc/llc.html" target="_blank">
+                    www.bit.ly/43nwOsP</a>
+                    or scan the QR code.
+                </p>
+          </div>
+         
+          <a href="https://boab235.github.io/pages/llc/llc.html"  target="_blank" rel="noopener noreferrer">
+            <img class="qr-icon" src="figs/qr.png" alt="QR code">
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+
+
+  </div><!-- end .columns -->
+
+
+  <!-- ╔══════════════════════════════════════╗
+       ║  FOOTER                              ║
+       ╚══════════════════════════════════════╝ -->
+  <footer class="page-footer">
+    <span>Author: Abdelaziz BOUZIANI, <a href="https://linkedin.com/in/bouz1" target="_blank">linkedin.com/in/bouz1</a></span>
+    <span><a href="https://boab235.github.io/pages/llc/llc.html" target="_blank">https://boab235.github.io/pages/llc/llc.html</a></span>
+    <span>May 2026</span>
+  </footer>
+
+
+</div>
+</body>
+</html>
