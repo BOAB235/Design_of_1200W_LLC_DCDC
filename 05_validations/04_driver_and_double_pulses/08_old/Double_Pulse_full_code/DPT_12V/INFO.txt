@@ -1,0 +1,13 @@
+GND OSCILLO = Drain of low side mos 
+CH1: Voltage = HV-/GND = S/D of low side
+CH2: voltage of the shunt resistor 7mOhm = Voltage of Middle_point/Drain_mos_low_side
+CH3: Inductance current , AC current sensor 
+	screen_2025-11-10_17-31-51-819.png ==> deltaI = 72mA 
+	screen_2025-11-10_17-33-05-384.png ==> deltaT = 1.18us 
+	screen_2025-11-10_17-33-54-005.png ==> deltaE = 11.7V 
+	v = L di/dt ==> L = v dt/di = 1e6*(11.7*1.18e-6/72e-3)= 191.75uH 
+
+Loop inductance : 
+	screen_2025-11-10_17-37-45-318.png
+	f_ringMhz = 1e-6/(2*pi*sqrt(L_loop*C_oss)) # Mhz 
+	6.33Mhz , and 43pF ==> L_loop= 14.7uH !!!!!!!!!!!

@@ -1,0 +1,11 @@
+oscilo powered by isolated 12V battery 
+
+Loop inductance : 
+	screen_2025-11-10_17-59-38-891.png
+	f_ringMhz = 1e-6/(2*pi*sqrt(L_loop*C_oss)) # Mhz 
+	28.4Mhz , and 43pF ==> L_loop= 730nH !!!!!!!!!!!
+Spick of voltage = 31V (like 100%)
+
+
+Voltage isolated probe(with battery) vs direct measurement
+screen_2025-11-10_18-13-46-776.png

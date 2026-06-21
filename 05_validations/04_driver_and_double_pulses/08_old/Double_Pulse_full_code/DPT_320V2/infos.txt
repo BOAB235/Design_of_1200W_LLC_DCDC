@@ -1,0 +1,6 @@
+2025-11-16_12-10-27-298.png IS with coil rowsky 
+2025-11-16_13-05-28-825 ID with R05F resitor 
+2025-11-16_18-43-46-473 rogowski coil v2 around ID LOOP 
+2025-11-16_19-03-28-622.csv R=220 ohm instead of 50
+2025-11-16_19-07-50-851.csv R = 10 ohm 
+2025-11-16_19-12-23-250.csv  R 47

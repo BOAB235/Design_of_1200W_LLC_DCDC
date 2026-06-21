@@ -31,6 +31,7 @@ subprocess.run(['jupyter', 'nbconvert', f'{notebook}.ipynb', '--to', 'html', '--
 # Generate TOC in HTML
 with open(f'{notebook}.html', 'r', encoding='utf-8') as f:
     soup = BeautifulSoup(f.read(), 'html.parser')
+    #soup.head.append(BeautifulSoup("<style>body{max-width:50vw;margin:auto;}</style>", "html.parser"))
 
 # Find "Table of contents" heading
 # Use get_text() instead of string because the heading may contain nested tags (like anchor links)
