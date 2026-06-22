@@ -7854,7 +7854,7 @@ a.anchor-link {
     text-decoration: underline;
 }
 </style>
-<ul class="toc-list"><li><a href="#title_1">Primary driver</a><ul><li><a href="#title_2">Driver HW dead time</a><li><a href="#title_3">Bootstrap circuit</a></li></li></ul></li><li><a href="#title_4">Double pulse test</a><ul><li><a href="#title_5">Setup</a><li><a href="#title_6">Example of the pre-processing</a><li><a href="#title_7">Rg impact</a></li></li></li></ul></li><li><a href="#title_8">Gate current</a><li><a href="#title_9">Secondary driver</a><li><a href="#title_10">Annexes</a><ul><li><a href="#title_11">Carat of the big Lm</a><li><a href="#title_12">Quick prototyping of rogowski coil</a><li><a href="#title_13">Double pulse code STM32f103</a></li></li></li></ul></li></li></li></ul>
+<ul class="toc-list"><li><a href="#title_1">Primary driver</a><ul><li><a href="#title_2">Driver HW dead time</a><li><a href="#title_3">Bootstrap circuit</a></li></li></ul></li><li><a href="#title_4">Double pulse test</a><ul><li><a href="#title_5">Setup</a><li><a href="#title_6">Example of the pre-processing</a><li><a href="#title_7">Rg impact</a></li></li></li></ul></li><li><a href="#title_8">Gate current</a><li><a href="#title_9">Secondary driver</a><li><a href="#title_10">Annexes</a><ul><li><a href="#title_11">Carat of the big Lm</a><li><a href="#title_12">Quick prototyping of rogowski coil</a><li><a href="#title_13">Double pulse code STM32f103</a><li><a href="#title_14">Miller effect: Simple explanation</a></li></li></li></li></ul></li></li></li></ul>
 </div>
 </div>
 </div>
@@ -9755,11 +9755,275 @@ $e = k .di/dt$</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs jp-mod-noInput" id="cell-id=e5691c40-ec5b-4650-86f7-1792848f4a5c">
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs jp-mod-noInput" id="cell-id=66e9e126-4e27-41b6-8407-842639ecf2dc">
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs jp-mod-noInput" id="cell-id=dcea8ec8-9248-47d5-9818-24fe76a811bc">
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs jp-mod-noInput" id="cell-id=e83e7920-e9df-40e7-a944-3557644cbe51">
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs jp-mod-noInput" id="cell-id=f6979529-0a81-4dcc-901e-b55bfc5749b1">
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e5691c40-ec5b-4650-86f7-1792848f4a5c">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="title_14">Miller effect: Simple explanation<a class="anchor-link" href="#Miller-effect:-Simple-explanation">¶</a></h3>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4270fc7e-886e-4299-a329-e68f947776b3">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h4 id="Miller-effect:-Simple-modelization">Miller effect: Simple modelization<a class="anchor-link" href="#Miller-effect:-Simple-modelization">¶</a></h4>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=66e9e126-4e27-41b6-8407-842639ecf2dc">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>In this part, we propose a simple explanation of miller effect in the mosfet</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=86f22286-ecf9-413c-8376-328f76ed4282">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>From the <strong>IPW60R037P7</strong> <a href="https://www.infineon.com/assets/row/public/documents/24/49/infineon-ipw60r037p7-ds-en.pdf?fileId=5546d46259d9a4bf015a5bb7bab83ca7">datasheet</a>, we can cound :
+we can found</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noInput" id="cell-id=dcea8ec8-9248-47d5-9818-24fe76a811bc">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-RenderedLatex jp-OutputArea-output" data-mime-type="text/latex" tabindex="0">
+$
+\begin{aligned}
+\mathrm{Qgs} &amp;= 27 \; \;\textrm{(nC)}
+\\
+\mathrm{Qgd} &amp;= 37 \; \;\textrm{(nC)}
+\\
+\mathrm{VGS} &amp;= 10 \; \;\textrm{(v)}
+\\
+\mathrm{VDD} &amp;= 400 \; \;\textrm{(v)}
+\\
+\mathrm{CO}_{en} &amp;= 1599 \; \;\textrm{(pF (time related))}
+\\
+V_{gsPlateau} &amp;= 5.200 \; \;\textrm{(V)}
+\end{aligned}
+$
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=9288147a-3da7-4861-b985-2fb8418763ce">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Calculating the average capacitors (actual capacitors depend on the voltage, but we will take this hypothesis)</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noInput" id="cell-id=e83e7920-e9df-40e7-a944-3557644cbe51">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-RenderedLatex jp-OutputArea-output" data-mime-type="text/latex" tabindex="0">
+$
+\begin{aligned}
+\mathrm{Cgd} &amp;= \frac{ \mathrm{Qgd} }{ \mathrm{VDD} - \mathrm{VGS} }  = \frac{ 37 }{ 400 - 10 } &amp;= 0.095 \; \;\textrm{(nF)}
+\\
+\mathrm{Cgs} &amp;= \frac{ \mathrm{Qgs} }{ V_{gsPlateau} }  = \frac{ 27 }{ 5.200 } &amp;= 5.192 \; \;\textrm{(nF)}
+\end{aligned}
+$
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=8153ec4c-1ba7-4c8d-8bc6-347d9ecb38b2">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<ul>
+<li>In the below simulation, we modulate the mosfet with ideal switch and capacitors</li>
+<li>We use a simple capacitor circuit ot make integral of the gate current</li>
+<li>For Cgs, we will use a value of 8 nF to compensate for the non-linearity of this capacitor.</li>
+</ul>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noInput" id="cell-id=f6979529-0a81-4dcc-901e-b55bfc5749b1">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<div style="width: 100%; text-align: center;">
+<img alt="No description has been provided for this image" src="./figs/sim_simple.png" style="max-width: 19cm; width: 75%; height: auto;"/>
+<div style="word-wrap: break-word;">
+<b>Figure 42 </b> Simple LTSPice simulation
+          </div>
+</div>
+<br/>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noInput" id="cell-id=59a2dcf7-6f33-4cab-ae9d-a6751706fbe6">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<div style="width: 100%; text-align: center;">
+<img alt="No description has been provided for this image" src="./figs/RES_SIM.png" style="max-width: 19cm; width: 75%; height: auto;"/>
+<div style="word-wrap: break-word;">
+<b>Figure 43 </b> Simple LTSPice simulation: Time result
+          </div>
+</div>
+<br/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=22da5fbb-f71e-4045-9869-ace4d3f757dd">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><strong>Result:</strong></p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noInput" id="cell-id=9c4d124d-3918-410f-8475-d328704398ff">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<div style="display: flex; justify-content: center; align-items: stretch; width: 100%; gap: 1cm;">
+<div style="flex: 1; text-align: center; max-width: 9cm; display: flex; flex-direction: column;">
+<img alt="No description has been provided for this image" src="./figs/sim_simpleres.png" style="width: 100%; height: auto;"/>
+<div style="word-wrap: break-word; margin-top: auto;">
+<b>Figure 44 </b> Simple LTSPice simulation: Result
+            </div>
+</div>
+<div style="flex: 1; text-align: center; max-width: 9cm; display: flex; flex-direction: column;">
+<img alt="No description has been provided for this image" src="./figs/millerPlateau.png" style="width: 100%; height: auto;"/>
+<div style="word-wrap: break-word; margin-top: auto;">
+<b>Figure 45 </b> Datasheet
+            </div>
+</div>
+</div>
+<br/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=6882b2d3-3e61-4b56-9bc4-37391b636758">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Using the very simple MOSFET model, we have already identified the overall signature of the Miller plateau:</p>
+<ul>
+<li>$\Delta_Q = 65-25 = 40nC$ (datasheet)</li>
+<li>$\Delta_Q = 34nC$ (Simulation)</li>
+</ul>
+<p>Why an oscillation? Because the model is very simple: no inductance loop, no resistance, constant capacitor, ideal diode...</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=ee7cbc92-7b03-4a73-8d9e-b274741b3c0a">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h4 id="Miller-effect-cross-conduction-problem">Miller effect cross-conduction problem<a class="anchor-link" href="#Miller-effect-cross-conduction-problem">¶</a></h4>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=36add14d-e075-4c27-95fd-ac19d59aaa2f">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>One of the challenges associated with the Miller effect concerns the turn-off phase:</p>
+<p>To illustrate this problem, shown below is a simple simulation model using a half-bridge and an LC branch to achieve ZVS.</p>
+<ul>
+<li>The gate resistance is identical for both SW-on / SW-off.</li>
+<li>It can be observed that the drain current (in purple) make a 200A spike (caused by a short circuit between the high/low side MOSFETS).</li>
+</ul>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noInput" id="cell-id=cf6cba49-0296-4873-bce4-19cb47d2845b">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<div style="width: 100%; text-align: center;">
+<img alt="No description has been provided for this image" src="./figs/millereffect1.png" style="max-width: 19cm; width: 100%; height: auto;"/>
+<div style="word-wrap: break-word;">
+<b>Figure 46 </b> Simple LTSPice simulation: NO ROFF branch, dead time =200ns
+          </div>
+</div>
+<br/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=9246e21b-2eb4-4d6c-b45b-11411345adcb">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>By adding a resistor R_off, the discharge time is fast and no short circuit occurs</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noInput" id="cell-id=058ce9e5-3b20-4c00-a1bd-da0c90950efa">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<div style="width: 100%; text-align: center;">
+<img alt="No description has been provided for this image" src="./figs/millereffect2.png" style="max-width: 19cm; width: 100%; height: auto;"/>
+<div style="word-wrap: break-word;">
+<b>Figure 47 </b> Simple LTSPice simulation: with ROFF branch, dead time =200ns
+          </div>
+</div>
+<br/>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs jp-mod-noInput" id="cell-id=7b32b109-427c-4b73-b994-3bd7410f8370">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs jp-mod-noInput" id="cell-id=c7890c02-9024-45a2-b75e-72c86769ae2d">
 </div>
 </main>
 </body>
